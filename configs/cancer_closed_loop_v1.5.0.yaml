@@ -1,0 +1,271 @@
+experiment:
+  name: CausaFlux v1.5.0 integrated cancer and neurobiology demonstration
+  seed: 31
+output: causaflux_v1.5.0_output
+data:
+  mode: synthetic
+  n_donors: 8
+  clones_per_donor: 30
+  non_tumor_cells_per_type: 8
+  times:
+  - 0
+  - 24
+  - 72
+  - 168
+state_model:
+  representation: multimodal_early_fusion
+  modalities:
+  - rna
+  - atac
+  - protein
+  - mutation
+  - drug_response
+causal_graph:
+  nodes:
+  - name: standard_therapy
+    type: intervention
+  - name: ire1_inhibition
+    type: intervention
+  - name: mitochondrial_inhibition
+    type: intervention
+  - name: ifng_support
+    type: intervention
+  - name: mutation_burden
+    type: genomic
+  - name: treatment_stress
+    type: state
+  - name: ire1_xbp1
+    type: pathway
+  - name: proteostasis_capacity
+    type: pathway
+  - name: enhancer_plasticity
+    type: regulatory
+  - name: mitochondrial_reserve
+    type: metabolic
+  - name: antigen_presentation
+    type: immune
+  - name: immune_exclusion
+    type: niche
+  - name: inflammatory_signaling
+    type: immune
+  - name: drug_tolerance
+    type: transition
+  - name: stable_resistance
+    type: outcome
+  edges:
+  - source: standard_therapy
+    target: treatment_stress
+    sign: positive
+    evidence: designed
+  - source: mutation_burden
+    target: stable_resistance
+    sign: positive
+    evidence: prior
+  - source: treatment_stress
+    target: ire1_xbp1
+    sign: positive
+    evidence: prior
+  - source: treatment_stress
+    target: enhancer_plasticity
+    sign: positive
+    evidence: prior
+  - source: treatment_stress
+    target: mitochondrial_reserve
+    sign: positive
+    evidence: prior
+  - source: ire1_inhibition
+    target: ire1_xbp1
+    sign: negative
+    evidence: intervention
+  - source: mitochondrial_inhibition
+    target: mitochondrial_reserve
+    sign: negative
+    evidence: intervention
+  - source: ifng_support
+    target: antigen_presentation
+    sign: positive
+    evidence: intervention
+  - source: ire1_xbp1
+    target: proteostasis_capacity
+    sign: positive
+    evidence: prior
+  - source: ire1_xbp1
+    target: antigen_presentation
+    sign: negative
+    evidence: hypothesis
+  - source: proteostasis_capacity
+    target: drug_tolerance
+    sign: positive
+    evidence: hypothesis
+  - source: enhancer_plasticity
+    target: drug_tolerance
+    sign: positive
+    evidence: hypothesis
+  - source: mitochondrial_reserve
+    target: drug_tolerance
+    sign: positive
+    evidence: hypothesis
+  - source: antigen_presentation
+    target: immune_exclusion
+    sign: negative
+    evidence: hypothesis
+  - source: immune_exclusion
+    target: inflammatory_signaling
+    sign: positive
+    evidence: hypothesis
+  - source: immune_exclusion
+    target: stable_resistance
+    sign: positive
+    evidence: hypothesis
+  - source: drug_tolerance
+    target: stable_resistance
+    sign: positive
+    evidence: hypothesis
+causal_estimation:
+  comparator: standard_therapy
+  treatments:
+  - standard_plus_ire1i
+  - standard_plus_mitoi
+  - standard_plus_ifng
+  covariates:
+  - donor_id
+  - baseline_mutation_burden
+  - baseline_enhancer_plasticity
+  - baseline_mitochondrial_reserve
+  - baseline_antigen_presentation
+  - baseline_ire1_xbp1
+  bootstrap: 24
+biomarkers:
+  features:
+  - ire1_xbp1
+  - proteostasis_capacity
+  - enhancer_plasticity
+  - mitochondrial_reserve
+  - antigen_presentation
+  - immune_exclusion
+  - inflammatory_signaling
+  - viability
+  - apoptosis_signal
+  assayability:
+    ire1_xbp1: 0.7
+    proteostasis_capacity: 0.62
+    enhancer_plasticity: 0.48
+    mitochondrial_reserve: 0.68
+    antigen_presentation: 0.86
+    immune_exclusion: 0.56
+    inflammatory_signaling: 0.88
+    viability: 0.9
+    apoptosis_signal: 0.82
+  outcome_column: future_resistant
+  cell_type: tumor
+  target_node: stable_resistance
+  warning_auc_threshold: 0.65
+  warning_stability_threshold: 0.6
+  bootstrap: 60
+  top_panel_size: 3
+  metadata_overrides:
+    ire1_xbp1:
+      modality: rna/protein
+      assay: RNA plus phospho-IRE1/XBP1 panel
+    immune_exclusion:
+      modality: spatial
+      assay: spatial immune-exclusion index
+    inflammatory_signaling:
+      modality: rna/protein
+      assay: tissue or circulating cytokine panel
+baseline_uncertainty:
+  split_mode: leave_one_donor_out
+  n_splits: 4
+  calibration_methods:
+  - isotonic
+  metric_bootstrap: 50
+  prediction_bootstrap: 6
+  transition_bootstrap: 50
+  bootstrap_model: logistic_l2
+multimodal:
+  mode: synthetic
+  missing_modality_rate: 0.03
+  export_csv_bundle: true
+  required_modalities:
+  - rna
+  - atac
+  - protein
+  - mutation
+  - drug_response
+  integration: early_fusion_prefixed_features
+spatial_graph:
+  coordinate_mode: synthetic
+  width: 1000
+  height: 1000
+  n_tumor_nests: 3
+  k_neighbors: 8
+  max_distance: 230
+  neighborhood_radius: 180
+  communication_radius: 190
+  min_circuit_edges: 3
+  bootstrap: 50
+  top_circuits: 12
+  representative_sample: null
+  export_graphml: true
+therapeutics:
+  comparator: standard_therapy
+  decision_time_hours: 24
+  horizon_hours: 168
+  timing_grid:
+  - 0
+  - 24
+  - 48
+  - 72
+  - 120
+  default_start_hour: 24
+  sequence_delay_hours: 24
+  bootstrap: 20
+  max_reference_rows_per_donor: 24
+  uncertainty_penalty: 0.12
+  normal_toxicity_weight: 0.3
+  interventions: []
+closed_loop:
+  budget: 2.4
+  batch_size: 4
+  round2_budget: 2.0
+  round2_batch_size: 3
+  max_per_type: 2
+  diversity_penalty: 0.1
+  information_gain_weight: 0.4
+  therapeutic_value_weight: 0.22
+  biomarker_value_weight: 0.13
+  temporal_value_weight: 0.1
+  feasibility_weight: 0.15
+  bootstrap: 50
+  eig_samples: 900
+  simulate_demonstration_round: true
+  true_hypothesis: H1_PROTEOSTASIS_UPSTREAM
+  hypotheses:
+  - hypothesis_id: H1_PROTEOSTASIS_UPSTREAM
+    hypothesis: IRE1-XBP1 proteostasis is upstream of persistent tolerance
+    mechanism: IRE1-XBP1 proteostasis
+    prior_probability: 0.3
+  - hypothesis_id: H2_MITOCHONDRIAL_PARALLEL
+    hypothesis: Mitochondrial reserve is a parallel driver of persistent tolerance
+    mechanism: Mitochondrial reserve
+    prior_probability: 0.25
+  - hypothesis_id: H3_ANTIGEN_EXCLUSION
+    hypothesis: Antigen-presentation failure drives immune-protected resistance
+    mechanism: Antigen presentation
+    prior_probability: 0.25
+  - hypothesis_id: H4_ENHANCER_COMMITMENT
+    hypothesis: Enhancer plasticity controls commitment to stable resistance
+    mechanism: Enhancer plasticity
+    prior_probability: 0.2
+  candidates: []
+  require_type_coverage: true
+
+neurobiology:
+  n_donors: 8
+  cells_per_type: 16
+  times_days: [0, 7, 21, 42]
+  apoe4_fraction: 0.5
+  bootstrap: 50
+  warning_time_days: 21
+  terminal_time_days: 42
+  synthetic_demonstration: true

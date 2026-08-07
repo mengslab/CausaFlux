@@ -1,0 +1,223 @@
+experiment:
+  name: CausaFlux v0.4.0 multimodal causal integration demonstration
+  seed: 31
+output: causaflux_v0.4.0_output
+data:
+  mode: synthetic
+  n_donors: 8
+  clones_per_donor: 30
+  non_tumor_cells_per_type: 8
+  times:
+  - 0
+  - 24
+  - 72
+  - 168
+state_model:
+  representation: multimodal_early_fusion
+  modalities:
+  - rna
+  - atac
+  - protein
+  - mutation
+  - drug_response
+causal_graph:
+  nodes:
+  - name: standard_therapy
+    type: intervention
+  - name: ire1_inhibition
+    type: intervention
+  - name: mitochondrial_inhibition
+    type: intervention
+  - name: ifng_support
+    type: intervention
+  - name: mutation_burden
+    type: genomic
+  - name: treatment_stress
+    type: state
+  - name: ire1_xbp1
+    type: pathway
+  - name: proteostasis_capacity
+    type: pathway
+  - name: enhancer_plasticity
+    type: regulatory
+  - name: mitochondrial_reserve
+    type: metabolic
+  - name: antigen_presentation
+    type: immune
+  - name: immune_exclusion
+    type: niche
+  - name: inflammatory_signaling
+    type: immune
+  - name: drug_tolerance
+    type: transition
+  - name: stable_resistance
+    type: outcome
+  edges:
+  - source: standard_therapy
+    target: treatment_stress
+    sign: positive
+    evidence: designed
+  - source: mutation_burden
+    target: stable_resistance
+    sign: positive
+    evidence: prior
+  - source: treatment_stress
+    target: ire1_xbp1
+    sign: positive
+    evidence: prior
+  - source: treatment_stress
+    target: enhancer_plasticity
+    sign: positive
+    evidence: prior
+  - source: treatment_stress
+    target: mitochondrial_reserve
+    sign: positive
+    evidence: prior
+  - source: ire1_inhibition
+    target: ire1_xbp1
+    sign: negative
+    evidence: intervention
+  - source: mitochondrial_inhibition
+    target: mitochondrial_reserve
+    sign: negative
+    evidence: intervention
+  - source: ifng_support
+    target: antigen_presentation
+    sign: positive
+    evidence: intervention
+  - source: ire1_xbp1
+    target: proteostasis_capacity
+    sign: positive
+    evidence: prior
+  - source: ire1_xbp1
+    target: antigen_presentation
+    sign: negative
+    evidence: hypothesis
+  - source: proteostasis_capacity
+    target: drug_tolerance
+    sign: positive
+    evidence: hypothesis
+  - source: enhancer_plasticity
+    target: drug_tolerance
+    sign: positive
+    evidence: hypothesis
+  - source: mitochondrial_reserve
+    target: drug_tolerance
+    sign: positive
+    evidence: hypothesis
+  - source: antigen_presentation
+    target: immune_exclusion
+    sign: negative
+    evidence: hypothesis
+  - source: immune_exclusion
+    target: inflammatory_signaling
+    sign: positive
+    evidence: hypothesis
+  - source: immune_exclusion
+    target: stable_resistance
+    sign: positive
+    evidence: hypothesis
+  - source: drug_tolerance
+    target: stable_resistance
+    sign: positive
+    evidence: hypothesis
+causal_estimation:
+  comparator: standard_therapy
+  treatments:
+  - standard_plus_ire1i
+  - standard_plus_mitoi
+  - standard_plus_ifng
+  covariates:
+  - donor_id
+  - baseline_mutation_burden
+  - baseline_enhancer_plasticity
+  - baseline_mitochondrial_reserve
+  - baseline_antigen_presentation
+  - baseline_ire1_xbp1
+  bootstrap: 24
+biomarkers:
+  features:
+  - ire1_xbp1
+  - proteostasis_capacity
+  - enhancer_plasticity
+  - mitochondrial_reserve
+  - antigen_presentation
+  - immune_exclusion
+  - inflammatory_signaling
+  - viability
+  - apoptosis_signal
+  assayability:
+    ire1_xbp1: 0.7
+    proteostasis_capacity: 0.62
+    enhancer_plasticity: 0.48
+    mitochondrial_reserve: 0.68
+    antigen_presentation: 0.86
+    immune_exclusion: 0.56
+    inflammatory_signaling: 0.88
+    viability: 0.9
+    apoptosis_signal: 0.82
+active_learning:
+  candidates:
+  - name: CRISPRi XBP1 at 24 h
+    mechanism: IRE1-XBP1 proteostasis
+    linked_treatment: standard_plus_ire1i
+    relative_cost: 0.54
+    relative_duration: 0.52
+    rationale: Distinguish whether the IRE1-XBP1 program is upstream of persistent
+      tolerance.
+  - name: IRE1 inhibitor time-course
+    mechanism: IRE1-XBP1 proteostasis
+    linked_treatment: standard_plus_ire1i
+    relative_cost: 0.35
+    relative_duration: 0.42
+    rationale: Resolve the intervention window that separates reversible tolerance
+      from stable resistance.
+  - name: Mitochondrial-reserve inhibition
+    mechanism: Mitochondrial reserve
+    linked_treatment: standard_plus_mitoi
+    relative_cost: 0.44
+    relative_duration: 0.46
+    rationale: Test whether energetic reserve is a parallel driver of drug-tolerant
+      persistence.
+  - name: IFNG antigen-presentation rescue
+    mechanism: Antigen presentation
+    linked_treatment: standard_plus_ifng
+    relative_cost: 0.4
+    relative_duration: 0.38
+    rationale: Determine whether restored antigen presentation reduces immune-protected
+      resistance.
+  - name: Dual IRE1 and mitochondrial perturbation
+    mechanism: IRE1-XBP1 proteostasis
+    linked_treatment: standard_plus_ire1i
+    prior_effect: -0.14
+    relative_cost: 0.78
+    relative_duration: 0.66
+    rationale: Test whether two adaptive routes act redundantly or synergistically.
+  - name: Add a 48 h sampling point
+    mechanism: IRE1-XBP1 proteostasis
+    linked_treatment: ''
+    prior_effect: -0.02
+    relative_cost: 0.25
+    relative_duration: 0.3
+    rationale: Improve temporal resolution near the predicted commitment transition.
+baseline_uncertainty:
+  split_mode: leave_one_donor_out
+  n_splits: 4
+  calibration_methods:
+  - sigmoid
+  - isotonic
+  metric_bootstrap: 50
+  prediction_bootstrap: 6
+  transition_bootstrap: 50
+  bootstrap_model: logistic_l2
+multimodal:
+  mode: synthetic
+  missing_modality_rate: 0.03
+  export_csv_bundle: true
+  required_modalities:
+  - rna
+  - atac
+  - protein
+  - mutation
+  - drug_response
+  integration: early_fusion_prefixed_features

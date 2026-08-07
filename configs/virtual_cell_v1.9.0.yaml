@@ -1,0 +1,24 @@
+virtual_cell:
+  version: 1.9.0
+  modeling_mode: reliability_weighted_validated_module_ensemble
+  final_time_hours: 72
+  steps: 37
+  uncertainty:
+    interval: 0.90
+    sources:
+      - module_disagreement
+      - prospective_cycle_calibration
+      - evidence_support
+  real_world:
+    require_accession_lock: true
+    redistribute_controlled_data: false
+    distinguish_observational_from_perturbational: true
+  validation:
+    require_software_dynamic_gate: true
+    require_multimodal_gate: true
+    require_intervention_generalization_gate: true
+    require_spatiotemporal_gate: true
+    require_foundation_transfer_gate: true
+    require_locked_three_cycle_software_loop: true
+    require_real_perturbational_evidence_for_real_claim: true
+    require_real_three_cycle_loop_for_real_claim: true

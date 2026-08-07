@@ -1,0 +1,9 @@
+experiment:
+  name: CausaFlux v1.7.0 spatiotemporal digital tissue quickstart
+benchmark:
+  primary_splits: [heldout_section, heldout_donor]
+  models: [CellIntrinsicContinuous, UngatedNeighborhoodContinuous, NicheformerAdapterProxy, CausaFluxSpatiotemporalGNN]
+  communication_edge_gate: learned
+  graph_layers: [cell_cell, regulatory, organelle]
+  outcomes: [future_cell_state, tissue_failure_score]
+  real_tissue_gate: blocked_until_external_validation

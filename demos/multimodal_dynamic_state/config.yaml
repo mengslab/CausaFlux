@@ -1,0 +1,8 @@
+experiment:
+  name: CausaFlux v1.4.0 multimodal dynamic state quickstart
+benchmark:
+  split: perturbation_history
+  modalities: [rna, imaging, reporter, phosphoprotein, metabolome, lipidome]
+  fusion: [product_of_experts, mixture_of_experts]
+  modality_dropout: 0.25
+  real_data_gate: blocked_until_external_longitudinal_validation

@@ -1,0 +1,62 @@
+benchmark:
+  name: CausaFlux v1.4.0 dynamic model benchmark
+  primary_split: perturbation_history
+  context_steps: 5
+  forecast_horizon: 3
+  seed: 130
+  synthetic_software_fixture: true
+
+models:
+  - LatestStateLinear
+  - LatestStateMLP
+  - HistorySummaryMLP
+  - GRUDynamic
+  - CausaFluxFactorizedGRU
+  - IrregularTimeTransformer
+  - NeuralCDE
+  - PRESCIENTComparator
+
+training:
+  epochs: 28
+  patience: 6
+  batch_size: 32
+  hidden_dim: 48
+  learning_rate: 0.002
+  weight_decay: 0.00001
+
+splits:
+  - perturbation_history
+  - dose_holdout
+  - sequence_holdout
+  - temporal_extrapolation
+  - donor_holdout
+
+metrics:
+  trajectory:
+    - rmse
+    - mae
+    - correlation
+    - calibrated_gaussian_nll
+  fate:
+    - accuracy
+    - macro_f1
+    - log_loss
+    - brier
+    - expected_calibration_error
+  uncertainty:
+    - coverage_50
+    - coverage_80
+    - coverage_90
+    - coverage_95
+
+exit_gate:
+  required_dynamic_model: at_least_one
+  baselines:
+    - LatestStateMLP
+    - HistorySummaryMLP
+  requirements:
+    - lower_trajectory_rmse_than_latest_state_mlp
+    - lower_calibrated_gaussian_nll_than_both_baselines
+    - lower_fate_log_loss_than_both_baselines
+    - no_train_test_history_overlap
+  foundation_pretraining_blocked_until_pass: true

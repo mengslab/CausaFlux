@@ -1,0 +1,8 @@
+experiment:
+  name: CausaFlux v1.7.0 intervention generalization quickstart
+benchmark:
+  holdouts: [unseen_perturbation, unseen_dose, unseen_combination, unseen_sequence]
+  baselines: [additive, nearest_neighbor, CPA_adapter_proxy, GEARS_adapter_proxy, TxPert_adapter_proxy, scGPT_adapter_proxy]
+  uncertainty: split_conformal
+  causal_comparators: [sequential_g_computation, marginal_structural_model]
+  established_model_gate: blocked_until_external_predictions_are_imported

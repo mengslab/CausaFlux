@@ -1,0 +1,33 @@
+experiment:
+  name: CausaFlux v1.5.0 multimodal dynamic state benchmark
+  synthetic_software_fixture: true
+benchmark:
+  split: perturbation_history
+  context_steps: 4
+  steps: 7
+  modalities:
+    - rna
+    - imaging
+    - reporter
+    - phosphoprotein
+    - metabolome
+    - lipidome
+model:
+  latent_dim: 24
+  hidden_dim: 48
+  fusion:
+    - product_of_experts
+    - mixture_of_experts
+  modality_dropout: 0.25
+training:
+  epochs: 30
+  patience: 7
+  batch_size: 32
+  learning_rate: 0.002
+validation:
+  primary_outcome: destructive_state
+  baselines:
+    - BaselineCovariatesMLP
+    - LatestRNAMLP
+    - StaticMultimodalFusion
+  real_data_foundation_gate: blocked

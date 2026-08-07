@@ -1,0 +1,93 @@
+experiment:
+  name: CausaFlux v0.2 UPR stress-adaptation demonstration
+  seed: 7
+
+output: causaflux_v0.2_output
+
+data:
+  mode: synthetic
+  n_trajectories: 320
+  min_steps: 8
+  max_steps: 16
+  missing_feature_rate: 0.08
+  replicate_size: 4
+  export_long_csv: true
+
+model:
+  hidden_dim: 96
+  identity_dim: 12
+  adaptation_dim: 24
+  commitment_dim: 12
+  context_dim: 12
+  time_dim: 12
+  dropout: 0.15
+  time_scale: 1.0
+  min_log_variance: -6.0
+  max_log_variance: 2.0
+
+training:
+  epochs: 8
+  batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  patience: 8
+  split_mode: group
+  train_fraction: 0.70
+  val_fraction: 0.15
+  observation_dropout: 0.05
+  device: auto
+
+simulation:
+  final_time: 10.0
+  steps: 18
+  mc_samples: 24
+  sample_process_noise: true
+  plot_feature_indices: [0, 1, 6, 7, 9, 11]
+  comparison_features:
+    - XBP1_activity
+    - protein_aggregation
+    - inflammatory_signaling
+    - viability
+    - commitment_signal
+  scenarios:
+    - name: continuous_stress
+      events:
+        - channel: ER_stress
+          value: 1.0
+          start: 0.0
+          stop: 10.0
+    - name: stress_recovery
+      events:
+        - channel: ER_stress
+          value: 1.0
+          start: 0.0
+          stop: 4.0
+    - name: pulsatile_stress
+      events:
+        - channel: ER_stress
+          value: 1.0
+          start: 0.0
+          stop: 7.5
+          shape: pulse
+          period: 2.0
+          duty_cycle: 0.45
+    - name: ire1_inhibition
+      events:
+        - channel: ER_stress
+          value: 1.0
+          start: 0.0
+          stop: 5.5
+        - channel: IRE1_inhibition
+          value: 0.6
+          start: 0.0
+          stop: 5.5
+    - name: atf6_support
+      events:
+        - channel: ER_stress
+          value: 1.0
+          start: 0.0
+          stop: 5.5
+        - channel: ATF6_activation
+          value: 0.5
+          start: 0.0
+          stop: 5.5

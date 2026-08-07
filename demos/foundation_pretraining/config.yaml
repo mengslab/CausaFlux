@@ -1,0 +1,8 @@
+framework: CausaFlux
+version: 1.7.0
+benchmark: foundation_pretraining
+synthetic_fixture: true
+samples: 900
+components: 12
+seed: 170
+require_gate: true

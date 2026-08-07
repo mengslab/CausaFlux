@@ -1,0 +1,15 @@
+benchmark:
+  name: CausaFlux v1.4.0 dynamic model benchmark quickstart
+  primary_split: perturbation_history
+  synthetic_software_fixture: true
+training:
+  epochs: 12
+  patience: 4
+  batch_size: 32
+  hidden_dim: 40
+data:
+  replicates_per_history: 3
+  seed: 130
+exit_gate:
+  require_pass: true
+  foundation_pretraining_blocked_for_synthetic_data: true

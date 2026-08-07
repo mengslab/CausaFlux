@@ -1,0 +1,35 @@
+experiment:
+  name: CausaFlux v1.4.0 neural–glial trajectory demonstration
+  seed: 47
+output: causaflux_v1.4.0_neuro_output
+neurobiology:
+  n_donors: 8
+  cells_per_type: 16
+  times_days: [0, 7, 21, 42]
+  apoe4_fraction: 0.5
+  bootstrap: 50
+  warning_time_days: 21
+  terminal_time_days: 42
+  cell_types:
+    - excitatory_neuron
+    - inhibitory_neuron
+    - astrocyte
+    - microglia
+    - oligodendrocyte
+  states:
+    - homeostatic
+    - compensated_stress
+    - adaptive_glial_response
+    - maladaptive_inflammation
+    - synaptic_dysfunction
+    - irreversible_degeneration
+  modalities:
+    - rna_pathways
+    - live_imaging
+    - electrophysiology
+    - genotype
+    - cell_context
+  genotype_context: APOE3_APOE4
+  outcome: future_irreversible_dysfunction
+  donor_split: leave_one_donor_out
+  synthetic_demonstration: true

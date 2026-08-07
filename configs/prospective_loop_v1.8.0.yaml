@@ -1,0 +1,14 @@
+prospective_loop:
+  seed: 180
+  truth_hypothesis: H1_PROTEOSTASIS_UPSTREAM
+  max_cycles: 3
+  min_cycles: 3
+  experiments_per_cycle: 2
+  cycle_budget: 1.30
+  posterior_stop_threshold: 0.92
+  min_expected_information_gain: 0.015
+  discovery_threshold: 0.70
+  recovery_threshold: -0.55
+  baseline_strategy: prespecified_non_ai_fixed_order
+  require_independent_cycle3: true
+  synthetic_failure_experiment: IMG_MITO_24H
