@@ -1,0 +1,23 @@
+{
+  "best_validation_objective": 0.5711346196914224,
+  "calibrated_gaussian_nll": 0.7245655059814453,
+  "coverage_50": 0.4675925925925926,
+  "coverage_80": 0.7106481481481481,
+  "coverage_90": 0.8078703703703703,
+  "coverage_95": 0.8877314814814815,
+  "epochs_completed": 28,
+  "fate_accuracy": 0.8611111111111112,
+  "fate_brier": 0.21192735109167668,
+  "fate_ece": 0.05583752691745755,
+  "fate_log_loss": 0.42949277852815787,
+  "fate_macro_f1": 0.6912972085385878,
+  "interval_width_50": 0.6019013524055481,
+  "interval_width_80": 1.1436314582824707,
+  "interval_width_90": 1.4678349494934082,
+  "interval_width_95": 1.7490333318710327,
+  "model": "NeuralCDE",
+  "model_family": "dynamic",
+  "trajectory_correlation": 0.8817336858551975,
+  "trajectory_mae": 0.46987491846084595,
+  "trajectory_rmse": 0.8019008040428162
+}

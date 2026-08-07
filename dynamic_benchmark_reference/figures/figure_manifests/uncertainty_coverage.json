@@ -1,0 +1,29 @@
+{
+  "dpi": 600,
+  "figure_id": "uncertainty_coverage",
+  "formats": {
+    "pdf": "uncertainty_coverage.pdf",
+    "png": "uncertainty_coverage.png",
+    "svg": "uncertainty_coverage.svg",
+    "tiff": "uncertainty_coverage.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "calibration_set": "validation histories only"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "819a940444b527e0d681c00c4f37afc3791989ba6d7ed461447167df0ae60438",
+    "png": "6f503a11fe0743751f906c5229bc6e810970d6b572c855535bcc79b205191fc9",
+    "svg": "98c7dfd9e66e846f5857d0c9c8bbffbd2dcfdc17133e1428a9f94efc44737790",
+    "tiff": "54375a7ae970e323f76f980342df84037bb7fbfc7a9c22417602e7a4a0bb239f"
+  },
+  "source_data": [
+    "uncertainty_coverage__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "c25ac000c011c003400bc01ec07cc0d883e086809f00bc007000c09b209b24f2",
+  "width_mm": 183.0
+}

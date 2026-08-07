@@ -1,0 +1,3 @@
+adapter,status,required_input,network_download,included_checkpoint
+scVIStaticEmbedding,optional_interface_ready,precomputed per-observation scVI latent matrix,False,False
+scGPTStaticEmbedding,optional_interface_ready,precomputed per-observation scGPT embedding matrix,False,False

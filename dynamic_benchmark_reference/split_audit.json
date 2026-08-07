@@ -1,0 +1,24 @@
+{
+  "donor_leakage": false,
+  "donor_overlap_train_test": [
+    "D00",
+    "D01",
+    "D02",
+    "D03",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10"
+  ],
+  "history_leakage": false,
+  "history_overlap_train_test": [],
+  "mode": "perturbation_history",
+  "n_test": 36,
+  "n_train": 116,
+  "n_validation": 28,
+  "test_histories": 9,
+  "train_histories": 29,
+  "validation_histories": 7
+}

@@ -1,0 +1,21 @@
+{
+  "criteria": [
+    "lower trajectory RMSE than the latest-state MLP",
+    "lower calibrated Gaussian NLL than both static baselines",
+    "lower fate log loss than both static baselines",
+    "evaluation on completely held-out perturbation histories"
+  ],
+  "evaluation_scope": "synthetic_software_fixture",
+  "foundation_pretraining_allowed": false,
+  "foundation_pretraining_status": "BLOCKED_REAL_LONGITUDINAL_GATE_REQUIRED",
+  "passing_dynamic_models": [
+    "CausaFluxFactorizedGRU"
+  ],
+  "performance_gate_passed": true,
+  "required_baselines": [
+    "LatestStateMLP",
+    "HistorySummaryMLP"
+  ],
+  "status": "PASS",
+  "winning_dynamic_model": "CausaFluxFactorizedGRU"
+}

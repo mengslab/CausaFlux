@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "trajectory_forecast_benchmark",
+  "formats": {
+    "pdf": "trajectory_forecast_benchmark.pdf",
+    "png": "trajectory_forecast_benchmark.png",
+    "svg": "trajectory_forecast_benchmark.svg",
+    "tiff": "trajectory_forecast_benchmark.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "comparison": "complete held-out histories",
+    "gate": "PASS"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "e5d1cb35da59be190d39df191c1340bee8476e191acb00e3b3dec77e6a5c425e",
+    "png": "324b407de77a0003f2500e61bc269c3cf1862a2eb9e028128cb2ef133a709f6f",
+    "svg": "4392ba82c8df0b88062a8cd73be5eded9b722dd77ff4cb3c061dd5752e16d942",
+    "tiff": "7bbcadc295830db1859b8411f0141eb6b0e770e8d407fbd447a214d2fbb8fd21"
+  },
+  "source_data": [
+    "trajectory_forecast_benchmark__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "010d4e60496c4899487d482d48164817080b080b080b0801080348050a49106c",
+  "width_mm": 183.0
+}

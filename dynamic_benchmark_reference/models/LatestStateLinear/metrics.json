@@ -1,0 +1,23 @@
+{
+  "best_validation_objective": 1.340493994180372,
+  "calibrated_gaussian_nll": 1.2270066738128662,
+  "coverage_50": 0.5324074074074074,
+  "coverage_80": 0.7835648148148148,
+  "coverage_90": 0.8611111111111112,
+  "coverage_95": 0.9120370370370371,
+  "epochs_completed": 28,
+  "fate_accuracy": 0.7777777777777778,
+  "fate_brier": 0.2879086584872432,
+  "fate_ece": 0.18402916193008426,
+  "fate_log_loss": 0.5464964902111172,
+  "fate_macro_f1": 0.3010752688172043,
+  "interval_width_50": 0.9444431662559509,
+  "interval_width_80": 1.7944716215133667,
+  "interval_width_90": 2.3031790256500244,
+  "interval_width_95": 2.7444074153900146,
+  "model": "LatestStateLinear",
+  "model_family": "static",
+  "trajectory_correlation": 0.8705691904497754,
+  "trajectory_mae": 0.5916194915771484,
+  "trajectory_rmse": 0.8110436797142029
+}

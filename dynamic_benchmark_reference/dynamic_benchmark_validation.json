@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "all_models_present": true,
+    "coverage_metrics_present": true,
+    "fate_metrics_present": true,
+    "foundation_pretraining_guard_present": true,
+    "gate_passed": true,
+    "no_history_leakage": true,
+    "trajectory_metrics_present": true
+  },
+  "gate": {
+    "criteria": [
+      "lower trajectory RMSE than the latest-state MLP",
+      "lower calibrated Gaussian NLL than both static baselines",
+      "lower fate log loss than both static baselines",
+      "evaluation on completely held-out perturbation histories"
+    ],
+    "evaluation_scope": "synthetic_software_fixture",
+    "foundation_pretraining_allowed": false,
+    "foundation_pretraining_status": "BLOCKED_REAL_LONGITUDINAL_GATE_REQUIRED",
+    "passing_dynamic_models": [
+      "CausaFluxFactorizedGRU"
+    ],
+    "performance_gate_passed": true,
+    "required_baselines": [
+      "LatestStateMLP",
+      "HistorySummaryMLP"
+    ],
+    "status": "PASS",
+    "winning_dynamic_model": "CausaFluxFactorizedGRU"
+  },
+  "valid": true
+}

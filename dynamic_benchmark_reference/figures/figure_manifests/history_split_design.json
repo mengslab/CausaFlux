@@ -1,0 +1,29 @@
+{
+  "dpi": 600,
+  "figure_id": "history_split_design",
+  "formats": {
+    "pdf": "history_split_design.pdf",
+    "png": "history_split_design.png",
+    "svg": "history_split_design.svg",
+    "tiff": "history_split_design.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "history_overlap_train_test": 0
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "45251883db384ccf69eac6e734f3828a10a0fb2faa9eaffc741cdde66c56d4ad",
+    "png": "0353ab1fcb981fa82007e83c0061e84ea835fbc9ae5e008d5bdb0dba5117a9a8",
+    "svg": "0e1cc7376c601de4e932fd7698f5b38bfa0c034164eae0aa6662189d449ad11a",
+    "tiff": "6da202e28d126ee6897af6e7e661a08c255fbb638fce55c38e5081aa5f3a6dea"
+  },
+  "source_data": [
+    "history_split_design__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "c35bc0c340d8c0d040d0c0d040d0c0d0d0d040c430d030e630e630e63ce71ce3",
+  "width_mm": 183.0
+}

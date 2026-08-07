@@ -1,0 +1,24 @@
+{
+  "required_arrays": {
+    "donor_ids": "string [trajectory]",
+    "fates": "int64 [trajectory]",
+    "history_ids": "string [trajectory]",
+    "interventions": "float32 [trajectory,time,intervention]",
+    "observations": "float32 [trajectory,time,feature]",
+    "times": "float32 [trajectory,time]"
+  },
+  "required_semantics": [
+    "history_id uniquely identifies target, dose, order, schedule and recovery interval",
+    "donor_id identifies the biological donor or independent experimental unit",
+    "future interventions are known schedules, not post-outcome measurements",
+    "external test sets cannot be used for feature selection, hyperparameter tuning or calibration"
+  ],
+  "schema_version": "1.7.0",
+  "supported_split_modes": [
+    "perturbation_history",
+    "dose_holdout",
+    "sequence_holdout",
+    "temporal_extrapolation",
+    "donor_holdout"
+  ]
+}

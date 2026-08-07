@@ -1,0 +1,23 @@
+{
+  "best_validation_objective": 0.48231605580195186,
+  "calibrated_gaussian_nll": 0.25248026847839355,
+  "coverage_50": 0.5324074074074074,
+  "coverage_80": 0.8194444444444444,
+  "coverage_90": 0.9097222222222222,
+  "coverage_95": 0.9490740740740741,
+  "epochs_completed": 28,
+  "fate_accuracy": 0.75,
+  "fate_brier": 0.2993362152704761,
+  "fate_ece": 0.12618477145830787,
+  "fate_log_loss": 0.5583499542623066,
+  "fate_macro_f1": 0.48809523809523814,
+  "interval_width_50": 0.5351995229721069,
+  "interval_width_80": 1.0168957710266113,
+  "interval_width_90": 1.3051714897155762,
+  "interval_width_95": 1.5552078485488892,
+  "model": "IrregularTimeTransformer",
+  "model_family": "dynamic",
+  "trajectory_correlation": 0.9582990050605699,
+  "trajectory_mae": 0.2934314012527466,
+  "trajectory_rmse": 0.4636779725551605
+}

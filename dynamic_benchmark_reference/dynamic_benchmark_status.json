@@ -1,0 +1,39 @@
+{
+  "gate": {
+    "criteria": [
+      "lower trajectory RMSE than the latest-state MLP",
+      "lower calibrated Gaussian NLL than both static baselines",
+      "lower fate log loss than both static baselines",
+      "evaluation on completely held-out perturbation histories"
+    ],
+    "evaluation_scope": "synthetic_software_fixture",
+    "foundation_pretraining_allowed": false,
+    "foundation_pretraining_status": "BLOCKED_REAL_LONGITUDINAL_GATE_REQUIRED",
+    "passing_dynamic_models": [
+      "CausaFluxFactorizedGRU"
+    ],
+    "performance_gate_passed": true,
+    "required_baselines": [
+      "LatestStateMLP",
+      "HistorySummaryMLP"
+    ],
+    "status": "PASS",
+    "winning_dynamic_model": "CausaFluxFactorizedGRU"
+  },
+  "models_evaluated": [
+    "LatestStateLinear",
+    "LatestStateMLP",
+    "HistorySummaryMLP",
+    "GRUDynamic",
+    "CausaFluxFactorizedGRU",
+    "IrregularTimeTransformer",
+    "NeuralCDE",
+    "PRESCIENTComparator"
+  ],
+  "n_donors": 12,
+  "n_histories": 45,
+  "n_trajectories": 180,
+  "primary_split": "perturbation_history",
+  "synthetic_software_benchmark": true,
+  "version": "1.7.0"
+}

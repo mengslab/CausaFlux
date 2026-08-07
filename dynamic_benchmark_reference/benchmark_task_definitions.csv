@@ -1,0 +1,6 @@
+task_id,split,primary,question
+DB-01,perturbation_history,True,generalization to unseen target-dose-sequence histories
+DB-02,dose_holdout,False,generalization to an unseen dose
+DB-03,sequence_holdout,False,generalization to an unseen temporal sequence
+DB-04,temporal_extrapolation,False,forecasting after the final context observation
+DB-05,donor_holdout,False,generalization to independent donors

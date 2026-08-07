@@ -1,0 +1,29 @@
+{
+  "dpi": 600,
+  "figure_id": "fate_prediction_benchmark",
+  "formats": {
+    "pdf": "fate_prediction_benchmark.pdf",
+    "png": "fate_prediction_benchmark.png",
+    "svg": "fate_prediction_benchmark.svg",
+    "tiff": "fate_prediction_benchmark.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "winning_dynamic_model": "CausaFluxFactorizedGRU"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "212c190950f000d94911df88ad121999f5d6915ff075928c26b995cdc60e29e9",
+    "png": "265005fb410dda37944ced8eee66c847798044e8be68e581cad711fb4cc7d589",
+    "svg": "67a7e94fc13f1a52270c3b9e293a83bff090c204b9c06ab3a244504fcda66d29",
+    "tiff": "6e251d81799083b72e20c1fd10e03f901f4ce9a67936e2225a4078c24a19e11b"
+  },
+  "source_data": [
+    "fate_prediction_benchmark__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "00d80b3408b448b408b408b4083d080d482c482e482f482e482f4a11098f1072",
+  "width_mm": 183.0
+}
