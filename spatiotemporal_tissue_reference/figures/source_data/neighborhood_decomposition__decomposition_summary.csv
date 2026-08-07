@@ -1,0 +1,11 @@
+,split_regime,cell_type,neighborhood_contribution
+0,heldout_donor,fibroblast,0.03529426143666111
+1,heldout_donor,macrophage,0.03592912893767165
+2,heldout_donor,t_cell,0.021791325420774426
+3,heldout_donor,tumor,0.011873090161801518
+4,heldout_donor,vascular,0.01663751681098491
+5,heldout_section,fibroblast,-0.0017575918135381144
+6,heldout_section,macrophage,-0.001070067978343397
+7,heldout_section,t_cell,-0.0030580216548623295
+8,heldout_section,tumor,-0.008001873722936245
+9,heldout_section,vascular,-0.0008810638889371748

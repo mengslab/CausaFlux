@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "spatiotemporal_model_comparison",
+  "formats": {
+    "pdf": "spatiotemporal_model_comparison.pdf",
+    "png": "spatiotemporal_model_comparison.png",
+    "svg": "spatiotemporal_model_comparison.svg",
+    "tiff": "spatiotemporal_model_comparison.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "synthetic": true,
+    "version": "1.7.0"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "399230755c22fa85879829ec21f2c9c1355e2db530e0e5e2449d3082621e6b28",
+    "png": "484b98338ec90c6421d134bcbb3884681bd5691384f2096c7a25446e251d56cb",
+    "svg": "9e88aeccfb3db415630541807cc99e4da9086d9e48e1759c12601f49452c274b",
+    "tiff": "9786e4a2850ec28dc46297714efae4e6494e321e7ecc1595a6a4869a7599aa7d"
+  },
+  "source_data": [
+    "spatiotemporal_model_comparison__comparison.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "3e1e39a131b119b3199399b399b399b399b319b319b319b319b319b326640ccd",
+  "width_mm": 183.0
+}

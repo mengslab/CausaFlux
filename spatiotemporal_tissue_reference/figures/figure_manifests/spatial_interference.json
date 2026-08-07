@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "spatial_interference",
+  "formats": {
+    "pdf": "spatial_interference.pdf",
+    "png": "spatial_interference.png",
+    "svg": "spatial_interference.svg",
+    "tiff": "spatial_interference.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "synthetic": true,
+    "version": "1.7.0"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "f44071850096a0808c0bd37f67ec697aec666a16257c583e6fcb8c9a6a0c68df",
+    "png": "2708eb4f7496a05df883296c98ff3c1b5918f0de95e92d36e3dce403db0660da",
+    "svg": "6287e77f4ca7812900850a6729d85788872a324260147aa596221b27bda8fece",
+    "tiff": "45a74c5cd698116eb3c339041036079e1e9b7c54b8f0f6e9feca888c02aec5b1"
+  },
+  "source_data": [
+    "spatial_interference__interference.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "7240052115a115a115a115a115a115a115a115a115a115a115a119a905870c0c",
+  "width_mm": 183.0
+}

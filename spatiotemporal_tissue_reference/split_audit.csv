@@ -1,0 +1,3 @@
+split_regime,train_sections,validation_sections,test_sections,train_donors,test_donors,section_overlap_train_test,donor_overlap_train_test
+heldout_section,18,3,3,12,3,0,3
+heldout_donor,14,4,6,7,3,0,0

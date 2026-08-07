@@ -1,0 +1,42 @@
+{
+  "heldout_donor": {
+    "coefficients": {
+      "distance": -1.3767997148900986,
+      "ligand_signal": 0.7446594507293879,
+      "receptor_signal": 0.1354843117896268,
+      "rel_fibroblast_to_t_cell": 0.11978872866736381,
+      "rel_fibroblast_to_tumor": 0.25493056190445446,
+      "rel_macrophage_to_t_cell": 0.15509362262209284,
+      "rel_macrophage_to_tumor": 0.28748958972477273,
+      "rel_other": -0.16551077156109217,
+      "rel_t_cell_to_tumor": -0.4341957578759572,
+      "rel_tumor_to_macrophage": 0.17980441712085424,
+      "rel_vascular_to_tumor": -0.22650369041046572
+    },
+    "mean_absolute_gate_error_test": 2.9891558969692666e-07,
+    "split_regime": "heldout_donor",
+    "test_auc": 1.0,
+    "test_edges": 4320,
+    "train_edges": 10080
+  },
+  "heldout_section": {
+    "coefficients": {
+      "distance": -1.3702198898955178,
+      "ligand_signal": 0.7700522557427093,
+      "receptor_signal": 0.13973965791947623,
+      "rel_fibroblast_to_t_cell": 0.12101176635527737,
+      "rel_fibroblast_to_tumor": 0.24507502676512427,
+      "rel_macrophage_to_t_cell": 0.16078897950873355,
+      "rel_macrophage_to_tumor": 0.29764487201159967,
+      "rel_other": -0.15169684936691133,
+      "rel_t_cell_to_tumor": -0.4336945406836668,
+      "rel_tumor_to_macrophage": 0.18590499526516438,
+      "rel_vascular_to_tumor": -0.23473956601529572
+    },
+    "mean_absolute_gate_error_test": 2.525360537925668e-07,
+    "split_regime": "heldout_section",
+    "test_auc": 1.0,
+    "test_edges": 2160,
+    "train_edges": 12960
+  }
+}

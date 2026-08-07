@@ -1,0 +1,31 @@
+{
+  "dpi": 600,
+  "figure_id": "tissue_graph_snapshot",
+  "formats": {
+    "pdf": "tissue_graph_snapshot.pdf",
+    "png": "tissue_graph_snapshot.png",
+    "svg": "tissue_graph_snapshot.svg",
+    "tiff": "tissue_graph_snapshot.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "synthetic": true,
+    "version": "1.7.0"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "07d28c98a981c8acd128bdbf9e0be59d8138473538b66543517571202641a5d9",
+    "png": "c5cf066b8fef700ed3ad4756f2ebcc8d6ea51b15268456b33a78c618444935bf",
+    "svg": "6d4ef32ca18ba813f4ef484df4fcc8cae7ec39d2d6dd8380ab19ed9a5ffde918",
+    "tiff": "5d6db2a132ce0355219dc94e817250a1dc1558a53dff9336fae69fdc29c5263e"
+  },
+  "source_data": [
+    "tissue_graph_snapshot__nodes.csv",
+    "tissue_graph_snapshot__edges.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "06ca41842821714c40885184d182c2c0f06070323024ce66d31a2b003d241867",
+  "width_mm": 183.0
+}

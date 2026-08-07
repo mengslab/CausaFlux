@@ -1,0 +1,62 @@
+{
+  "details": [
+    {
+      "bootstrap_state_ci_low": 0.006006219176033843,
+      "communication_gate_auc": 1.0,
+      "criteria": {
+        "bootstrap_state_delta_positive": true,
+        "communication_gate_predictive": true,
+        "state_rmse_better": true,
+        "tissue_outcome_rmse_better": true
+      },
+      "full_state_rmse": 0.13141699734778756,
+      "full_tissue_rmse": 0.020089798801598602,
+      "intrinsic_state_rmse": 0.13913581847314013,
+      "intrinsic_tissue_rmse": 0.02022332123222769,
+      "pass": true,
+      "secondary_destructive_rmse_full": 0.12993965262365495,
+      "secondary_destructive_rmse_intrinsic": 0.13034756457880647,
+      "split_regime": "heldout_section",
+      "state_rmse_improvement": 0.007718821125352576,
+      "tissue_rmse_improvement": 0.00013352243062908845
+    },
+    {
+      "bootstrap_state_ci_low": 0.007750775730157136,
+      "communication_gate_auc": 1.0,
+      "criteria": {
+        "bootstrap_state_delta_positive": true,
+        "communication_gate_predictive": true,
+        "state_rmse_better": true,
+        "tissue_outcome_rmse_better": true
+      },
+      "full_state_rmse": 0.14514542455275056,
+      "full_tissue_rmse": 0.04152503386819248,
+      "intrinsic_state_rmse": 0.1583942607409852,
+      "intrinsic_tissue_rmse": 0.048149168393674044,
+      "pass": true,
+      "secondary_destructive_rmse_full": 0.13906248613652922,
+      "secondary_destructive_rmse_intrinsic": 0.12164351165073672,
+      "split_regime": "heldout_donor",
+      "state_rmse_improvement": 0.013248836188234636,
+      "tissue_rmse_improvement": 0.006624134525481565
+    }
+  ],
+  "exit_criterion": "Neighborhood context must add reproducible predictive information beyond cell-intrinsic state on held-out tissue sections and held-out donors.",
+  "foundation_pretraining_authorized": false,
+  "framework": "CausaFlux",
+  "primary_metrics": [
+    "multivariate future-state RMSE",
+    "tissue outcome RMSE",
+    "section-cluster bootstrap improvement",
+    "communication gate AUC"
+  ],
+  "real_tissue_validation_gate": "BLOCKED_REAL_SPATIOTEMPORAL_TISSUE_DATA_REQUIRED",
+  "secondary_metrics": [
+    "destructive-state RMSE",
+    "state R2",
+    "spatial interference estimand"
+  ],
+  "software_spatiotemporal_gate": "PASS",
+  "synthetic_fixture": true,
+  "version": "1.7.0"
+}

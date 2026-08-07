@@ -1,0 +1,237 @@
+[
+  {
+    "path": "DATASET_CARD.md",
+    "size_bytes": 283,
+    "sha256": "f38265f44bed9a316b8b05b15a38582707342ea4e3ee3e87f1fb40cfc6fe0eab"
+  },
+  {
+    "path": "MODEL_CARD.md",
+    "size_bytes": 371,
+    "sha256": "f9da15a0c2d217a669099a6d181e3ced9d921ccb91246f8a4fb2628381fb4a89"
+  },
+  {
+    "path": "adapters/nicheformer_adapter.json",
+    "size_bytes": 717,
+    "sha256": "468400a6fad6f04a173c6e26940a3bdd613828a6fd69bdeef18e3d7d0cfaf267"
+  },
+  {
+    "path": "communication_edge_gates_heldout_donor.csv",
+    "size_bytes": 4781696,
+    "sha256": "b6da540f6dff59bb5bac812a76185c97efe389d6675ce893beaf66971adda396"
+  },
+  {
+    "path": "communication_edge_gates_heldout_section.csv",
+    "size_bytes": 4780376,
+    "sha256": "c4f5295903c571eb68a5c6ff790f59a69f26881a8302acb36337f5f501da8b43"
+  },
+  {
+    "path": "communication_gate_metrics.csv",
+    "size_bytes": 180,
+    "sha256": "19b658f17ee2899133c86fb17106579e9040ce422daa450ef430d67695a85955"
+  },
+  {
+    "path": "communication_gate_metrics.json",
+    "size_bytes": 1536,
+    "sha256": "00309af468f6287475a1bb4a381938aa301176407469db148167437ea3b58ca2"
+  },
+  {
+    "path": "figures/figure_manifests/neighborhood_decomposition.json",
+    "size_bytes": 982,
+    "sha256": "1e25209f956279e4f7ac5c7991909dc29f3bd244a351b907b8fcbf11a0436a89"
+  },
+  {
+    "path": "figures/figure_manifests/spatial_interference.json",
+    "size_bytes": 937,
+    "sha256": "5edede66e68a8181c5c4edb5fc81ea24935eceb04dda0cc2f8c3b6aa0ed5daec"
+  },
+  {
+    "path": "figures/figure_manifests/spatiotemporal_model_comparison.json",
+    "size_bytes": 1001,
+    "sha256": "2233a88b00f3f9b78dfbf5dc2b388d1868c78800f306be57dc856ba838d11f56"
+  },
+  {
+    "path": "figures/figure_manifests/tissue_graph_snapshot.json",
+    "size_bytes": 976,
+    "sha256": "f549b4aec6bc6689a76de64421d40882c48b34c4c40ffe6664ad93e7ff732176"
+  },
+  {
+    "path": "figures/neighborhood_decomposition.pdf",
+    "size_bytes": 18301,
+    "sha256": "a5cde650db432c1612296ec1bd02e0d40cce3b5b13e3020ad1740151ba4a98aa"
+  },
+  {
+    "path": "figures/neighborhood_decomposition.png",
+    "size_bytes": 301174,
+    "sha256": "02a1db6965e64c936f8b1861562caccc7931e980ebb22674e36a0621c39f8ad6"
+  },
+  {
+    "path": "figures/neighborhood_decomposition.svg",
+    "size_bytes": 11800,
+    "sha256": "c3b4d73028aa2a445c410e3de7e3853470b6ba08c2e4e5def3d0e1ec89399f91"
+  },
+  {
+    "path": "figures/neighborhood_decomposition.tiff",
+    "size_bytes": 573132,
+    "sha256": "cdbd525d948c9088b5f33f02d2bb5b088716259cffc0a5d2d3bc376342ce1826"
+  },
+  {
+    "path": "figures/source_data/neighborhood_decomposition__decomposition_summary.csv",
+    "size_bytes": 523,
+    "sha256": "782a3afc7e39f0c2b218248f05c68d5853682c93c2f7a5804d4b6288b09e5758"
+  },
+  {
+    "path": "figures/source_data/spatial_interference__interference.csv",
+    "size_bytes": 535,
+    "sha256": "783155d261df84a864ba1492bcf9dfd0a0b867d1c6b19e32c20ffa9df1b82ecb"
+  },
+  {
+    "path": "figures/source_data/spatiotemporal_model_comparison__comparison.csv",
+    "size_bytes": 1821,
+    "sha256": "10ea24ca3bb218de748d95023fda4b9947409489d4c4a59c6d0f8040021e57f8"
+  },
+  {
+    "path": "figures/source_data/tissue_graph_snapshot__edges.csv",
+    "size_bytes": 40663,
+    "sha256": "3a03541bf1d0dbd9fd7807bfbe4e6e8d35bc14b39148824dae9b19c3bab29823"
+  },
+  {
+    "path": "figures/source_data/tissue_graph_snapshot__nodes.csv",
+    "size_bytes": 12055,
+    "sha256": "ed706509367fedf3436d2f47923b3ef06e4f63b732096aef135aeb03c8579c14"
+  },
+  {
+    "path": "figures/spatial_interference.pdf",
+    "size_bytes": 16653,
+    "sha256": "f44071850096a0808c0bd37f67ec697aec666a16257c583e6fcb8c9a6a0c68df"
+  },
+  {
+    "path": "figures/spatial_interference.png",
+    "size_bytes": 161442,
+    "sha256": "2708eb4f7496a05df883296c98ff3c1b5918f0de95e92d36e3dce403db0660da"
+  },
+  {
+    "path": "figures/spatial_interference.svg",
+    "size_bytes": 6800,
+    "sha256": "6287e77f4ca7812900850a6729d85788872a324260147aa596221b27bda8fece"
+  },
+  {
+    "path": "figures/spatial_interference.tiff",
+    "size_bytes": 865844,
+    "sha256": "45a74c5cd698116eb3c339041036079e1e9b7c54b8f0f6e9feca888c02aec5b1"
+  },
+  {
+    "path": "figures/spatiotemporal_model_comparison.pdf",
+    "size_bytes": 20710,
+    "sha256": "399230755c22fa85879829ec21f2c9c1355e2db530e0e5e2449d3082621e6b28"
+  },
+  {
+    "path": "figures/spatiotemporal_model_comparison.png",
+    "size_bytes": 311899,
+    "sha256": "484b98338ec90c6421d134bcbb3884681bd5691384f2096c7a25446e251d56cb"
+  },
+  {
+    "path": "figures/spatiotemporal_model_comparison.svg",
+    "size_bytes": 11241,
+    "sha256": "9e88aeccfb3db415630541807cc99e4da9086d9e48e1759c12601f49452c274b"
+  },
+  {
+    "path": "figures/spatiotemporal_model_comparison.tiff",
+    "size_bytes": 979344,
+    "sha256": "9786e4a2850ec28dc46297714efae4e6494e321e7ecc1595a6a4869a7599aa7d"
+  },
+  {
+    "path": "figures/tissue_graph_snapshot.pdf",
+    "size_bytes": 30832,
+    "sha256": "07d28c98a981c8acd128bdbf9e0be59d8138473538b66543517571202641a5d9"
+  },
+  {
+    "path": "figures/tissue_graph_snapshot.png",
+    "size_bytes": 575357,
+    "sha256": "c5cf066b8fef700ed3ad4756f2ebcc8d6ea51b15268456b33a78c618444935bf"
+  },
+  {
+    "path": "figures/tissue_graph_snapshot.svg",
+    "size_bytes": 50002,
+    "sha256": "6d4ef32ca18ba813f4ef484df4fcc8cae7ec39d2d6dd8380ab19ed9a5ffde918"
+  },
+  {
+    "path": "figures/tissue_graph_snapshot.tiff",
+    "size_bytes": 867038,
+    "sha256": "5d6db2a132ce0355219dc94e817250a1dc1558a53dff9336fae69fdc29c5263e"
+  },
+  {
+    "path": "heterogeneous_edges_timevarying.csv",
+    "size_bytes": 3944068,
+    "sha256": "6d67a2ba439b82fc1743b6cb16f16a04b2b24ad3d48199792e477593b50646e7"
+  },
+  {
+    "path": "intrinsic_neighborhood_decomposition.csv",
+    "size_bytes": 627532,
+    "sha256": "6cbb0c0380f8253e1c056fb045c73203bb085e97ee8af4292d47c24140bbb988"
+  },
+  {
+    "path": "model_comparison.csv",
+    "size_bytes": 1804,
+    "sha256": "6fa33ac3cb47264d6a2a61cfab5dc3dc35ab41890791c6d79b2601358290c515"
+  },
+  {
+    "path": "nodes_timevarying.csv",
+    "size_bytes": 1116738,
+    "sha256": "eb89e6893acc12587d5f75ca2fe06ba6c8d5913985d6fb95d89dfb81c788790a"
+  },
+  {
+    "path": "organelle_edges.csv",
+    "size_bytes": 645347,
+    "sha256": "2480bf1377e0021350122ff25f77dfb29b972f8bbe4d320a37cb41d0ca3f941b"
+  },
+  {
+    "path": "regulatory_edges.csv",
+    "size_bytes": 690760,
+    "sha256": "4fc6b71efb3f060ffdc6fbd68cf1dd9d83f9a35f9cf5da16c43cb1e24041d12d"
+  },
+  {
+    "path": "report/index.html",
+    "size_bytes": 8678,
+    "sha256": "6b0bf653ccb096be3df27873b8e9883708ca995bad8c256c9c58ac6377ef1e47"
+  },
+  {
+    "path": "run_manifest.json",
+    "size_bytes": 638,
+    "sha256": "2d79baf103c94e1bbf1b699a6f8b02ee970ce291926a821d9de391742162a9c1"
+  },
+  {
+    "path": "spatial_interference_estimands.csv",
+    "size_bytes": 530,
+    "sha256": "9706ebe49b04ed30096252bee40a12d7b0827cf886bbe2e38e4951a8f7200f0f"
+  },
+  {
+    "path": "spatiotemporal_exit_gate.json",
+    "size_bytes": 2319,
+    "sha256": "d024f248b24ffb0a4f9b27b043dd10dbf4abf14c0dba7c55ec819e1694baf47c"
+  },
+  {
+    "path": "split_audit.csv",
+    "size_bytes": 200,
+    "sha256": "e4e6f0016d3bbf59ff041dcf7d40d625ad52dca0fab7724cab70965edeeeabcc"
+  },
+  {
+    "path": "test_predictions_heldout_donor.csv",
+    "size_bytes": 583634,
+    "sha256": "30b481c1f0ff202446f8b3cca522a28e2ffa1bb38fba9d34b39fa4dd16f08d16"
+  },
+  {
+    "path": "test_predictions_heldout_section.csv",
+    "size_bytes": 584581,
+    "sha256": "c1e30087c13c9742869b1ced7ca189ffec1e996dcb68bb079a310b439d2367f3"
+  },
+  {
+    "path": "tissue_outcome_predictions.csv",
+    "size_bytes": 43709,
+    "sha256": "3f23782fa559f2bde89f787462356c6502242b16c91937ca54766242cd7fb312"
+  },
+  {
+    "path": "tissue_outcomes.csv",
+    "size_bytes": 2500,
+    "sha256": "c95e91caf6eb96639878bbafde9bd155db6b0d38f65247d5eef6b7c7c8fa44b7"
+  }
+]

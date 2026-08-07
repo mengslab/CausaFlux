@@ -1,0 +1,3 @@
+split_regime,estimand,exposure_low,exposure_high,estimated_effect_on_next_damage,n_test,interpretation
+heldout_section,standardized_neighbor_damage_q75_vs_q25,0.41721042861039237,1.4658188506085006,0.8369894315511519,324,Synthetic spatial-interference estimator for software validation; not a causal biological claim.
+heldout_donor,standardized_neighbor_damage_q75_vs_q25,0.4300382683340772,1.5451586025452277,0.8572799615920181,648,Synthetic spatial-interference estimator for software validation; not a causal biological claim.

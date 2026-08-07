@@ -1,0 +1,3 @@
+split_regime,test_auc,mean_absolute_gate_error_test,train_edges,test_edges
+heldout_section,1.0,2.525360537925668e-07,12960,2160
+heldout_donor,1.0,2.9891558969692666e-07,10080,4320

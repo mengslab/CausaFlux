@@ -1,0 +1,284 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CausaFlux v1.7.0 spatiotemporal digital tissue</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:28px auto;padding:0 22px;color:#202124}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border:1px solid #ddd;padding:6px;text-align:left}th{background:#f4f4f4}.ok{border-left:4px solid #2D7F78;padding:12px;background:#f2fbf8}.warn{border-left:4px solid #C78B2C;padding:12px;background:#fff9ee}</style></head><body>
+<h1>CausaFlux v1.7.0 — Spatiotemporal Digital Tissue</h1>
+<div class='ok'><strong>Software gate: PASS</strong>. Neighborhood-conditioned continuous dynamics are evaluated on atomic held-out tissue sections and complete held-out donors.</div>
+<div class='warn'>Synthetic software-validation tissue only. The real-tissue validation gate remains BLOCKED_REAL_SPATIOTEMPORAL_TISSUE_DATA_REQUIRED.</div>
+<h2>Model comparison</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>split_regime</th>
+      <th>model</th>
+      <th>n_test</th>
+      <th>state_rmse</th>
+      <th>state_mae</th>
+      <th>state_r2</th>
+      <th>destructive_rmse</th>
+      <th>destructive_r2</th>
+      <th>tissue_rmse</th>
+      <th>tissue_r2</th>
+      <th>delta_state_rmse_mean</th>
+      <th>state_ci_low</th>
+      <th>state_ci_high</th>
+      <th>bootstrap_replicates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>heldout_section</td>
+      <td>CellIntrinsicContinuous</td>
+      <td>324</td>
+      <td>0.13914</td>
+      <td>0.09627</td>
+      <td>0.91645</td>
+      <td>0.13035</td>
+      <td>0.97651</td>
+      <td>0.02022</td>
+      <td>0.94033</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>heldout_section</td>
+      <td>UngatedNeighborhoodContinuous</td>
+      <td>324</td>
+      <td>0.13459</td>
+      <td>0.08889</td>
+      <td>0.92174</td>
+      <td>0.13255</td>
+      <td>0.97571</td>
+      <td>0.01980</td>
+      <td>0.94282</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>heldout_section</td>
+      <td>NicheformerAdapterProxy</td>
+      <td>324</td>
+      <td>0.14082</td>
+      <td>0.09765</td>
+      <td>0.91567</td>
+      <td>0.13078</td>
+      <td>0.97635</td>
+      <td>0.02863</td>
+      <td>0.88042</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>heldout_section</td>
+      <td>CausaFluxSpatiotemporalGNN</td>
+      <td>324</td>
+      <td>0.13142</td>
+      <td>0.08581</td>
+      <td>0.92261</td>
+      <td>0.12994</td>
+      <td>0.97666</td>
+      <td>0.02009</td>
+      <td>0.94112</td>
+      <td>0.00789</td>
+      <td>0.00601</td>
+      <td>0.00963</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>heldout_donor</td>
+      <td>CellIntrinsicContinuous</td>
+      <td>648</td>
+      <td>0.15839</td>
+      <td>0.10568</td>
+      <td>0.91585</td>
+      <td>0.12164</td>
+      <td>0.97936</td>
+      <td>0.04815</td>
+      <td>-0.25705</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>heldout_donor</td>
+      <td>UngatedNeighborhoodContinuous</td>
+      <td>648</td>
+      <td>0.14774</td>
+      <td>0.09255</td>
+      <td>0.92862</td>
+      <td>0.13993</td>
+      <td>0.97269</td>
+      <td>0.04096</td>
+      <td>0.09010</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>heldout_donor</td>
+      <td>NicheformerAdapterProxy</td>
+      <td>648</td>
+      <td>0.16179</td>
+      <td>0.11189</td>
+      <td>0.91463</td>
+      <td>0.11242</td>
+      <td>0.98237</td>
+      <td>0.03771</td>
+      <td>0.22905</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>heldout_donor</td>
+      <td>CausaFluxSpatiotemporalGNN</td>
+      <td>648</td>
+      <td>0.14515</td>
+      <td>0.08999</td>
+      <td>0.92786</td>
+      <td>0.13906</td>
+      <td>0.97303</td>
+      <td>0.04153</td>
+      <td>0.06504</td>
+      <td>0.01331</td>
+      <td>0.00775</td>
+      <td>0.01750</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Qualifying CausaFlux model</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>split_regime</th>
+      <th>model</th>
+      <th>n_test</th>
+      <th>state_rmse</th>
+      <th>state_mae</th>
+      <th>state_r2</th>
+      <th>destructive_rmse</th>
+      <th>destructive_r2</th>
+      <th>tissue_rmse</th>
+      <th>tissue_r2</th>
+      <th>delta_state_rmse_mean</th>
+      <th>state_ci_low</th>
+      <th>state_ci_high</th>
+      <th>bootstrap_replicates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>heldout_section</td>
+      <td>CausaFluxSpatiotemporalGNN</td>
+      <td>324</td>
+      <td>0.13142</td>
+      <td>0.08581</td>
+      <td>0.92261</td>
+      <td>0.12994</td>
+      <td>0.97666</td>
+      <td>0.02009</td>
+      <td>0.94112</td>
+      <td>0.00789</td>
+      <td>0.00601</td>
+      <td>0.00963</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>heldout_donor</td>
+      <td>CausaFluxSpatiotemporalGNN</td>
+      <td>648</td>
+      <td>0.14515</td>
+      <td>0.08999</td>
+      <td>0.92786</td>
+      <td>0.13906</td>
+      <td>0.97303</td>
+      <td>0.04153</td>
+      <td>0.06504</td>
+      <td>0.01331</td>
+      <td>0.00775</td>
+      <td>0.01750</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Spatial interference estimands</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>split_regime</th>
+      <th>estimand</th>
+      <th>exposure_low</th>
+      <th>exposure_high</th>
+      <th>estimated_effect_on_next_damage</th>
+      <th>n_test</th>
+      <th>interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>heldout_section</td>
+      <td>standardized_neighbor_damage_q75_vs_q25</td>
+      <td>0.41721</td>
+      <td>1.46582</td>
+      <td>0.83699</td>
+      <td>324</td>
+      <td>Synthetic spatial-interference estimator for software validation; not a causal biological claim.</td>
+    </tr>
+    <tr>
+      <td>heldout_donor</td>
+      <td>standardized_neighbor_damage_q75_vs_q25</td>
+      <td>0.43004</td>
+      <td>1.54516</td>
+      <td>0.85728</td>
+      <td>648</td>
+      <td>Synthetic spatial-interference estimator for software validation; not a causal biological claim.</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Communication-edge gate diagnostics</h2><pre>{
+  "heldout_section": {
+    "test_auc": 1.0,
+    "mean_absolute_gate_error_test": 2.525360537925668e-07,
+    "coefficients": {
+      "distance": -1.3702198898955178,
+      "ligand_signal": 0.7700522557427093,
+      "receptor_signal": 0.13973965791947623,
+      "rel_fibroblast_to_t_cell": 0.12101176635527737,
+      "rel_fibroblast_to_tumor": 0.24507502676512427,
+      "rel_macrophage_to_t_cell": 0.16078897950873355,
+      "rel_macrophage_to_tumor": 0.29764487201159967,
+      "rel_other": -0.15169684936691133,
+      "rel_t_cell_to_tumor": -0.4336945406836668,
+      "rel_tumor_to_macrophage": 0.18590499526516438,
+      "rel_vascular_to_tumor": -0.23473956601529572
+    },
+    "train_edges": 12960,
+    "test_edges": 2160
+  },
+  "heldout_donor": {
+    "test_auc": 1.0,
+    "mean_absolute_gate_error_test": 2.9891558969692666e-07,
+    "coefficients": {
+      "distance": -1.3767997148900986,
+      "ligand_signal": 0.7446594507293879,
+      "receptor_signal": 0.1354843117896268,
+      "rel_fibroblast_to_t_cell": 0.11978872866736381,
+      "rel_fibroblast_to_tumor": 0.25493056190445446,
+      "rel_macrophage_to_t_cell": 0.15509362262209284,
+      "rel_macrophage_to_tumor": 0.28748958972477273,
+      "rel_other": -0.16551077156109217,
+      "rel_t_cell_to_tumor": -0.4341957578759572,
+      "rel_tumor_to_macrophage": 0.17980441712085424,
+      "rel_vascular_to_tumor": -0.22650369041046572
+    },
+    "train_edges": 10080,
+    "test_edges": 4320
+  }
+}</pre>
+<h2>Architecture</h2><p>Time-varying typed tissue graphs are coupled to continuous state-rate models. A learned communication gate weights neighbor messages. Regulatory and organelle graphs remain explicit within-cell graph layers. A Nicheformer file adapter accepts externally generated embeddings without redistributing checkpoints.</p>
+<h2>Scientific boundary</h2><p>The bundled benchmark demonstrates software behavior and a synthetic predictive advantage of neighborhood context. It does not establish biological interference, a causal ligand–receptor mechanism, tissue prognosis, or clinical guidance.</p>
+</body></html>

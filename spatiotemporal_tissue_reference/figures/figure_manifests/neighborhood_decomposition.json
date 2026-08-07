@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "neighborhood_decomposition",
+  "formats": {
+    "pdf": "neighborhood_decomposition.pdf",
+    "png": "neighborhood_decomposition.png",
+    "svg": "neighborhood_decomposition.svg",
+    "tiff": "neighborhood_decomposition.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "synthetic": true,
+    "version": "1.7.0"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "a5cde650db432c1612296ec1bd02e0d40cce3b5b13e3020ad1740151ba4a98aa",
+    "png": "02a1db6965e64c936f8b1861562caccc7931e980ebb22674e36a0621c39f8ad6",
+    "svg": "c3b4d73028aa2a445c410e3de7e3853470b6ba08c2e4e5def3d0e1ec89399f91",
+    "tiff": "cdbd525d948c9088b5f33f02d2bb5b088716259cffc0a5d2d3bc376342ce1826"
+  },
+  "source_data": [
+    "neighborhood_decomposition__decomposition_summary.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "333126016300418040c0e060e030e00bc00ce000400447c82072490e324c264c",
+  "width_mm": 183.0
+}

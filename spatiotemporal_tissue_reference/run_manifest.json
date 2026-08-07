@@ -1,0 +1,30 @@
+{
+  "config": {
+    "bootstrap_replicates": 100,
+    "cells_per_section": 36,
+    "donor_test_count": 3,
+    "donor_validation_count": 2,
+    "gate_C": 2.0,
+    "k_neighbors": 5,
+    "n_donors": 12,
+    "ridge_alpha": 1.0,
+    "section_test_fraction": 0.25,
+    "sections_per_donor": 2,
+    "seed": 160,
+    "timepoints": [
+      0.0,
+      12.0,
+      24.0,
+      48.0
+    ]
+  },
+  "framework": "CausaFlux",
+  "n_donors": 12,
+  "n_edges": 17280,
+  "n_nodes": 3456,
+  "n_sections": 24,
+  "real_tissue_gate": "BLOCKED_REAL_SPATIOTEMPORAL_TISSUE_DATA_REQUIRED",
+  "software_gate": "PASS",
+  "synthetic_fixture": true,
+  "version": "1.7.0"
+}
