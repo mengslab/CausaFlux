@@ -1,0 +1,7 @@
+trajectory_id,group_id,time,fate,XBP1_activity,ATF4_activity,ATF6_activity,calcium_homeostasis,redox_balance,mitochondrial_function,protein_aggregation,inflammatory_signaling,metabolic_capacity,viability,adaptive_reserve,commitment_signal,ER_stress,IRE1_inhibition,PERK_inhibition,ATF6_activation
+cell_001,replicate_A,0,recovery,0.12,0.10,0.10,0.85,0.85,0.82,0.08,0.08,0.85,0.95,0.90,0.04,0,0,0,0
+cell_001,replicate_A,1,recovery,0.55,0.42,0.31,0.72,0.74,0.70,0.20,0.12,0.72,0.91,0.75,0.08,1,0,0,0
+cell_001,replicate_A,3,recovery,0.72,0.58,0.44,0.78,0.79,0.76,0.16,0.10,0.77,0.93,0.80,0.07,0,0,0,0
+cell_002,replicate_B,0,persistent_dysfunction,0.11,0.09,0.10,0.84,0.86,0.81,0.08,0.09,0.84,0.95,0.88,0.05,0,0,0,0
+cell_002,replicate_B,1,persistent_dysfunction,0.30,0.48,,0.61,0.58,0.55,0.34,0.25,0.58,0.79,0.52,0.18,1.2,0.5,0,0
+cell_002,replicate_B,3,persistent_dysfunction,0.18,0.41,0.26,0.50,0.47,0.43,0.52,0.49,0.44,0.66,0.31,0.42,1.2,0.5,0,0

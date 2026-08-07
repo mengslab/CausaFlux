@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "generalization_axes",
+  "formats": {
+    "pdf": "generalization_axes.pdf",
+    "png": "generalization_axes.png",
+    "svg": "generalization_axes.svg",
+    "tiff": "generalization_axes.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "synthetic": true,
+    "version": "1.7.0"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "a07e88ad4fbd3b2758035c351d15a3a08010836e7be6038dec2fdaa8efcc2038",
+    "png": "13bc1c6eda34758b14275910ec972cef34777f31feef5ff460bc1dfc96e51123",
+    "svg": "2bfd94f865f588b76c8a8adbbab97cf59997959dc4a71556ee8cf584eab6901b",
+    "tiff": "a7a1717ccbce864a59ed874ab6fe71232fb50a20c3226a9cd44be392e55735e9"
+  },
+  "source_data": [
+    "generalization_axes__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "34e0401a511a4018411b41931993999319931993199319931993199319b32064",
+  "width_mm": 183.0
+}

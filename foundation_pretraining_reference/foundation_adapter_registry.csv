@@ -1,0 +1,8 @@
+name,domain,role,contract,execution,bundled_checkpoint,scientific_gate
+scGPT,single-cell RNA,external foundation encoder,"row_id,embedding_*",user-managed official environment,False,external embeddings required
+GET,regulatory genomics,external chromatin/regulatory encoder,"region_or_cell_id,embedding_*",user-managed official environment,False,external embeddings required
+Nicheformer,spatial/single-cell,external niche encoder,"row_id,niche_embedding_*",user-managed official environment,False,external embeddings required
+MrVI,single-cell sample heterogeneity,external donor/sample-aware encoder,"row_id,mrvi_embedding_*",scvi-tools user-managed environment,False,external embeddings required
+ESM2,protein sequence,selected protein encoder adapter,"protein_id,embedding_*",user-managed pretrained model,False,external embeddings required
+MolFormer,chemical structure,selected compound encoder adapter,"compound_id,embedding_*",user-managed MolFormer environment,False,external embeddings required
+DINOv2,live-cell/spatial imaging,selected image encoder adapter,"frame_or_cell_id,embedding_*",user-managed DINOv2/vision environment,False,external embeddings required

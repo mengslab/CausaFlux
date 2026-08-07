@@ -1,0 +1,11 @@
+objective,family,prediction_contract
+masked_modality_reconstruction,self_supervised,masked observed modalities -> full modalities
+cross_modal_reconstruction,self_supervised,subset of modalities -> withheld modality
+temporal_ordering,temporal,ordered observation pairs
+future_state_prediction,dynamic,context -> future state
+intervention_identification,intervention,latent -> perturbation identity
+intervention_effect_prediction,intervention,latent + intervention -> effect vector
+graph_edge_prediction,graph,paired cells -> edge probability
+recovery_commitment_discrimination,fate,latent -> recovery/commitment
+time_to_fate_prediction,fate,latent -> time to fate
+contrastive_donor_tissue_invariance,invariance,reduce donor/tissue nuisance while retaining biology

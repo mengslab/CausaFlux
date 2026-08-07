@@ -1,0 +1,236 @@
+{
+  "artifacts": [
+    {
+      "path": "DATASET_CARD.md",
+      "sha256": "e4f90183cc5c09f15e66575753776fef95663ff1d6828ca60287a250ff8ea211",
+      "size_bytes": 303
+    },
+    {
+      "path": "MODEL_CARD.md",
+      "sha256": "dc4b80344e377f0e736655bf73dbc6e6884778bcd58e5cb0b1df4fb37990c9a3",
+      "size_bytes": 373
+    },
+    {
+      "path": "adapters/adapter_registry.csv",
+      "sha256": "79597e9a8ff6d79fa5d40932e6e09eb24df18092b190b6046159b9d2cf66f7d6",
+      "size_bytes": 1219
+    },
+    {
+      "path": "adapters/cpa_adapter.json",
+      "sha256": "944ff743b229409cf5531f0a11893f4793736075a82a286dd13a6b03404b5526",
+      "size_bytes": 479
+    },
+    {
+      "path": "adapters/external_prediction_template.csv",
+      "sha256": "efea44724192c0f0120499c55444b75153295f10e1e191ef0bb3addd274f84c8",
+      "size_bytes": 6026
+    },
+    {
+      "path": "adapters/gears_adapter.json",
+      "sha256": "59b43806afb0e600037b9ad8d059887720e6eb04600d4a467747d4ada4f47a25",
+      "size_bytes": 459
+    },
+    {
+      "path": "adapters/scgpt_adapter.json",
+      "sha256": "ff90e2c90dde1bafc51be0ff086da245b571f6356f8a1fe68092d6a8a8ee5143",
+      "size_bytes": 468
+    },
+    {
+      "path": "adapters/txpert_adapter.json",
+      "sha256": "ce373b9306efac742bda1ce86f708a8357d2d432556005778af99e41a086bf9d",
+      "size_bytes": 473
+    },
+    {
+      "path": "benchmark_rows.csv",
+      "sha256": "a5e25d49f60b65565b851c9e934233cffb892bef22bc157777e16ef515afa17d",
+      "size_bytes": 273722
+    },
+    {
+      "path": "causal_comparators.csv",
+      "sha256": "390c243d62f2eb14ea979c201347ba76f659cfd6e573f4fe353bb046e1ab31de",
+      "size_bytes": 644
+    },
+    {
+      "path": "compound_embeddings.csv",
+      "sha256": "6def76f43af30aebb5a70c7bb3626a837e0e102f32b5e3d6a5942115deb614e4",
+      "size_bytes": 1432
+    },
+    {
+      "path": "conformal_coverage.csv",
+      "sha256": "f4efa666c5ce3291c08385c0453f0c9bc6adffaf60f37d8ef379df0f648d519f",
+      "size_bytes": 366
+    },
+    {
+      "path": "conformal_test_rows.csv",
+      "sha256": "ad90690603c26a7c5cf0fc12f3b64c064a6eda437fb95a28a15772b6904c51e6",
+      "size_bytes": 9236
+    },
+    {
+      "path": "external_established_model_gate.json",
+      "sha256": "68ddb73ae06c452d319d0bf6db8d8f02527f5efd74545cb851cce10078a9bb26",
+      "size_bytes": 286
+    },
+    {
+      "path": "figures/conformal_coverage.pdf",
+      "sha256": "fd2f5218e66a333c7b5e120a552ef6f1655e717e4a86b9dadabe3382be163601",
+      "size_bytes": 17550
+    },
+    {
+      "path": "figures/conformal_coverage.png",
+      "sha256": "60d72b480e3d14003916ecd3c18cd14a3c9b42be677ee8c920b51dc64d2407bf",
+      "size_bytes": 283886
+    },
+    {
+      "path": "figures/conformal_coverage.svg",
+      "sha256": "7f18b625a720252039a8a5f34812a4589acc720f81722e6a889035f554eb8ca9",
+      "size_bytes": 9782
+    },
+    {
+      "path": "figures/conformal_coverage.tiff",
+      "sha256": "c75ae2afccf2bd5e3625137eb94711d807cd264786b3e9f331b7f5668a551596",
+      "size_bytes": 532240
+    },
+    {
+      "path": "figures/figure_manifests/conformal_coverage.json",
+      "sha256": "89cb5ecbd5baa7a7668d4330c8226d78e5d116537af1ee80cbbce8dba96707d1",
+      "size_bytes": 920
+    },
+    {
+      "path": "figures/figure_manifests/generalization_axes.json",
+      "sha256": "0e493ebd75cbb5dfbcdb116db25006b5b9c99c8a62cef6ee7e421a30c2603218",
+      "size_bytes": 926
+    },
+    {
+      "path": "figures/figure_manifests/intervention_model_ranking.json",
+      "sha256": "a0df1bcda16d1b2069610d7f85f6db736ae511ea28cff6e9c97bd06a5e2d3b87",
+      "size_bytes": 968
+    },
+    {
+      "path": "figures/figure_manifests/support_diagnostics.json",
+      "sha256": "af1d2583ff99de6dd4cb283b30f6125e86b2abc7f0713803975e2f9ab9607b3f",
+      "size_bytes": 926
+    },
+    {
+      "path": "figures/generalization_axes.pdf",
+      "sha256": "a07e88ad4fbd3b2758035c351d15a3a08010836e7be6038dec2fdaa8efcc2038",
+      "size_bytes": 17228
+    },
+    {
+      "path": "figures/generalization_axes.png",
+      "sha256": "13bc1c6eda34758b14275910ec972cef34777f31feef5ff460bc1dfc96e51123",
+      "size_bytes": 183465
+    },
+    {
+      "path": "figures/generalization_axes.svg",
+      "sha256": "2bfd94f865f588b76c8a8adbbab97cf59997959dc4a71556ee8cf584eab6901b",
+      "size_bytes": 9517
+    },
+    {
+      "path": "figures/generalization_axes.tiff",
+      "sha256": "a7a1717ccbce864a59ed874ab6fe71232fb50a20c3226a9cd44be392e55735e9",
+      "size_bytes": 678960
+    },
+    {
+      "path": "figures/intervention_model_ranking.pdf",
+      "sha256": "88c7b5d5df39230617e2df40fd168573775de00903491acad7b4b6729ca5de97",
+      "size_bytes": 20376
+    },
+    {
+      "path": "figures/intervention_model_ranking.png",
+      "sha256": "1cab9699d326a23792a432552b091b95f02cc96c137cf59f5ca0c90aaa06abdc",
+      "size_bytes": 241867
+    },
+    {
+      "path": "figures/intervention_model_ranking.svg",
+      "sha256": "35d1f9940ee706236bc830fbf52cfe180a6d7c61f0df11700b5f9e082b87d619",
+      "size_bytes": 11777
+    },
+    {
+      "path": "figures/intervention_model_ranking.tiff",
+      "sha256": "6cd7352209930ad3d1ad2b02ac1f35bf86b517ad12a9da4db3138ea5357b01e8",
+      "size_bytes": 810552
+    },
+    {
+      "path": "figures/source_data/conformal_coverage__panel_a.csv",
+      "sha256": "5e3a7d496e63763689126354c69d886756c53773c225788c03be274dc49928f2",
+      "size_bytes": 377
+    },
+    {
+      "path": "figures/source_data/generalization_axes__panel_a.csv",
+      "sha256": "9a21049d4037214c75da7e623bb69d9ec103fa89a58a903ce8ce9182080fb6af",
+      "size_bytes": 592
+    },
+    {
+      "path": "figures/source_data/intervention_model_ranking__panel_a.csv",
+      "sha256": "414127f41b7446a9b695730d0ab4337d0e34666f27700bb1653b5d94234c883e",
+      "size_bytes": 1076
+    },
+    {
+      "path": "figures/source_data/support_diagnostics__panel_a.csv",
+      "sha256": "a8bdefe7d770151bfc834209515a2b37f6aab7188e597d219ae9786ce95e8609",
+      "size_bytes": 217
+    },
+    {
+      "path": "figures/support_diagnostics.pdf",
+      "sha256": "0370098a25d77f3b5b921544692d81150a7306d9dc8f1615609f83a129219257",
+      "size_bytes": 18512
+    },
+    {
+      "path": "figures/support_diagnostics.png",
+      "sha256": "cd5f5e38acaf98bd5f72ee5d8c2dbded11a40034a3cb1d7b34b844d5064450a5",
+      "size_bytes": 159922
+    },
+    {
+      "path": "figures/support_diagnostics.svg",
+      "sha256": "bab9fe0e6e67d03ca106cc945f1b3811902dbf9eb0a4e5199620c164e5fd8334",
+      "size_bytes": 10826
+    },
+    {
+      "path": "figures/support_diagnostics.tiff",
+      "sha256": "54dcb17d8091ece7e9d3b8783cb5ac851208ede5719db6c759dbfbbb3e9d2ab4",
+      "size_bytes": 424264
+    },
+    {
+      "path": "gene_embeddings.csv",
+      "sha256": "fd5ce39987d0777fdb309f6d53bc3f785bdc191da25de8e4dfd10b06bab0673f",
+      "size_bytes": 1383
+    },
+    {
+      "path": "intervention_exit_gate.json",
+      "sha256": "a6939296b640bf298ada0608d534af1abc15901ad11ef45d2ea5f17bc00822d2",
+      "size_bytes": 1458
+    },
+    {
+      "path": "model_comparison.csv",
+      "sha256": "06ead3f21bb3d93844c573091c2f2bfbd4ebcd3d08dc1cd61989e086fbaaf7c0",
+      "size_bytes": 5264
+    },
+    {
+      "path": "positivity_support_diagnostics.csv",
+      "sha256": "2add6a45e2c961a9446d979fb1f0bd9b18b4c3bf277a93e802730e2fd23375e3",
+      "size_bytes": 12093
+    },
+    {
+      "path": "report/index.html",
+      "sha256": "2510f8076f66c3fe922f0a6e768f8ff6c3de66be3ca7b139fd1d0ff53c0d5592",
+      "size_bytes": 6597
+    },
+    {
+      "path": "run_manifest.json",
+      "sha256": "baa07c7831c370a63ce9e13df5f7ccf8def113c4a9a1daad5d785f4c230b500e",
+      "size_bytes": 472
+    },
+    {
+      "path": "split_audit.json",
+      "sha256": "68878e053e33166ad3652eeabed42158c0727dbef7088143da326ba780c04388",
+      "size_bytes": 256
+    },
+    {
+      "path": "test_prediction_errors.csv",
+      "sha256": "ae1b6084b33099a5184d4edb313ce4286349e2e8319c90f96e43218d76e581a2",
+      "size_bytes": 37418
+    }
+  ],
+  "framework": "CausaFlux",
+  "version": "1.7.0"
+}

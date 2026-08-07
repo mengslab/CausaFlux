@@ -1,0 +1,9 @@
+{
+  "bundled_checkpoint": false,
+  "contract": "frame_or_cell_id,embedding_*",
+  "domain": "live-cell/spatial imaging",
+  "execution": "user-managed DINOv2/vision environment",
+  "name": "DINOv2",
+  "role": "selected image encoder adapter",
+  "scientific_gate": "external embeddings required"
+}

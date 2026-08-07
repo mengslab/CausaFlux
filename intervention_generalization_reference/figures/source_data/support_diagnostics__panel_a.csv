@@ -1,0 +1,5 @@
+,holdout_type,mean_support_distance,warning_fraction
+0,unseen_combination,9.915776373673236,1.0
+1,unseen_dose,6.503594486471131,1.0
+2,unseen_perturbation,4.9749568670187205,1.0
+3,unseen_sequence,8.405560411475012,1.0

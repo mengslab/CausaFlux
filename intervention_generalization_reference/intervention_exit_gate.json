@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "best_baseline_rmse": 0.27014314530440403,
+      "holdout_type": "overall",
+      "improvement_fraction": 0.5789575358990527,
+      "main_rmse": 0.11374173555894652,
+      "pass": true
+    },
+    {
+      "best_baseline_rmse": 0.1260427251946941,
+      "holdout_type": "unseen_perturbation",
+      "improvement_fraction": 0.2644403944360861,
+      "main_rmse": 0.09271193722840998,
+      "pass": true
+    },
+    {
+      "best_baseline_rmse": 0.16136588247143227,
+      "holdout_type": "unseen_dose",
+      "improvement_fraction": 0.32587382421756705,
+      "main_rmse": 0.10878096525222417,
+      "pass": true
+    },
+    {
+      "best_baseline_rmse": 0.1569434352819327,
+      "holdout_type": "unseen_combination",
+      "improvement_fraction": 0.03943323243543904,
+      "main_rmse": 0.15075464831924396,
+      "pass": true
+    },
+    {
+      "best_baseline_rmse": 0.4712451962573479,
+      "holdout_type": "unseen_sequence",
+      "improvement_fraction": 0.7558175490864538,
+      "main_rmse": 0.11506980700335429,
+      "pass": true
+    }
+  ],
+  "framework": "CausaFlux",
+  "scientific_boundary": "PASS is a deterministic synthetic software gate. It does not establish superiority to actual CPA, GEARS, TxPert, or scGPT until external row-aligned predictions are imported and evaluated on a real benchmark.",
+  "software_generalization_gate": "PASS",
+  "version": "1.7.0",
+  "winning_model": "CausaFluxInterventionGeneralizer"
+}

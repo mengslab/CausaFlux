@@ -1,0 +1,2 @@
+row_id,donor_id,sample_id,lineage_id,time_hours,cell_type,state,therapy,future_resistant
+example_001,D01,S01,L01,0,tumor,treatment_sensitive,standard_therapy,0

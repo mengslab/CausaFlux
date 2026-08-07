@@ -1,0 +1,9 @@
+{
+  "bundled_checkpoint": false,
+  "contract": "compound_id,embedding_*",
+  "domain": "chemical structure",
+  "execution": "user-managed MolFormer environment",
+  "name": "MolFormer",
+  "role": "selected compound encoder adapter",
+  "scientific_gate": "external embeddings required"
+}

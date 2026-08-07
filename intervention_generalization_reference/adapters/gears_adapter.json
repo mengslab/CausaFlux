@@ -1,0 +1,13 @@
+{
+  "adapter": "GEARS",
+  "external_package": "GEARS / user-managed environment",
+  "framework": "CausaFlux",
+  "prediction_contract": "row_id,prediction_0..prediction_k",
+  "required_inputs": [
+    "expression",
+    "gene_targets",
+    "gene_graph"
+  ],
+  "scientific_boundary": "External model execution is not bundled. Users must run the named model in its own licensed environment and import row-aligned predictions or embeddings.",
+  "version": "1.7.0"
+}

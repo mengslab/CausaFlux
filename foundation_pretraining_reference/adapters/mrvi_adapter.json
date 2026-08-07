@@ -1,0 +1,9 @@
+{
+  "bundled_checkpoint": false,
+  "contract": "row_id,mrvi_embedding_*",
+  "domain": "single-cell sample heterogeneity",
+  "execution": "scvi-tools user-managed environment",
+  "name": "MrVI",
+  "role": "external donor/sample-aware encoder",
+  "scientific_gate": "external embeddings required"
+}

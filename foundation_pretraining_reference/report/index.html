@@ -1,0 +1,119 @@
+<html><head><meta charset='utf-8'><title>CausaFlux v1.7.0 Foundation Pretraining</title><style>body{font-family:Arial;max-width:1150px;margin:30px auto}table{border-collapse:collapse;width:100%;font-size:12px}td,th{border:1px solid #ddd;padding:5px}th{background:#f3f3f3}.ok{border-left:4px solid #2D7F78;padding:10px;background:#f4fbf9}.warn{border-left:4px solid #C78B2C;padding:10px;background:#fff8e9}</style></head><body><h1>CausaFlux v1.7.0 — Foundation Adapter and Pretraining</h1><div class='ok'><b>Software gate: PASS</b></div><p>Seven adapter contracts and ten pretraining objectives are registered. Third-party checkpoints are not redistributed.</p><h2>Foundation linear-probe evaluation</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>representation</th>
+      <th>evaluation</th>
+      <th>split</th>
+      <th>future_state_rmse</th>
+      <th>future_state_r2</th>
+      <th>intervention_effect_rmse</th>
+      <th>intervention_effect_r2</th>
+      <th>cell_type_accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CausaFluxFoundation</td>
+      <td>linear_probe</td>
+      <td>standard</td>
+      <td>0.2845</td>
+      <td>0.9381</td>
+      <td>0.3696</td>
+      <td>0.3766</td>
+      <td>0.7111</td>
+    </tr>
+    <tr>
+      <td>CausaFluxFoundation</td>
+      <td>linear_probe</td>
+      <td>donor_holdout</td>
+      <td>0.2999</td>
+      <td>0.9293</td>
+      <td>0.3598</td>
+      <td>0.4027</td>
+      <td>0.7163</td>
+    </tr>
+    <tr>
+      <td>CausaFluxFoundation</td>
+      <td>linear_probe</td>
+      <td>tissue_holdout</td>
+      <td>0.2963</td>
+      <td>0.9127</td>
+      <td>0.3951</td>
+      <td>0.2377</td>
+      <td>0.7574</td>
+    </tr>
+    <tr>
+      <td>CausaFluxFoundation</td>
+      <td>linear_probe</td>
+      <td>perturbation_holdout</td>
+      <td>0.2909</td>
+      <td>0.9075</td>
+      <td>0.4286</td>
+      <td>-1.0515</td>
+      <td>0.7661</td>
+    </tr>
+    <tr>
+      <td>CausaFluxFoundation</td>
+      <td>linear_probe</td>
+      <td>prospective</td>
+      <td>0.2940</td>
+      <td>0.9306</td>
+      <td>0.3834</td>
+      <td>0.3767</td>
+      <td>0.7403</td>
+    </tr>
+  </tbody>
+</table><h2>Gate</h2><pre>{
+  "framework": "CausaFlux",
+  "version": "1.7.0",
+  "software_pretraining_gate": "PASS",
+  "exit_criterion": "Pretraining must improve dynamic and intervention tasks, not merely annotation or integration metrics.",
+  "aggregate_holdout": {
+    "foundation_future_rmse": 0.29571988504607455,
+    "no_pretraining_future_rmse": 0.5366594507280388,
+    "foundation_effect_rmse": 0.39449678906247226,
+    "no_pretraining_effect_rmse": 0.40775857750794825
+  },
+  "details": [
+    {
+      "split": "donor_holdout",
+      "future_improved": true,
+      "intervention_noninferior_1pct": true,
+      "foundation_future_rmse": 0.2999365153902648,
+      "no_pretraining_future_rmse": 0.5557034749516773,
+      "pca_future_rmse": 0.2970282886684597,
+      "foundation_effect_rmse": 0.35982204747835916,
+      "no_pretraining_effect_rmse": 0.37831675375877655,
+      "pca_effect_rmse": 0.3575313588040452
+    },
+    {
+      "split": "tissue_holdout",
+      "future_improved": true,
+      "intervention_noninferior_1pct": true,
+      "foundation_future_rmse": 0.296340076056027,
+      "no_pretraining_future_rmse": 0.5256746164881038,
+      "pca_future_rmse": 0.29400895149039324,
+      "foundation_effect_rmse": 0.3950773107312989,
+      "no_pretraining_effect_rmse": 0.40748882150398297,
+      "pca_effect_rmse": 0.39969628769532345
+    },
+    {
+      "split": "perturbation_holdout",
+      "future_improved": true,
+      "intervention_noninferior_1pct": true,
+      "foundation_future_rmse": 0.29088306369193195,
+      "no_pretraining_future_rmse": 0.5286002607443354,
+      "pca_future_rmse": 0.28997412831313324,
+      "foundation_effect_rmse": 0.42859100897775876,
+      "no_pretraining_effect_rmse": 0.4374701572610853,
+      "pca_effect_rmse": 0.4284862198733771
+    }
+  ],
+  "prospective_proxy": {
+    "future_state_rmse": 0.2939857800807114,
+    "intervention_effect_rmse": 0.3833531471675772
+  },
+  "real_pretraining_authorization": "BLOCKED_REAL_LONGITUDINAL_MULTIMODAL_AND_INTERVENTION_GATES_REQUIRED",
+  "foundation_pretraining_authorized": false,
+  "synthetic_fixture": true
+}</pre><div class='warn'>Synthetic software validation only. Real-data foundation pretraining remains blocked until upstream real longitudinal, multimodal, intervention and tissue gates pass.</div></body></html>

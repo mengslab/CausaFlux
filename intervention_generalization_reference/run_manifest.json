@@ -1,0 +1,20 @@
+{
+  "config": {
+    "bootstrap_replicates": 100,
+    "conformal_alpha": 0.1,
+    "embedding_dim": 8,
+    "n_compounds": 8,
+    "n_genes": 8,
+    "replicates": 5,
+    "response_dim": 12,
+    "ridge_alpha": 2.0,
+    "seed": 150
+  },
+  "external_established_model_gate": "BLOCKED_EXTERNAL_ESTABLISHED_MODEL_PREDICTIONS_REQUIRED",
+  "framework": "CausaFlux",
+  "n_rows": 600,
+  "response_dim": 12,
+  "software_gate": "PASS",
+  "synthetic_fixture": true,
+  "version": "1.7.0"
+}

@@ -1,0 +1,13 @@
+{
+  "n_test": 165,
+  "n_train": 388,
+  "n_validation": 47,
+  "synthetic_fixture": true,
+  "test_holdout_counts": {
+    "unseen_combination": 10,
+    "unseen_dose": 70,
+    "unseen_perturbation": 10,
+    "unseen_sequence": 75
+  },
+  "test_row_overlap": []
+}

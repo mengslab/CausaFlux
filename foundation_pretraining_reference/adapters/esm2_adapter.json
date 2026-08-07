@@ -1,0 +1,9 @@
+{
+  "bundled_checkpoint": false,
+  "contract": "protein_id,embedding_*",
+  "domain": "protein sequence",
+  "execution": "user-managed pretrained model",
+  "name": "ESM2",
+  "role": "selected protein encoder adapter",
+  "scientific_gate": "external embeddings required"
+}

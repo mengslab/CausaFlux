@@ -1,0 +1,4 @@
+channel,value,start,stop,shape,end_value,period,duty_cycle
+ER_stress,0.25,0,2,linear,1.0,,
+ER_stress,1.0,2,6,constant,,,
+ATF6_activation,0.45,1,6,constant,,,

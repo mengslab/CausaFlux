@@ -1,0 +1,54 @@
+{
+  "aggregate_holdout": {
+    "foundation_effect_rmse": 0.39449678906247226,
+    "foundation_future_rmse": 0.29571988504607455,
+    "no_pretraining_effect_rmse": 0.40775857750794825,
+    "no_pretraining_future_rmse": 0.5366594507280388
+  },
+  "details": [
+    {
+      "foundation_effect_rmse": 0.35982204747835916,
+      "foundation_future_rmse": 0.2999365153902648,
+      "future_improved": true,
+      "intervention_noninferior_1pct": true,
+      "no_pretraining_effect_rmse": 0.37831675375877655,
+      "no_pretraining_future_rmse": 0.5557034749516773,
+      "pca_effect_rmse": 0.3575313588040452,
+      "pca_future_rmse": 0.2970282886684597,
+      "split": "donor_holdout"
+    },
+    {
+      "foundation_effect_rmse": 0.3950773107312989,
+      "foundation_future_rmse": 0.296340076056027,
+      "future_improved": true,
+      "intervention_noninferior_1pct": true,
+      "no_pretraining_effect_rmse": 0.40748882150398297,
+      "no_pretraining_future_rmse": 0.5256746164881038,
+      "pca_effect_rmse": 0.39969628769532345,
+      "pca_future_rmse": 0.29400895149039324,
+      "split": "tissue_holdout"
+    },
+    {
+      "foundation_effect_rmse": 0.42859100897775876,
+      "foundation_future_rmse": 0.29088306369193195,
+      "future_improved": true,
+      "intervention_noninferior_1pct": true,
+      "no_pretraining_effect_rmse": 0.4374701572610853,
+      "no_pretraining_future_rmse": 0.5286002607443354,
+      "pca_effect_rmse": 0.4284862198733771,
+      "pca_future_rmse": 0.28997412831313324,
+      "split": "perturbation_holdout"
+    }
+  ],
+  "exit_criterion": "Pretraining must improve dynamic and intervention tasks, not merely annotation or integration metrics.",
+  "foundation_pretraining_authorized": false,
+  "framework": "CausaFlux",
+  "prospective_proxy": {
+    "future_state_rmse": 0.2939857800807114,
+    "intervention_effect_rmse": 0.3833531471675772
+  },
+  "real_pretraining_authorization": "BLOCKED_REAL_LONGITUDINAL_MULTIMODAL_AND_INTERVENTION_GATES_REQUIRED",
+  "software_pretraining_gate": "PASS",
+  "synthetic_fixture": true,
+  "version": "1.7.0"
+}

@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "support_diagnostics",
+  "formats": {
+    "pdf": "support_diagnostics.pdf",
+    "png": "support_diagnostics.png",
+    "svg": "support_diagnostics.svg",
+    "tiff": "support_diagnostics.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "synthetic": true,
+    "version": "1.7.0"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "0370098a25d77f3b5b921544692d81150a7306d9dc8f1615609f83a129219257",
+    "png": "cd5f5e38acaf98bd5f72ee5d8c2dbded11a40034a3cb1d7b34b844d5064450a5",
+    "svg": "bab9fe0e6e67d03ca106cc945f1b3811902dbf9eb0a4e5199620c164e5fd8334",
+    "tiff": "54dcb17d8091ece7e9d3b8783cb5ac851208ede5719db6c759dbfbbb3e9d2ab4"
+  },
+  "source_data": [
+    "support_diagnostics__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "1c014001c00040004000c000c000b219e211c000c0004000c00040002d2d296d",
+  "width_mm": 183.0
+}

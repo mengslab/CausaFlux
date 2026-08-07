@@ -1,0 +1,13 @@
+{
+  "adapter": "scGPT",
+  "external_package": "scGPT / user-managed environment",
+  "framework": "CausaFlux",
+  "prediction_contract": "row_id,prediction_0..prediction_k",
+  "required_inputs": [
+    "expression",
+    "perturbation_tokens",
+    "cell_context"
+  ],
+  "scientific_boundary": "External model execution is not bundled. Users must run the named model in its own licensed environment and import row-aligned predictions or embeddings.",
+  "version": "1.7.0"
+}

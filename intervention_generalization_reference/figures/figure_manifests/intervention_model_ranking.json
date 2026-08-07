@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "intervention_model_ranking",
+  "formats": {
+    "pdf": "intervention_model_ranking.pdf",
+    "png": "intervention_model_ranking.png",
+    "svg": "intervention_model_ranking.svg",
+    "tiff": "intervention_model_ranking.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "synthetic": true,
+    "version": "1.7.0"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "88c7b5d5df39230617e2df40fd168573775de00903491acad7b4b6729ca5de97",
+    "png": "1cab9699d326a23792a432552b091b95f02cc96c137cf59f5ca0c90aaa06abdc",
+    "svg": "35d1f9940ee706236bc830fbf52cfe180a6d7c61f0df11700b5f9e082b87d619",
+    "tiff": "6cd7352209930ad3d1ad2b02ac1f35bf86b517ad12a9da4db3138ea5357b01e8"
+  },
+  "source_data": [
+    "intervention_model_ranking__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "00d00300033004b407b0043a045a041e040c042e04160407040704150b690a79",
+  "width_mm": 183.0
+}

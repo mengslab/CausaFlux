@@ -1,0 +1,9 @@
+{
+  "bundled_checkpoint": false,
+  "contract": "row_id,embedding_*",
+  "domain": "single-cell RNA",
+  "execution": "user-managed official environment",
+  "name": "scGPT",
+  "role": "external foundation encoder",
+  "scientific_gate": "external embeddings required"
+}

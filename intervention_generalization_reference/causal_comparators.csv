@@ -1,0 +1,3 @@
+comparator,outcome_rmse,outcome_mae,outcome_r2,estimand,interpretation
+SequentialGComputation,0.11416684120573957,0.08920122642898375,0.4664020653229557,synthetic continuous intervention-response outcome,"software comparator only; causal validity additionally requires exchangeability, consistency, positivity, and correct longitudinal model specification"
+MarginalStructuralModel,0.11595906916702381,0.09045108696136928,0.4495173812879162,synthetic continuous intervention-response outcome,"software comparator only; causal validity additionally requires exchangeability, consistency, positivity, and correct longitudinal model specification"

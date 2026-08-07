@@ -1,0 +1,244 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CausaFlux v1.7.0 intervention generalization</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:28px auto;padding:0 22px;color:#202124}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border:1px solid #ddd;padding:6px;text-align:left}th{background:#f4f4f4}.ok{border-left:4px solid #00A087;padding:12px;background:#f2fbf8}.warn{border-left:4px solid #E64B35;padding:12px;background:#fff5f3}</style></head><body>
+<h1>CausaFlux v1.7.0 — Intervention Generalization</h1>
+<div class='ok'><strong>Synthetic software gate: PASS.</strong> The gate evaluates unseen perturbations, doses, combinations and temporal sequences. Actual established-model superiority remains separately gated.</div>
+<h2>Overall model comparison</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>holdout_type</th>
+      <th>n</th>
+      <th>rmse</th>
+      <th>mae</th>
+      <th>r2</th>
+      <th>mean_feature_correlation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CausaFluxInterventionGeneralizer</td>
+      <td>overall</td>
+      <td>165</td>
+      <td>0.1137</td>
+      <td>0.0903</td>
+      <td>0.9284</td>
+      <td>0.9639</td>
+    </tr>
+    <tr>
+      <td>CPAAdapterProxy</td>
+      <td>overall</td>
+      <td>165</td>
+      <td>0.2701</td>
+      <td>0.1946</td>
+      <td>0.5960</td>
+      <td>0.7662</td>
+    </tr>
+    <tr>
+      <td>scGPTAdapterProxy</td>
+      <td>overall</td>
+      <td>165</td>
+      <td>0.2728</td>
+      <td>0.1983</td>
+      <td>0.5881</td>
+      <td>0.7631</td>
+    </tr>
+    <tr>
+      <td>TxPertAdapterProxy</td>
+      <td>overall</td>
+      <td>165</td>
+      <td>0.2844</td>
+      <td>0.2053</td>
+      <td>0.5521</td>
+      <td>0.7284</td>
+    </tr>
+    <tr>
+      <td>SequentialGComputation</td>
+      <td>overall</td>
+      <td>165</td>
+      <td>0.3168</td>
+      <td>0.2393</td>
+      <td>0.4444</td>
+      <td>0.6353</td>
+    </tr>
+    <tr>
+      <td>MarginalStructuralModel</td>
+      <td>overall</td>
+      <td>165</td>
+      <td>0.3202</td>
+      <td>0.2418</td>
+      <td>0.4325</td>
+      <td>0.6232</td>
+    </tr>
+    <tr>
+      <td>NearestNeighbor</td>
+      <td>overall</td>
+      <td>165</td>
+      <td>0.3742</td>
+      <td>0.2852</td>
+      <td>0.2248</td>
+      <td>0.4990</td>
+    </tr>
+    <tr>
+      <td>GEARSAdapterProxy</td>
+      <td>overall</td>
+      <td>165</td>
+      <td>0.3860</td>
+      <td>0.2951</td>
+      <td>0.1753</td>
+      <td>0.4567</td>
+    </tr>
+    <tr>
+      <td>AdditiveBaseline</td>
+      <td>overall</td>
+      <td>165</td>
+      <td>0.4300</td>
+      <td>0.3337</td>
+      <td>-0.0237</td>
+      <td>0.2250</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Generalization gate</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>holdout_type</th>
+      <th>main_rmse</th>
+      <th>best_baseline_rmse</th>
+      <th>improvement_fraction</th>
+      <th>pass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>overall</td>
+      <td>0.1137</td>
+      <td>0.2701</td>
+      <td>0.5790</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>unseen_perturbation</td>
+      <td>0.0927</td>
+      <td>0.1260</td>
+      <td>0.2644</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>unseen_dose</td>
+      <td>0.1088</td>
+      <td>0.1614</td>
+      <td>0.3259</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>unseen_combination</td>
+      <td>0.1508</td>
+      <td>0.1569</td>
+      <td>0.0394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>unseen_sequence</td>
+      <td>0.1151</td>
+      <td>0.4712</td>
+      <td>0.7558</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Intervention-specific conformal uncertainty</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>holdout_type</th>
+      <th>nominal_coverage</th>
+      <th>empirical_feature_coverage</th>
+      <th>mean_interval_width</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>overall</td>
+      <td>0.9000</td>
+      <td>0.8333</td>
+      <td>0.3177</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <td>unseen_perturbation</td>
+      <td>0.9000</td>
+      <td>0.8917</td>
+      <td>0.3177</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>unseen_dose</td>
+      <td>0.9000</td>
+      <td>0.8452</td>
+      <td>0.3177</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>unseen_combination</td>
+      <td>0.9000</td>
+      <td>0.7167</td>
+      <td>0.3177</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>unseen_sequence</td>
+      <td>0.9000</td>
+      <td>0.8300</td>
+      <td>0.3177</td>
+      <td>75</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Positivity and support diagnostics</h2><p>Rows flagged: 165 / 165. Support warnings are diagnostic; they do not make unsupported counterfactuals identifiable.</p>
+<h2>Longitudinal causal comparators</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>comparator</th>
+      <th>outcome_rmse</th>
+      <th>outcome_mae</th>
+      <th>outcome_r2</th>
+      <th>estimand</th>
+      <th>interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SequentialGComputation</td>
+      <td>0.1142</td>
+      <td>0.0892</td>
+      <td>0.4664</td>
+      <td>synthetic continuous intervention-response outcome</td>
+      <td>software comparator only; causal validity additionally requires exchangeability, consistency, positivity, and correct longitudinal model specification</td>
+    </tr>
+    <tr>
+      <td>MarginalStructuralModel</td>
+      <td>0.1160</td>
+      <td>0.0905</td>
+      <td>0.4495</td>
+      <td>synthetic continuous intervention-response outcome</td>
+      <td>software comparator only; causal validity additionally requires exchangeability, consistency, positivity, and correct longitudinal model specification</td>
+    </tr>
+  </tbody>
+</table>
+<h2>External established-model gate</h2><pre>{
+  "required_external_adapters": [
+    "CPA",
+    "GEARS",
+    "TxPert",
+    "scGPT"
+  ],
+  "supplied_external_adapters": [],
+  "missing_external_adapters": [
+    "CPA",
+    "GEARS",
+    "TxPert",
+    "scGPT"
+  ],
+  "status": "BLOCKED_EXTERNAL_ESTABLISHED_MODEL_PREDICTIONS_REQUIRED"
+}</pre>
+<p><strong>Boundary:</strong> CPA/GEARS/TxPert/scGPT entries in the bundled synthetic table are lightweight contract/regression proxies, not executions of those published models. External predictions must be imported for a genuine established-method comparison.</p>
+</body></html>

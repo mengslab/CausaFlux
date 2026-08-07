@@ -1,0 +1,16 @@
+{
+  "missing_external_adapters": [
+    "CPA",
+    "GEARS",
+    "TxPert",
+    "scGPT"
+  ],
+  "required_external_adapters": [
+    "CPA",
+    "GEARS",
+    "TxPert",
+    "scGPT"
+  ],
+  "status": "BLOCKED_EXTERNAL_ESTABLISHED_MODEL_PREDICTIONS_REQUIRED",
+  "supplied_external_adapters": []
+}

@@ -1,0 +1,9 @@
+{
+  "bundled_checkpoint": false,
+  "contract": "region_or_cell_id,embedding_*",
+  "domain": "regulatory genomics",
+  "execution": "user-managed official environment",
+  "name": "GET",
+  "role": "external chromatin/regulatory encoder",
+  "scientific_gate": "external embeddings required"
+}

@@ -1,0 +1,14 @@
+{
+  "adapter": "CPA",
+  "external_package": "cpa-tools / user-managed CPA environment",
+  "framework": "CausaFlux",
+  "prediction_contract": "row_id,prediction_0..prediction_k",
+  "required_inputs": [
+    "expression",
+    "perturbation",
+    "dose",
+    "cell_context"
+  ],
+  "scientific_boundary": "External model execution is not bundled. Users must run the named model in its own licensed environment and import row-aligned predictions or embeddings.",
+  "version": "1.7.0"
+}

@@ -1,0 +1,9 @@
+{
+  "bundled_checkpoint": false,
+  "contract": "row_id,niche_embedding_*",
+  "domain": "spatial/single-cell",
+  "execution": "user-managed official environment",
+  "name": "Nicheformer",
+  "role": "external niche encoder",
+  "scientific_gate": "external embeddings required"
+}
