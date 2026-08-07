@@ -1,0 +1,297 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CausaFlux v1.8.0 Prospective Loop</title>
+<style>body{font-family:Arial,sans-serif;max-width:1180px;margin:28px auto;line-height:1.45}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border:1px solid #ddd;padding:6px}th{background:#f3f3f3}.ok{border-left:5px solid #2b7a68;background:#f2faf7;padding:12px}.warn{border-left:5px solid #b8842f;background:#fff8e9;padding:12px}code,pre{background:#f7f7f7;padding:8px;overflow:auto}</style></head><body>
+<h1>CausaFlux v1.8.0 — Prospective Experimental Loop</h1>
+<div class='ok'><b>Software exit gate: PASS</b><br>Passing metrics: outcome_discovery, experiment_efficiency, recovery_trajectory_identification</div>
+<div class='warn'><b>Evidence boundary:</b> This bundled run is synthetic software validation. It does not constitute prospective biological validation.</div>
+<h2>Required prospective sequence</h2><ol><li>Cycle 1: prediction → experiment → outcome → locked evaluation.</li><li>Cycle 2: posterior-updated model → new recommendation → new experiment → locked evaluation.</li><li>Cycle 3: independent confirmation or falsification.</li></ol>
+<h2>CausaFlux vs non-AI strategy</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>metric</th>
+      <th>causaflux</th>
+      <th>non_ai_baseline</th>
+      <th>absolute_improvement</th>
+      <th>prespecified_margin</th>
+      <th>criterion_pass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>outcome_discovery</td>
+      <td>4.0000</td>
+      <td>3.0000</td>
+      <td>1.0000</td>
+      <td>0.0000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>uncertainty_reduction_nats</td>
+      <td>1.3762</td>
+      <td>1.3762</td>
+      <td>-0.0001</td>
+      <td>0.0100</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>experiment_efficiency</td>
+      <td>0.5233</td>
+      <td>0.4454</td>
+      <td>0.0779</td>
+      <td>0.0000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>recovery_trajectory_identification</td>
+      <td>4.0000</td>
+      <td>3.0000</td>
+      <td>1.0000</td>
+      <td>0.0000</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Cycle calibration</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>cycle</th>
+      <th>n_attempted</th>
+      <th>n_evaluable</th>
+      <th>n_failed</th>
+      <th>prediction_rmse</th>
+      <th>interval_coverage_90</th>
+      <th>brier_discovery</th>
+      <th>mean_predicted_discovery_probability</th>
+      <th>observed_discovery_rate</th>
+      <th>recovery_trajectories_identified</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.9106</td>
+      <td>0.0000</td>
+      <td>0.5451</td>
+      <td>0.2617</td>
+      <td>1.0000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0.1314</td>
+      <td>1.0000</td>
+      <td>0.0212</td>
+      <td>0.8552</td>
+      <td>1.0000</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0.1423</td>
+      <td>1.0000</td>
+      <td>0.0073</td>
+      <td>0.5128</td>
+      <td>0.5000</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Experiment-cost ledger</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>strategy</th>
+      <th>cycle</th>
+      <th>experiment_id</th>
+      <th>planned_cost</th>
+      <th>attempted_cost</th>
+      <th>failed_assay_cost</th>
+      <th>evaluable_cost</th>
+      <th>status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CausaFlux_model_guided</td>
+      <td>1</td>
+      <td>IMG_ER_RECOVERY_18H</td>
+      <td>0.2500</td>
+      <td>0.2500</td>
+      <td>0.0000</td>
+      <td>0.2500</td>
+      <td>evaluable</td>
+    </tr>
+    <tr>
+      <td>CausaFlux_model_guided</td>
+      <td>1</td>
+      <td>IMG_MITO_24H</td>
+      <td>0.2400</td>
+      <td>0.2400</td>
+      <td>0.2400</td>
+      <td>0.0000</td>
+      <td>failed_qc</td>
+    </tr>
+    <tr>
+      <td>CausaFlux_model_guided</td>
+      <td>2</td>
+      <td>DRUG_IRE1I_TIMECOURSE</td>
+      <td>0.4200</td>
+      <td>0.4200</td>
+      <td>0.0000</td>
+      <td>0.4200</td>
+      <td>evaluable</td>
+    </tr>
+    <tr>
+      <td>CausaFlux_model_guided</td>
+      <td>2</td>
+      <td>PROTEOMICS_XBP1_TARGETS</td>
+      <td>0.4600</td>
+      <td>0.4600</td>
+      <td>0.0000</td>
+      <td>0.4600</td>
+      <td>evaluable</td>
+    </tr>
+    <tr>
+      <td>CausaFlux_model_guided</td>
+      <td>3</td>
+      <td>CRISPR_XBP1_24H</td>
+      <td>0.6200</td>
+      <td>0.6200</td>
+      <td>0.0000</td>
+      <td>0.6200</td>
+      <td>evaluable</td>
+    </tr>
+    <tr>
+      <td>CausaFlux_model_guided</td>
+      <td>3</td>
+      <td>CRISPR_NDUFS1_24H</td>
+      <td>0.6400</td>
+      <td>0.6400</td>
+      <td>0.0000</td>
+      <td>0.6400</td>
+      <td>evaluable</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Posterior history</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>cycle</th>
+      <th>model_freeze_id</th>
+      <th>posterior_entropy_nats</th>
+      <th>H1_PROTEOSTASIS_UPSTREAM</th>
+      <th>H2_MITOCHONDRIAL_PARALLEL</th>
+      <th>H3_ANTIGEN_EXCLUSION</th>
+      <th>H4_ENHANCER_COMMITMENT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>PRIOR</td>
+      <td>1.3762</td>
+      <td>0.3000</td>
+      <td>0.2500</td>
+      <td>0.2500</td>
+      <td>0.2000</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>CF180-C1-4034579c34bc</td>
+      <td>0.0196</td>
+      <td>0.9975</td>
+      <td>0.0011</td>
+      <td>0.0001</td>
+      <td>0.0013</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>CF180-C2-0160914e97ea</td>
+      <td>0.0007</td>
+      <td>0.9999</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>CF180-C3-90eebc2ba79e</td>
+      <td>0.0001</td>
+      <td>1.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Cycle audit</h2><h3>Cycle 1</h3><pre>{
+  "brier_discovery": 0.545136111111111,
+  "interval_coverage_90": 0.0,
+  "mean_predicted_discovery_probability": 0.26166666666666666,
+  "n_attempted": 2,
+  "n_evaluable": 1,
+  "n_failed": 1,
+  "observed_discovery_rate": 1.0,
+  "prediction_rmse": 0.9105956452137938,
+  "recovery_trajectories_identified": 1
+}</pre><p><b>Failed assays:</b></p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>cycle_id</th>
+      <th>experiment_id</th>
+      <th>sample_id</th>
+      <th>assay_status</th>
+      <th>qc_metric</th>
+      <th>qc_value</th>
+      <th>qc_threshold</th>
+      <th>qc_pass</th>
+      <th>failure_reason</th>
+      <th>usable_for_primary_endpoint</th>
+      <th>locked_evaluation_eligible</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>IMG_MITO_24H</td>
+      <td>C1-IMG_MITO_24H-R1</td>
+      <td>fail</td>
+      <td>synthetic_assay_quality</td>
+      <td>0.42</td>
+      <td>0.7</td>
+      <td>False</td>
+      <td>prespecified synthetic technical failure</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table><h3>Cycle 2</h3><pre>{
+  "brier_discovery": 0.0211773888888889,
+  "interval_coverage_90": 1.0,
+  "mean_predicted_discovery_probability": 0.8551666666666666,
+  "n_attempted": 2,
+  "n_evaluable": 2,
+  "n_failed": 0,
+  "observed_discovery_rate": 1.0,
+  "prediction_rmse": 0.13136865942342207,
+  "recovery_trajectories_identified": 2
+}</pre><p>No failed assays.</p><h3>Cycle 3</h3><pre>{
+  "brier_discovery": 0.007304944444444444,
+  "interval_coverage_90": 1.0,
+  "mean_predicted_discovery_probability": 0.5128333333333334,
+  "n_attempted": 2,
+  "n_evaluable": 2,
+  "n_failed": 0,
+  "observed_discovery_rate": 0.5,
+  "prediction_rmse": 0.14225926672579706,
+  "recovery_trajectories_identified": 1
+}</pre><p>No failed assays.</p>
+<h2>Governance artifacts</h2><p>Each cycle contains a model freeze manifest, a SHA-256 locked preregistered prediction export, LIMS/ELN experiment contract, QC ingestion, failed-assay ledger, locked prediction-vs-outcome evaluation, and posterior update.</p>
+</body></html>

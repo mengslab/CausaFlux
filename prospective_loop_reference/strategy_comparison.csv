@@ -1,0 +1,5 @@
+metric,causaflux,non_ai_baseline,absolute_improvement,prespecified_margin,criterion_pass
+outcome_discovery,4.0,3.0,1.0,0.0,True
+uncertainty_reduction_nats,1.3761546356441936,1.3762243688513283,-6.973320713465903e-05,0.01,False
+experiment_efficiency,0.5232527131726972,0.44538005464444275,0.07787265852825442,0.0,True
+recovery_trajectory_identification,4.0,3.0,1.0,0.0,True

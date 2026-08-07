@@ -1,0 +1,21 @@
+{
+  "candidate_catalog_sha256": "1fa6f5c016a929b5a02aa70bf7a09a69895dfd71a181664d7a1d90d4cc4c8bb6",
+  "configuration_sha256": "ad2ca8a2fc494c502042626ab12ab6c13aeaabc508046a4838c0400f856061bd",
+  "created_at_utc": "2026-08-07T18:02:09+00:00",
+  "cycle": 3,
+  "framework": "CausaFlux",
+  "immutable_after_prediction_export": true,
+  "model_class": "Bayesian mechanism posterior + CausaFlux experiment utility engine",
+  "model_freeze_id": "CF180-C3-90eebc2ba79e",
+  "model_state": {
+    "H1_PROTEOSTASIS_UPSTREAM": 0.9999387473904204,
+    "H2_MITOCHONDRIAL_PARALLEL": 1.3609379169329878e-05,
+    "H3_ANTIGEN_EXCLUSION": 5.847893118921959e-08,
+    "H4_ENHANCER_COMMITMENT": 4.758475147893964e-05
+  },
+  "model_state_sha256": "53d31c0b41357521722b302500cc86e796e741ea744eba1ed5ac7d6f979e9cd1",
+  "parent_model_freeze_id": "CF180-C2-0160914e97ea",
+  "source_tree_sha256": "5f7e14c437a99004b4cc2ffbd0020635d4bcae2091ee17d7d36298d1620f7816",
+  "training_or_evidence_boundary": "Synthetic software-validation fixture; no real prospective biological claim.",
+  "version": "1.8.0"
+}

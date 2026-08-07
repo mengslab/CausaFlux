@@ -1,0 +1,88 @@
+{
+  "donor_cohort_latent_context": true,
+  "external_contract": "NPZ with explicit per-modality tensors, masks, donors, cohorts, histories, and outcomes",
+  "fusion": [
+    "product_of_experts",
+    "mixture_of_experts"
+  ],
+  "late_omics_modalities": [
+    "rna",
+    "phosphoprotein",
+    "metabolome",
+    "lipidome"
+  ],
+  "modalities": {
+    "imaging": {
+      "features": [
+        "mitochondrial_fragmentation",
+        "calcium_burst",
+        "er_expansion",
+        "nuclear_condensation",
+        "organelle_contact",
+        "lysosomal_burden",
+        "cell_motility",
+        "morphologic_stress_index"
+      ],
+      "n_features": 8
+    },
+    "lipidome": {
+      "features": [
+        "TG",
+        "DG",
+        "ceramide",
+        "PC",
+        "PE",
+        "cholesteryl_ester"
+      ],
+      "n_features": 6
+    },
+    "metabolome": {
+      "features": [
+        "ATP",
+        "NADH",
+        "lactate",
+        "glutathione",
+        "succinate",
+        "acetyl_CoA"
+      ],
+      "n_features": 6
+    },
+    "phosphoprotein": {
+      "features": [
+        "pIRE1a",
+        "pPERK",
+        "pEIF2a",
+        "pJNK",
+        "pAKT",
+        "pAMPK",
+        "pSTAT3",
+        "pSRC3"
+      ],
+      "n_features": 8
+    },
+    "reporter": {
+      "features": [
+        "XBP1_reporter",
+        "ATF4_reporter",
+        "ATF6_reporter"
+      ],
+      "n_features": 3
+    },
+    "rna": {
+      "features": [
+        "XBP1",
+        "ATF4",
+        "ATF6",
+        "HSPA5",
+        "DDIT3",
+        "NQO1",
+        "IL6",
+        "PPARGC1A",
+        "BCL2",
+        "CASP3"
+      ],
+      "n_features": 10
+    }
+  },
+  "modality_dropout_training": 0.25
+}

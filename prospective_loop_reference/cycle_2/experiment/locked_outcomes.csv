@@ -1,0 +1,3 @@
+cycle_id,experiment_id,sample_id,outcome_name,observed_value,standard_error,unit,endpoint_role,blinded,measurement_timestamp_utc
+2,DRUG_IRE1I_TIMECOURSE,C2-DRUG_IRE1I_TIMECOURSE-R1,observed_standardized_readout,-0.9198302026449872,0.3,standardized,primary,True,2026-08-07T18:02:09+00:00
+2,PROTEOMICS_XBP1_TARGETS,C2-PROTEOMICS_XBP1_TARGETS-R1,observed_standardized_readout,-0.8438817073071538,0.28,standardized,primary,True,2026-08-07T18:02:09+00:00

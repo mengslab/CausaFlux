@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "blinded": {
+      "type": "boolean"
+    },
+    "cycle_id": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "endpoint_role": {
+      "enum": [
+        "primary",
+        "secondary"
+      ],
+      "type": "string"
+    },
+    "experiment_id": {
+      "type": "string"
+    },
+    "measurement_timestamp_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observed_value": {
+      "type": "number"
+    },
+    "outcome_name": {
+      "type": "string"
+    },
+    "sample_id": {
+      "type": "string"
+    },
+    "standard_error": {
+      "exclusiveMinimum": 0,
+      "type": "number"
+    },
+    "unit": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "cycle_id",
+    "experiment_id",
+    "sample_id",
+    "outcome_name",
+    "observed_value",
+    "standard_error",
+    "endpoint_role"
+  ],
+  "title": "CausaFlux locked outcome ingestion contract",
+  "type": "object"
+}

@@ -1,0 +1,7 @@
+strategy,cycle,experiment_id,status,observed_value,cost,posterior_entropy_nats
+prespecified_non_ai_fixed_order,1,DRUG_IRE1I_TIMECOURSE,evaluable,-0.9198302026449872,0.42,0.6765001293064088
+prespecified_non_ai_fixed_order,1,DRUG_MITOI_TIMECOURSE,evaluable,0.043523491479829035,0.44,0.4821210633669423
+prespecified_non_ai_fixed_order,2,CRISPR_B2M_TAP1_RESCUE,evaluable,0.5564960640388176,0.7,0.2968183337265769
+prespecified_non_ai_fixed_order,2,IMG_ER_RECOVERY_18H,evaluable,-1.3190956452137939,0.25,0.0018421907314988195
+prespecified_non_ai_fixed_order,3,CRISPR_EP300_24H,evaluable,0.16065817441818625,0.66,2.0315270735043573e-05
+prespecified_non_ai_fixed_order,3,CRISPR_XBP1_24H,evaluable,-1.0931812910867185,0.62,2.2354932181445853e-06

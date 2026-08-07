@@ -1,0 +1,18 @@
+{
+  "adaptive_stopping_rule": "After at least 3 cycles, stop when posterior max >= 0.920, all remaining EIG < 0.015, budget exhausted, or max_cycles reached.",
+  "baseline_strategy": "prespecified_non_ai_fixed_order",
+  "created_at_utc": "2026-08-07T18:02:09+00:00",
+  "cycle": 2,
+  "failed_assay_rule": "Failed/primary-endpoint-unusable assays are excluded from posterior update and locked prediction scoring but remain in attempted-cost accounting. Replacement, if any, uses the next preregistered eligible ranking without inspecting failed outcomes.",
+  "locked_before_outcome_access": true,
+  "model_freeze_id": "CF180-C2-0160914e97ea",
+  "prediction_export_sha256": "ca0baecdc5b7ea02ad1446fa685e8ede0ca7d013ee8143ef8b5fa469dca44bf8",
+  "preregistration_id": "PREREG-C2-ca0baecdc5b7",
+  "primary_endpoint": "observed_standardized_readout",
+  "primary_metrics": [
+    "prediction_rmse",
+    "90pct_interval_coverage",
+    "brier_discovery"
+  ],
+  "selected_experiments_sha256": "eb3afb66871266986cc37d0cc68f57aeae3d7cabec714bf112a917f403e335cf"
+}

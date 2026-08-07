@@ -1,0 +1,29 @@
+{
+  "dpi": 600,
+  "figure_id": "cross_modal_forecasting",
+  "formats": {
+    "pdf": "cross_modal_forecasting.pdf",
+    "png": "cross_modal_forecasting.png",
+    "svg": "cross_modal_forecasting.svg",
+    "tiff": "cross_modal_forecasting.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "benchmark": "synthetic_multimodal_dynamic"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "ecac64699b2c4091d5c1807a7d3b30ac2a1d1f2b806d05ce0adabb5011815d49",
+    "png": "5a1ebbb1333cf32f9f1f20dda8fd25a888722db4e1fa2e64f57bcaaf876f2697",
+    "svg": "cd2d5eecab3440304fa04fa81e19a0010e13ea36a4079e0794ac198a81e8d489",
+    "tiff": "ef8103e5f7aa3240d2009ce2b846a7c0c36dc278063168fdcb13fff90db771fe"
+  },
+  "source_data": [
+    "cross_modal_forecasting__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "d358408758e5d88718cb09492d4d2d352245280520052005200d2215146b39ce",
+  "width_mm": 183.0
+}

@@ -1,0 +1,39 @@
+{
+  "baseline_best_auc": 0.9658119658119657,
+  "baseline_best_brier": 0.07091117490269953,
+  "baseline_best_log_loss": 0.26800738535496654,
+  "foundation_pretraining_authorization": "BLOCKED_REAL_MULTIMODAL_LONGITUDINAL_GATE_REQUIRED",
+  "framework": "CausaFlux",
+  "gate_details": [
+    {
+      "auc_delta_vs_best_baseline": 0.017094017094017144,
+      "brier_improvement": 0.042174130578795946,
+      "log_loss_improvement": 0.1338827023208426,
+      "model": "CausaFluxPoEDynamic",
+      "passed": true
+    },
+    {
+      "auc_delta_vs_best_baseline": 0.012820512820512886,
+      "brier_improvement": 0.01556319348591613,
+      "log_loss_improvement": -0.11624494553081816,
+      "model": "EarlyImagingReporterGRU",
+      "passed": false
+    },
+    {
+      "auc_delta_vs_best_baseline": 0.02564102564102566,
+      "brier_improvement": 0.04031071430762077,
+      "log_loss_improvement": 0.13894650568386394,
+      "model": "CausaFluxMoEDynamic",
+      "passed": true
+    }
+  ],
+  "interpretation": "At least one dynamic early-imaging/reporter model beats baseline covariates, latest RNA, and static multimodal fusion on the synthetic software fixture.",
+  "poe_imaging_reporter_ablation_log_loss_delta": 0.058920460439698064,
+  "qualifying_models": [
+    "CausaFluxMoEDynamic",
+    "CausaFluxPoEDynamic"
+  ],
+  "software_exit_gate_passed": true,
+  "synthetic_software_fixture": true,
+  "version": "1.7.0"
+}

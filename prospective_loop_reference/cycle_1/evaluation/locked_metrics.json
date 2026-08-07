@@ -1,0 +1,11 @@
+{
+  "brier_discovery": 0.545136111111111,
+  "interval_coverage_90": 0.0,
+  "mean_predicted_discovery_probability": 0.26166666666666666,
+  "n_attempted": 2,
+  "n_evaluable": 1,
+  "n_failed": 1,
+  "observed_discovery_rate": 1.0,
+  "prediction_rmse": 0.9105956452137938,
+  "recovery_trajectories_identified": 1
+}

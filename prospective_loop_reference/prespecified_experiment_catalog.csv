@@ -1,0 +1,13 @@
+experiment_id,experiment_name,experiment_type,mechanism,target,assay_type,sample_time_hours,estimated_cost,measurement_noise,technical_failure_probability,baseline_order,confirmation_group,assay_family,recovery_informative,expected_readout__H1_PROTEOSTASIS_UPSTREAM,expected_readout__H2_MITOCHONDRIAL_PARALLEL,expected_readout__H3_ANTIGEN_EXCLUSION,expected_readout__H4_ENHANCER_COMMITMENT
+DRUG_IRE1I_TIMECOURSE,IRE1 inhibitor dose-time course,drug,IRE1-XBP1 proteostasis,IRE1A,pharmacologic,72,0.42,0.3,0.08,1,A,functional,True,-1.05,-0.28,-0.1,-0.36
+CRISPR_XBP1_24H,CRISPRi XBP1 at 24 h,crispr,IRE1-XBP1 proteostasis,XBP1,genetic,72,0.62,0.32,0.1,5,A,genetic,True,-1.18,-0.32,-0.12,-0.43
+IMG_ER_RECOVERY_18H,Live ER recovery imaging at 18 h,imaging,IRE1-XBP1 proteostasis,ER morphology,imaging,18,0.25,0.27,0.06,7,A,imaging,True,-0.9,-0.25,-0.08,-0.28
+PROTEOMICS_XBP1_TARGETS,Orthogonal XBP1-target proteomics,sampling_time,IRE1-XBP1 proteostasis,XBP1 target proteins,proteomics,48,0.46,0.28,0.07,10,A,proteomics,True,-0.98,-0.24,-0.09,-0.31
+DRUG_MITOI_TIMECOURSE,Mitochondrial reserve inhibitor time course,drug,Mitochondrial reserve,OXPHOS,pharmacologic,72,0.44,0.31,0.09,2,B,functional,True,-0.25,-1.06,-0.09,-0.23
+CRISPR_NDUFS1_24H,CRISPRi NDUFS1 at 24 h,crispr,Mitochondrial reserve,NDUFS1,genetic,72,0.64,0.34,0.11,6,B,genetic,True,-0.24,-1.15,-0.08,-0.27
+IMG_MITO_24H,Mitochondrial membrane-potential imaging,imaging,Mitochondrial reserve,mitochondria,imaging,24,0.24,0.29,0.18,8,B,imaging,True,-0.18,-0.91,-0.06,-0.18
+CRISPR_B2M_TAP1_RESCUE,CRISPRa B2M/TAP1 antigen-presentation rescue,crispr,Antigen presentation,B2M;TAP1,genetic,96,0.7,0.36,0.14,3,C,genetic,False,-0.08,-0.07,-1.16,-0.15
+FLOW_MHC1_48H,Flow-cytometric MHC-I recovery,sampling_time,Antigen presentation,MHC-I,flow,48,0.31,0.28,0.08,9,C,flow,False,-0.08,-0.06,-0.96,-0.12
+CRISPR_EP300_24H,CRISPRi EP300 enhancer-plasticity perturbation,crispr,Enhancer plasticity,EP300,genetic,72,0.66,0.35,0.12,4,D,genetic,False,-0.29,-0.18,-0.09,-1.08
+ATAC_COMMITMENT_36H,ATAC-seq commitment-window sampling,sampling_time,Enhancer plasticity,enhancer accessibility,atac,36,0.48,0.3,0.09,11,D,chromatin,False,-0.23,-0.15,-0.08,-0.94
+UNTARGETED_LATE_OMICS,Untargeted late-state multi-omics panel,sampling_time,Broad characterization,multi-omic panel,multiomics,96,0.78,0.44,0.15,12,E,multiomics,False,-0.55,-0.52,-0.49,-0.5

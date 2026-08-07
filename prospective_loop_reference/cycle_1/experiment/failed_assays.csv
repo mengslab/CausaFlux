@@ -1,0 +1,2 @@
+cycle_id,experiment_id,sample_id,assay_status,qc_metric,qc_value,qc_threshold,qc_pass,failure_reason,usable_for_primary_endpoint,locked_evaluation_eligible
+1,IMG_MITO_24H,C1-IMG_MITO_24H-R1,fail,synthetic_assay_quality,0.42,0.7,False,prespecified synthetic technical failure,False,False

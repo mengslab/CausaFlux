@@ -1,0 +1,8 @@
+{
+  "cumulative_cost": 1.37,
+  "cycle": 2,
+  "posterior_max": 0.9999387473904204,
+  "reason": "minimum_required_cycles_not_reached",
+  "remaining_max_eig": 0.0002768026623488542,
+  "stop": false
+}

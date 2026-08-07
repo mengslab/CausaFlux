@@ -1,0 +1,29 @@
+{
+  "dpi": 600,
+  "figure_id": "destructive_state_prediction",
+  "formats": {
+    "pdf": "destructive_state_prediction.pdf",
+    "png": "destructive_state_prediction.png",
+    "svg": "destructive_state_prediction.svg",
+    "tiff": "destructive_state_prediction.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "benchmark": "synthetic_multimodal_dynamic"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "7269894bf978190ccacbff485612c657630759d669ed2c4c2a770abbf4219dc8",
+    "png": "8880bb0ad3f85e8ba428aa07d8161d61a2f7914336c51476cf3ba14aad4b29f3",
+    "svg": "25377ee19ef2c2540a43b0f63fbdb5e7fcaf777d6fafad82d76a2e676a097165",
+    "tiff": "663267a3feb44f256577af96fc64aaecbe0afb8ed2d4fcb37843b6bfec379aac"
+  },
+  "source_data": [
+    "destructive_state_prediction__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "008c0e000e88068006804b004bc048d04af00ac848f9493048f9484505ab143a",
+  "width_mm": 183.0
+}

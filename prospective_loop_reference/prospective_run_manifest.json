@@ -1,0 +1,21 @@
+{
+  "completed_cycles": 3,
+  "contracts_sha256": {
+    "ELN_TEMPLATE.md": "a859657fb2dc0e0bb4bb1902b356899ed34af6410a13c0cde2153ddef014ccd7",
+    "experiment_contract.schema.json": "dffec145074035b125d3c120ce77cecf35010fc82e70d285767d2ca2cb4841e5",
+    "experiment_contract_template.csv": "b11e97e564f55ea2065e8ad200cf1a5a7669950f4923979a83d2d752f46b1dcf",
+    "experimental_qc.schema.json": "a466ffe0483b5ba2e8c399cd3a1e93cbb14b4fc35a3e04576099c6a92a4affba",
+    "experimental_qc_template.csv": "a988af03b6142353b2c3bd3ad92aa95b35fabe673f08dd892440ca7477a84ba4",
+    "outcome_contract.schema.json": "db1d3860bb50c2ec0cbe933776a8192de301f7424b265cb781354dd2b4bf2094",
+    "outcome_template.csv": "16ad5de64d4f5207f7070ada02a80fec739dd07f18f11832b3bb23bd1cd54d0e"
+  },
+  "created_at_utc": "2026-08-07T18:02:09+00:00",
+  "experiment_catalog_sha256": "1fa6f5c016a929b5a02aa70bf7a09a69895dfd71a181664d7a1d90d4cc4c8bb6",
+  "framework": "CausaFlux",
+  "hypothesis_priors_sha256": "7de3b6c5377b0a4db6ab3093de411d88303c19d29b50e107e6637de1895b8f84",
+  "non_ai_strategy_sha256": "cae34f059b74433997c48627342a6e01fdfe3becfe47cd24bba66277fb7a3457",
+  "release": "Prospective Experimental Loop",
+  "software_gate": "PASS",
+  "synthetic_fixture": true,
+  "version": "1.8.0"
+}

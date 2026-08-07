@@ -1,0 +1,1 @@
+cycle_id,experiment_id,sample_id,assay_status,qc_metric,qc_value,qc_threshold,qc_pass,failure_reason,usable_for_primary_endpoint,locked_evaluation_eligible

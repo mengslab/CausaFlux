@@ -1,0 +1,29 @@
+{
+  "dpi": 600,
+  "figure_id": "mnar_sensitivity",
+  "formats": {
+    "pdf": "mnar_sensitivity.pdf",
+    "png": "mnar_sensitivity.png",
+    "svg": "mnar_sensitivity.svg",
+    "tiff": "mnar_sensitivity.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "benchmark": "synthetic_multimodal_dynamic"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "573bdcee69286718b2bdfddb006d985908d1e45eab01d497b78633b0d73c02b9",
+    "png": "204b640560393af852551b3a345df8dda7a90364fee0ba725ad32e9ef0ec2d5a",
+    "svg": "82be38b4f2bbd27e09ddc707cf2d9a6fe66c9e7e9af49c2bbe0ec36775d38c23",
+    "tiff": "b628d570888f85e7340d37bd8cede95006a0875086e7d5c64995a6ff978c8551"
+  },
+  "source_data": [
+    "mnar_sensitivity__panel_a.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.7.0",
+  "visual_hash": "d35a40104018402c4024c064c046c0c2c0834181410143001e42239d623300c6",
+  "width_mm": 183.0
+}

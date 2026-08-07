@@ -1,0 +1,18 @@
+{
+  "batch_size": 32,
+  "bootstrap_replicates": 100,
+  "context_steps": 4,
+  "device": "cpu",
+  "epochs": 30,
+  "hidden_dim": 48,
+  "latent_dim": 24,
+  "learning_rate": 0.002,
+  "modality_dropout": 0.25,
+  "n_cohorts": 3,
+  "n_donors": 15,
+  "patience": 7,
+  "replicates_per_history": 5,
+  "seed": 140,
+  "steps": 7,
+  "weight_decay": 1e-05
+}

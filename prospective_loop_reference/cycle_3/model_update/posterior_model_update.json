@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-08-07T18:02:09+00:00",
+  "cycle": 3,
+  "entropy_reduction_nats": 0.0006163566317299485,
+  "n_evaluable_outcomes": 2,
+  "parent_model_freeze_id": "CF180-C3-90eebc2ba79e",
+  "posterior": {
+    "H1_PROTEOSTASIS_UPSTREAM": 0.9999945155131376,
+    "H2_MITOCHONDRIAL_PARALLEL": 5.082978370364574e-09,
+    "H3_ANTIGEN_EXCLUSION": 6.849452711880207e-10,
+    "H4_ENHANCER_COMMITMENT": 5.478718938885297e-06
+  },
+  "posterior_entropy_nats": 7.196870035280753e-05,
+  "prior": {
+    "H1_PROTEOSTASIS_UPSTREAM": 0.9999387473904204,
+    "H2_MITOCHONDRIAL_PARALLEL": 1.3609379169329878e-05,
+    "H3_ANTIGEN_EXCLUSION": 5.847893118921959e-08,
+    "H4_ENHANCER_COMMITMENT": 4.758475147893964e-05
+  },
+  "prior_entropy_nats": 0.000688325332082756,
+  "update_type": "Bayesian posterior model update; neural/foundation weights remain frozen during the cycle"
+}

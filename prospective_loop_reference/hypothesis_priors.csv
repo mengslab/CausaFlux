@@ -1,0 +1,5 @@
+hypothesis_id,hypothesis,mechanism,prior_probability
+H1_PROTEOSTASIS_UPSTREAM,IRE1-XBP1 proteostasis is upstream of persistent tolerance,IRE1-XBP1 proteostasis,0.3
+H2_MITOCHONDRIAL_PARALLEL,Mitochondrial reserve is a parallel driver of persistent tolerance,Mitochondrial reserve,0.25
+H3_ANTIGEN_EXCLUSION,Antigen-presentation failure drives immune-protected resistance,Antigen presentation,0.25
+H4_ENHANCER_COMMITMENT,Enhancer plasticity controls commitment to stable resistance,Enhancer plasticity,0.2
