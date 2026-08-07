@@ -1,0 +1,25 @@
+benchmark_id,source_id,accession,access,license_summary,license_url
+htan_spatial_cancer,htan_oms_breast,HTAN center hta9; file Synapse IDs resolved from portal query,mixed open and controlled,NIH/HTAN data-use terms; file-level access requirements,https://docs.humantumoratlas.org/data_access/portal/
+htan_spatial_cancer,htan_breast_precancer,HTAN center hta6; file Synapse IDs resolved from portal query,mixed open and controlled,NIH/HTAN data-use terms; file-level access requirements,https://docs.humantumoratlas.org/data_access/portal/
+htan_spatial_cancer,htan_cellular_geography_resistance,HTAN center hta5; file Synapse IDs resolved from portal query,mixed open and controlled,NIH/HTAN data-use terms,https://docs.humantumoratlas.org/data_access/portal/
+gdc_tcga_cptac_brca,tcga_brca,TCGA-BRCA,open harmonized derived files; controlled raw/germline files,NCI GDC data-use and dbGaP rules by file access class,https://gdc.cancer.gov/access-data
+gdc_tcga_cptac_brca,cptac2_breast_genomics,CPTAC-2,mixed open and controlled,NCI GDC/dbGaP terms,https://gdc.cancer.gov/access-data
+gdc_tcga_cptac_brca,cptac_brca_proteome,PDC000120,open processed proteomic data; file-specific terms,NCI PDC data-use terms,https://pdc.cancer.gov/pdc-docs/
+gdc_tcga_cptac_brca,calgb40601_proteogenomics,PDC000582,open/controlled by file,NCI PDC data-use terms,https://pdc.cancer.gov/pdc-docs/
+depmap_prism_lincs,depmap_26q1,DepMap Public 26Q1,public bulk download; acceptance of file-level terms required,Broad-generated DepMap release files generally CC BY 4.0; verify each file,https://forum.depmap.org/t/license-for-data-found-in-the-depmap-portal/130
+depmap_prism_lincs,prism_repurposing,PRISM Repurposing Secondary Screen,public bulk download with file-level terms,Verify file-specific terms in DepMap download panel,https://depmap.org/portal/download/all/
+depmap_prism_lincs,lincs_phase1,GSE92742,open,NCBI GEO terms and submitter-provided usage; citation required,https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html
+depmap_prism_lincs,lincs_phase2,GSE70138,open,NCBI GEO terms and submitter-provided usage,https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html
+depmap_prism_lincs,lincs_genetic_perturbations,GSE106127,open,NCBI GEO terms,https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html
+sea_ad_neural_glial,sea_ad_processed_single_cell,AWS s3://sea-ad-single-cell-profiling/; Brain Knowledge project UMSVXTDIAZTAFKGE43T,open processed data,Allen Institute Terms of Use and Citation Policy,https://alleninstitute.org/legal/terms-use/
+sea_ad_neural_glial,sea_ad_spatial,AWS s3://sea-ad-spatial-transcriptomics/,open,Allen Institute Terms of Use and Citation Policy,https://alleninstitute.org/legal/terms-use/
+sea_ad_neural_glial,sea_ad_neuropathology,AWS s3://sea-ad-quantitative-neuropathology/,open,Allen Institute Terms of Use,https://alleninstitute.org/legal/terms-use/
+sea_ad_neural_glial,sea_ad_multiregion,SEA-AD processed 11-region release (June 2026),open processed,Allen Institute Terms of Use,https://alleninstitute.org/legal/terms-use/
+amp_ad_molecular,ampad_rnaseq_harmonization,syn21241740,mixed open/controlled; Synapse account and conditions may be required,Study-specific Synapse access requirements and data-use terms,https://adknowledgeportal.synapse.org/DataAccess/
+amp_ad_molecular,rosmap,syn3219045,controlled for many individual-level files,ROSMAP/AD Knowledge Portal data-use terms,https://adknowledgeportal.synapse.org/DataAccess/
+amp_ad_molecular,msbb,syn3159438,mixed/controlled,MSBB/AD Knowledge Portal terms,https://adknowledgeportal.synapse.org/DataAccess/
+amp_ad_molecular,mayo_rnaseq,syn5550404,mixed/controlled,Mayo/AD Knowledge Portal terms,https://adknowledgeportal.synapse.org/DataAccess/
+amp_ad_molecular,ampad_diverse_cohorts,syn51732482,mixed/controlled,Study-specific terms,https://adknowledgeportal.synapse.org/DataAccess/
+dandi_neurophysiology,dandi_000048,DANDI:000048,open,Resolve exact CC0 or CC-BY license from immutable Dandiset metadata,https://docs.dandiarchive.org/introduction/
+dandi_neurophysiology,dandi_000039,DANDI:000039,open,Resolve from immutable Dandiset metadata,https://docs.dandiarchive.org/introduction/
+dandi_neurophysiology,dandi_000568,DANDI:000568,open,Resolve from immutable Dandiset metadata,https://docs.dandiarchive.org/introduction/

@@ -1,0 +1,101 @@
+<!doctype html><html><head><meta charset="utf-8"><title>AMP-AD molecular validation benchmark</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:32px auto;color:#202124;line-height:1.45;padding:0 20px}h1,h2{letter-spacing:-.02em}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border-bottom:1px solid #ddd;padding:7px;text-align:left;vertical-align:top}th{background:#f5f5f5}.tag{display:inline-block;background:#eef3f8;padding:3px 7px;border-radius:10px;margin-right:4px}.warning{border-left:4px solid #b75d00;padding:10px 14px;background:#fff7ed}.ok{border-left:4px solid #287a4a;padding:10px 14px;background:#effaf3}code{background:#f5f5f5;padding:2px 4px}a{color:#24557a}</style></head><body><h1>AMP-AD molecular validation benchmark</h1><p class="tag">neurobiology-bulk-multiomics</p><p>Do candidate neural–glial and molecular programs replicate across independent human Alzheimer cohorts?</p><div class="warning"><strong>Execution status:</strong> accession and metadata verified. Large or controlled matrices are not redistributed. Run the download plan after accepting source-specific terms.</div><h2>Accession manifest</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>role</th>
+      <th>repository</th>
+      <th>accession</th>
+      <th>version_policy</th>
+      <th>access</th>
+      <th>modalities</th>
+      <th>citation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ampad_rnaseq_harmonization</td>
+      <td>harmonized_discovery</td>
+      <td>AD Knowledge Portal/Synapse</td>
+      <td>syn21241740</td>
+      <td>Synapse entity version locked at download</td>
+      <td>mixed open/controlled; Synapse account and conditions may be required</td>
+      <td>harmonized bulk RNA-seq; clinical/pathology metadata</td>
+      <td>AMP-AD RNAseq Harmonization Study, Synapse syn21241740</td>
+    </tr>
+    <tr>
+      <td>rosmap</td>
+      <td>discovery_cohort</td>
+      <td>AD Knowledge Portal/Synapse</td>
+      <td>syn3219045</td>
+      <td>Synapse version lock</td>
+      <td>controlled for many individual-level files</td>
+      <td>longitudinal clinical; neuropathology; RNA-seq; proteomics; genomics</td>
+      <td>ROSMAP Study, Synapse syn3219045</td>
+    </tr>
+    <tr>
+      <td>msbb</td>
+      <td>independent_validation</td>
+      <td>AD Knowledge Portal/Synapse</td>
+      <td>syn3159438</td>
+      <td>Synapse version lock</td>
+      <td>mixed/controlled</td>
+      <td>multi-region RNA-seq; proteomics; epigenomics; pathology</td>
+      <td>Mount Sinai Brain Bank Study, Synapse syn3159438</td>
+    </tr>
+    <tr>
+      <td>mayo_rnaseq</td>
+      <td>independent_validation</td>
+      <td>AD Knowledge Portal/Synapse</td>
+      <td>syn5550404</td>
+      <td>Synapse version lock</td>
+      <td>mixed/controlled</td>
+      <td>temporal cortex RNA-seq; cerebellum RNA-seq; proteomics/metabolomics where available</td>
+      <td>Mayo RNAseq Study, Synapse syn5550404</td>
+    </tr>
+    <tr>
+      <td>ampad_diverse_cohorts</td>
+      <td>generalization_validation</td>
+      <td>AD Knowledge Portal/Synapse</td>
+      <td>syn51732482</td>
+      <td>Synapse version lock</td>
+      <td>mixed/controlled</td>
+      <td>harmonized human postmortem multiomics</td>
+      <td>AMP-AD Diverse Cohorts Study, Synapse syn51732482</td>
+    </tr>
+  </tbody>
+</table><h2>Independent validation</h2><p>Discovery: ROSMAP or harmonized discovery partition</p><p>Validation: MSBB, MayoRNAseq, AMP-AD Diverse Cohorts</p><p>Split unit: participant/donor</p><h2>Download plan</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>execution_mode</th>
+      <th>command_or_action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ampad_rnaseq_harmonization</td>
+      <td>account-or-controlled</td>
+      <td>synapse get -r syn21241740 --downloadLocation /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/ampad_rnaseq_harmonization</td>
+    </tr>
+    <tr>
+      <td>rosmap</td>
+      <td>account-or-controlled</td>
+      <td>synapse get -r syn3219045 --downloadLocation /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/rosmap</td>
+    </tr>
+    <tr>
+      <td>msbb</td>
+      <td>account-or-controlled</td>
+      <td>synapse get -r syn3159438 --downloadLocation /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/msbb</td>
+    </tr>
+    <tr>
+      <td>mayo_rnaseq</td>
+      <td>account-or-controlled</td>
+      <td>synapse get -r syn5550404 --downloadLocation /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/mayo_rnaseq</td>
+    </tr>
+    <tr>
+      <td>ampad_diverse_cohorts</td>
+      <td>account-or-controlled</td>
+      <td>synapse get -r syn51732482 --downloadLocation /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/ampad_diverse_cohorts</td>
+    </tr>
+  </tbody>
+</table><h2>Research-use limits</h2><p>Outputs are retrospective research benchmarks. They are not diagnostic, prognostic, or treatment guidance.</p><p><a href="index.html">Back to registry</a></p></body></html>

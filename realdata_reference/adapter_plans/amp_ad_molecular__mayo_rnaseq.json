@@ -1,0 +1,15 @@
+{
+  "accession": "syn5550404",
+  "adapter": "synapse",
+  "command_or_action": "synapse get --downloadFile false syn5550404 --downloadLocation /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/mayo_rnaseq",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/mayo_rnaseq",
+  "execution_mode": "account-or-controlled",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "lock_entity_version": true,
+    "synapse_id": "syn5550404"
+  },
+  "requires_user_authorization": true,
+  "source_id": "mayo_rnaseq"
+}

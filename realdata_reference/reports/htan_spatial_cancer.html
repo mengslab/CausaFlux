@@ -1,0 +1,71 @@
+<!doctype html><html><head><meta charset="utf-8"><title>HTAN spatial breast-cancer benchmark</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:32px auto;color:#202124;line-height:1.45;padding:0 20px}h1,h2{letter-spacing:-.02em}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border-bottom:1px solid #ddd;padding:7px;text-align:left;vertical-align:top}th{background:#f5f5f5}.tag{display:inline-block;background:#eef3f8;padding:3px 7px;border-radius:10px;margin-right:4px}.warning{border-left:4px solid #b75d00;padding:10px 14px;background:#fff7ed}.ok{border-left:4px solid #287a4a;padding:10px 14px;background:#effaf3}code{background:#f5f5f5;padding:2px 4px}a{color:#24557a}</style></head><body><h1>HTAN spatial breast-cancer benchmark</h1><p class="tag">cancer-spatial</p><p>Can CausaFlux recover reproducible tumor–immune–stromal niches and communication circuits associated with treatment state?</p><div class="warning"><strong>Execution status:</strong> accession and metadata verified. Large or controlled matrices are not redistributed. Run the download plan after accepting source-specific terms.</div><h2>Accession manifest</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>role</th>
+      <th>repository</th>
+      <th>accession</th>
+      <th>version_policy</th>
+      <th>access</th>
+      <th>modalities</th>
+      <th>citation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>htan_oms_breast</td>
+      <td>discovery</td>
+      <td>HTAN/Synapse</td>
+      <td>HTAN center hta9; file Synapse IDs resolved from portal query</td>
+      <td>Phase 1/portal-resolved immutable Synapse versions</td>
+      <td>mixed open and controlled</td>
+      <td>spatial imaging; single-cell RNA; DNA/RNA sequencing; clinical metadata</td>
+      <td>Human Tumor Atlas Network; HTAN OMS Atlas Center</td>
+    </tr>
+    <tr>
+      <td>htan_breast_precancer</td>
+      <td>independent_validation</td>
+      <td>HTAN/Synapse</td>
+      <td>HTAN center hta6; file Synapse IDs resolved from portal query</td>
+      <td>Phase 1/portal-resolved immutable Synapse versions</td>
+      <td>mixed open and controlled</td>
+      <td>spatial imaging; single-cell; mutations; copy number; methylation; gene expression</td>
+      <td>Human Tumor Atlas Network; Breast Pre-Cancer Atlas Center</td>
+    </tr>
+    <tr>
+      <td>htan_cellular_geography_resistance</td>
+      <td>secondary_validation</td>
+      <td>HTAN/Synapse</td>
+      <td>HTAN center hta5; file Synapse IDs resolved from portal query</td>
+      <td>portal-resolved</td>
+      <td>mixed open and controlled</td>
+      <td>spatial; single-cell; treatment response</td>
+      <td>Human Tumor Atlas Network</td>
+    </tr>
+  </tbody>
+</table><h2>Independent validation</h2><p>Discovery: OMS metastatic breast atlas</p><p>Validation: Breast Pre-Cancer Atlas, Cellular Geography of Therapeutic Resistance</p><p>Split unit: patient/case</p><h2>Download plan</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>execution_mode</th>
+      <th>command_or_action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>htan_oms_breast</td>
+      <td>portal-query-account</td>
+      <td>Open HTAN portal query for htan_oms_breast; export metadata; then use synapse get on locked synIDs into /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/htan_spatial_cancer/htan_oms_breast</td>
+    </tr>
+    <tr>
+      <td>htan_breast_precancer</td>
+      <td>portal-query-account</td>
+      <td>Open HTAN portal query for htan_breast_precancer; export metadata; then use synapse get on locked synIDs into /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/htan_spatial_cancer/htan_breast_precancer</td>
+    </tr>
+    <tr>
+      <td>htan_cellular_geography_resistance</td>
+      <td>portal-query-account</td>
+      <td>Open HTAN portal query for htan_cellular_geography_resistance; export metadata; then use synapse get on locked synIDs into /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/htan_spatial_cancer/htan_cellular_geography_resistance</td>
+    </tr>
+  </tbody>
+</table><h2>Research-use limits</h2><p>Outputs are retrospective research benchmarks. They are not diagnostic, prognostic, or treatment guidance.</p><p><a href="index.html">Back to registry</a></p></body></html>

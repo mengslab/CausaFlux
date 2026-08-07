@@ -1,0 +1,26 @@
+{
+  "accession": "TCGA-BRCA",
+  "adapter": "gdc",
+  "command_or_action": "POST the recorded filters to the GDC files/cases API; write response JSON, GDC release, file manifest, MD5 values and case joins under /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/gdc_tcga_cptac_brca/tcga_brca",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/gdc_tcga_cptac_brca/tcga_brca",
+  "execution_mode": "public-and-controlled",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "filters": {
+      "data_access": "open",
+      "data_categories": [
+        "Transcriptome Profiling",
+        "Simple Nucleotide Variation",
+        "Copy Number Variation",
+        "DNA Methylation",
+        "Clinical"
+      ],
+      "project_id": "TCGA-BRCA"
+    },
+    "format": "JSON",
+    "size": 10000
+  },
+  "requires_user_authorization": true,
+  "source_id": "tcga_brca"
+}

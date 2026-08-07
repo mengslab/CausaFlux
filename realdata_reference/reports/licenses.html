@@ -1,0 +1,206 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Data licenses</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:32px auto;color:#202124;line-height:1.45;padding:0 20px}h1,h2{letter-spacing:-.02em}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border-bottom:1px solid #ddd;padding:7px;text-align:left;vertical-align:top}th{background:#f5f5f5}.tag{display:inline-block;background:#eef3f8;padding:3px 7px;border-radius:10px;margin-right:4px}.warning{border-left:4px solid #b75d00;padding:10px 14px;background:#fff7ed}.ok{border-left:4px solid #287a4a;padding:10px 14px;background:#effaf3}code{background:#f5f5f5;padding:2px 4px}a{color:#24557a}</style></head><body><h1>Data access and license matrix</h1><div class="warning">The MIT license covers CausaFlux code only. Third-party biomedical data remain governed by source-specific terms.</div><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>benchmark_id</th>
+      <th>source_id</th>
+      <th>accession</th>
+      <th>access</th>
+      <th>license_summary</th>
+      <th>license_url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>htan_spatial_cancer</td>
+      <td>htan_oms_breast</td>
+      <td>HTAN center hta9; file Synapse IDs resolved from portal query</td>
+      <td>mixed open and controlled</td>
+      <td>NIH/HTAN data-use terms; file-level access requirements</td>
+      <td>https://docs.humantumoratlas.org/data_access/portal/</td>
+    </tr>
+    <tr>
+      <td>htan_spatial_cancer</td>
+      <td>htan_breast_precancer</td>
+      <td>HTAN center hta6; file Synapse IDs resolved from portal query</td>
+      <td>mixed open and controlled</td>
+      <td>NIH/HTAN data-use terms; file-level access requirements</td>
+      <td>https://docs.humantumoratlas.org/data_access/portal/</td>
+    </tr>
+    <tr>
+      <td>htan_spatial_cancer</td>
+      <td>htan_cellular_geography_resistance</td>
+      <td>HTAN center hta5; file Synapse IDs resolved from portal query</td>
+      <td>mixed open and controlled</td>
+      <td>NIH/HTAN data-use terms</td>
+      <td>https://docs.humantumoratlas.org/data_access/portal/</td>
+    </tr>
+    <tr>
+      <td>gdc_tcga_cptac_brca</td>
+      <td>tcga_brca</td>
+      <td>TCGA-BRCA</td>
+      <td>open harmonized derived files; controlled raw/germline files</td>
+      <td>NCI GDC data-use and dbGaP rules by file access class</td>
+      <td>https://gdc.cancer.gov/access-data</td>
+    </tr>
+    <tr>
+      <td>gdc_tcga_cptac_brca</td>
+      <td>cptac2_breast_genomics</td>
+      <td>CPTAC-2</td>
+      <td>mixed open and controlled</td>
+      <td>NCI GDC/dbGaP terms</td>
+      <td>https://gdc.cancer.gov/access-data</td>
+    </tr>
+    <tr>
+      <td>gdc_tcga_cptac_brca</td>
+      <td>cptac_brca_proteome</td>
+      <td>PDC000120</td>
+      <td>open processed proteomic data; file-specific terms</td>
+      <td>NCI PDC data-use terms</td>
+      <td>https://pdc.cancer.gov/pdc-docs/</td>
+    </tr>
+    <tr>
+      <td>gdc_tcga_cptac_brca</td>
+      <td>calgb40601_proteogenomics</td>
+      <td>PDC000582</td>
+      <td>open/controlled by file</td>
+      <td>NCI PDC data-use terms</td>
+      <td>https://pdc.cancer.gov/pdc-docs/</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>depmap_26q1</td>
+      <td>DepMap Public 26Q1</td>
+      <td>public bulk download; acceptance of file-level terms required</td>
+      <td>Broad-generated DepMap release files generally CC BY 4.0; verify each file</td>
+      <td>https://forum.depmap.org/t/license-for-data-found-in-the-depmap-portal/130</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>prism_repurposing</td>
+      <td>PRISM Repurposing Secondary Screen</td>
+      <td>public bulk download with file-level terms</td>
+      <td>Verify file-specific terms in DepMap download panel</td>
+      <td>https://depmap.org/portal/download/all/</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>lincs_phase1</td>
+      <td>GSE92742</td>
+      <td>open</td>
+      <td>NCBI GEO terms and submitter-provided usage; citation required</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>lincs_phase2</td>
+      <td>GSE70138</td>
+      <td>open</td>
+      <td>NCBI GEO terms and submitter-provided usage</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>lincs_genetic_perturbations</td>
+      <td>GSE106127</td>
+      <td>open</td>
+      <td>NCBI GEO terms</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neural_glial</td>
+      <td>sea_ad_processed_single_cell</td>
+      <td>AWS s3://sea-ad-single-cell-profiling/; Brain Knowledge project UMSVXTDIAZTAFKGE43T</td>
+      <td>open processed data</td>
+      <td>Allen Institute Terms of Use and Citation Policy</td>
+      <td>https://alleninstitute.org/legal/terms-use/</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neural_glial</td>
+      <td>sea_ad_spatial</td>
+      <td>AWS s3://sea-ad-spatial-transcriptomics/</td>
+      <td>open</td>
+      <td>Allen Institute Terms of Use and Citation Policy</td>
+      <td>https://alleninstitute.org/legal/terms-use/</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neural_glial</td>
+      <td>sea_ad_neuropathology</td>
+      <td>AWS s3://sea-ad-quantitative-neuropathology/</td>
+      <td>open</td>
+      <td>Allen Institute Terms of Use</td>
+      <td>https://alleninstitute.org/legal/terms-use/</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neural_glial</td>
+      <td>sea_ad_multiregion</td>
+      <td>SEA-AD processed 11-region release (June 2026)</td>
+      <td>open processed</td>
+      <td>Allen Institute Terms of Use</td>
+      <td>https://alleninstitute.org/legal/terms-use/</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>ampad_rnaseq_harmonization</td>
+      <td>syn21241740</td>
+      <td>mixed open/controlled; Synapse account and conditions may be required</td>
+      <td>Study-specific Synapse access requirements and data-use terms</td>
+      <td>https://adknowledgeportal.synapse.org/DataAccess/</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>rosmap</td>
+      <td>syn3219045</td>
+      <td>controlled for many individual-level files</td>
+      <td>ROSMAP/AD Knowledge Portal data-use terms</td>
+      <td>https://adknowledgeportal.synapse.org/DataAccess/</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>msbb</td>
+      <td>syn3159438</td>
+      <td>mixed/controlled</td>
+      <td>MSBB/AD Knowledge Portal terms</td>
+      <td>https://adknowledgeportal.synapse.org/DataAccess/</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>mayo_rnaseq</td>
+      <td>syn5550404</td>
+      <td>mixed/controlled</td>
+      <td>Mayo/AD Knowledge Portal terms</td>
+      <td>https://adknowledgeportal.synapse.org/DataAccess/</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>ampad_diverse_cohorts</td>
+      <td>syn51732482</td>
+      <td>mixed/controlled</td>
+      <td>Study-specific terms</td>
+      <td>https://adknowledgeportal.synapse.org/DataAccess/</td>
+    </tr>
+    <tr>
+      <td>dandi_neurophysiology</td>
+      <td>dandi_000048</td>
+      <td>DANDI:000048</td>
+      <td>open</td>
+      <td>Resolve exact CC0 or CC-BY license from immutable Dandiset metadata</td>
+      <td>https://docs.dandiarchive.org/introduction/</td>
+    </tr>
+    <tr>
+      <td>dandi_neurophysiology</td>
+      <td>dandi_000039</td>
+      <td>DANDI:000039</td>
+      <td>open</td>
+      <td>Resolve from immutable Dandiset metadata</td>
+      <td>https://docs.dandiarchive.org/introduction/</td>
+    </tr>
+    <tr>
+      <td>dandi_neurophysiology</td>
+      <td>dandi_000568</td>
+      <td>DANDI:000568</td>
+      <td>open</td>
+      <td>Resolve from immutable Dandiset metadata</td>
+      <td>https://docs.dandiarchive.org/introduction/</td>
+    </tr>
+  </tbody>
+</table><p><a href="index.html">Back to registry</a></p></body></html>

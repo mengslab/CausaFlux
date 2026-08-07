@@ -1,0 +1,86 @@
+<!doctype html><html><head><meta charset="utf-8"><title>GDC TCGA/CPTAC breast molecular benchmark</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:32px auto;color:#202124;line-height:1.45;padding:0 20px}h1,h2{letter-spacing:-.02em}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border-bottom:1px solid #ddd;padding:7px;text-align:left;vertical-align:top}th{background:#f5f5f5}.tag{display:inline-block;background:#eef3f8;padding:3px 7px;border-radius:10px;margin-right:4px}.warning{border-left:4px solid #b75d00;padding:10px 14px;background:#fff7ed}.ok{border-left:4px solid #287a4a;padding:10px 14px;background:#effaf3}code{background:#f5f5f5;padding:2px 4px}a{color:#24557a}</style></head><body><h1>GDC TCGA/CPTAC breast molecular benchmark</h1><p class="tag">cancer-molecular</p><p>Do multimodal molecular state representations replicate across TCGA genomics and CPTAC proteogenomics?</p><div class="warning"><strong>Execution status:</strong> accession and metadata verified. Large or controlled matrices are not redistributed. Run the download plan after accepting source-specific terms.</div><h2>Accession manifest</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>role</th>
+      <th>repository</th>
+      <th>accession</th>
+      <th>version_policy</th>
+      <th>access</th>
+      <th>modalities</th>
+      <th>citation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tcga_brca</td>
+      <td>discovery</td>
+      <td>NCI GDC</td>
+      <td>TCGA-BRCA</td>
+      <td>GDC current release resolved and locked at download</td>
+      <td>open harmonized derived files; controlled raw/germline files</td>
+      <td>RNA-seq; somatic mutation; copy number; methylation; clinical</td>
+      <td>The Cancer Genome Atlas Network. Comprehensive molecular portraits of human breast tumours. Nature 2012. DOI:10.1038/nature11412</td>
+    </tr>
+    <tr>
+      <td>cptac2_breast_genomics</td>
+      <td>independent_validation</td>
+      <td>NCI GDC</td>
+      <td>CPTAC-2</td>
+      <td>GDC current release resolved and locked</td>
+      <td>mixed open and controlled</td>
+      <td>WXS/WGS; RNA-seq; clinical</td>
+      <td>NCI Clinical Proteomic Tumor Analysis Consortium</td>
+    </tr>
+    <tr>
+      <td>cptac_brca_proteome</td>
+      <td>independent_validation</td>
+      <td>NCI PDC</td>
+      <td>PDC000120</td>
+      <td>PDC study version resolved and locked</td>
+      <td>open processed proteomic data; file-specific terms</td>
+      <td>proteome; phosphoproteome; acetylproteome; clinical</td>
+      <td>Krug et al. Proteogenomic Landscape of Breast Cancer Tumorigenesis and Targeted Therapy. Cell 2020. DOI:10.1016/j.cell.2020.10.036</td>
+    </tr>
+    <tr>
+      <td>calgb40601_proteogenomics</td>
+      <td>therapy_response_validation</td>
+      <td>NCI PDC</td>
+      <td>PDC000582</td>
+      <td>PDC study version resolved and locked</td>
+      <td>open/controlled by file</td>
+      <td>proteome; phosphoproteome; treatment response</td>
+      <td>NCI PDC study PDC000582</td>
+    </tr>
+  </tbody>
+</table><h2>Independent validation</h2><p>Discovery: TCGA-BRCA</p><p>Validation: CPTAC-2/PDC000120, PDC000582</p><p>Split unit: patient</p><h2>Download plan</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>execution_mode</th>
+      <th>command_or_action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tcga_brca</td>
+      <td>public-and-controlled</td>
+      <td>Use GDC API/client with query {"project_id":"TCGA-BRCA","data_access":"open","data_categories":["Transcriptome Profiling","Simple Nucleotide Variation","Copy Number Variation","DNA Methylation","Clinical"]}; write file manifest and MD5 lock under /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/gdc_tcga_cptac_brca/tcga_brca</td>
+    </tr>
+    <tr>
+      <td>cptac2_breast_genomics</td>
+      <td>public-and-controlled</td>
+      <td>Use GDC API/client with query {"project_id":"CPTAC-2","primary_site":"Breast"}; write file manifest and MD5 lock under /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/gdc_tcga_cptac_brca/cptac2_breast_genomics</td>
+    </tr>
+    <tr>
+      <td>cptac_brca_proteome</td>
+      <td>public-and-controlled</td>
+      <td>Use PDC GraphQL API for study PDC000120; write study version and file checksums under /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/gdc_tcga_cptac_brca/cptac_brca_proteome</td>
+    </tr>
+    <tr>
+      <td>calgb40601_proteogenomics</td>
+      <td>public-and-controlled</td>
+      <td>Use PDC GraphQL API for study PDC000582; write study version and file checksums under /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/gdc_tcga_cptac_brca/calgb40601_proteogenomics</td>
+    </tr>
+  </tbody>
+</table><h2>Research-use limits</h2><p>Outputs are retrospective research benchmarks. They are not diagnostic, prognostic, or treatment guidance.</p><p><a href="index.html">Back to registry</a></p></body></html>

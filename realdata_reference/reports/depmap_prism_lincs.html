@@ -1,0 +1,101 @@
+<!doctype html><html><head><meta charset="utf-8"><title>DepMap–PRISM–LINCS perturbation benchmark</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:32px auto;color:#202124;line-height:1.45;padding:0 20px}h1,h2{letter-spacing:-.02em}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border-bottom:1px solid #ddd;padding:7px;text-align:left;vertical-align:top}th{background:#f5f5f5}.tag{display:inline-block;background:#eef3f8;padding:3px 7px;border-radius:10px;margin-right:4px}.warning{border-left:4px solid #b75d00;padding:10px 14px;background:#fff7ed}.ok{border-left:4px solid #287a4a;padding:10px 14px;background:#effaf3}code{background:#f5f5f5;padding:2px 4px}a{color:#24557a}</style></head><body><h1>DepMap–PRISM–LINCS perturbation benchmark</h1><p class="tag">cancer-perturbation</p><p>Can gene dependencies, drug sensitivity, and perturbational signatures jointly prioritize reproducible state-specific interventions?</p><div class="warning"><strong>Execution status:</strong> accession and metadata verified. Large or controlled matrices are not redistributed. Run the download plan after accepting source-specific terms.</div><h2>Accession manifest</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>role</th>
+      <th>repository</th>
+      <th>accession</th>
+      <th>version_policy</th>
+      <th>access</th>
+      <th>modalities</th>
+      <th>citation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>depmap_26q1</td>
+      <td>discovery</td>
+      <td>Broad DepMap/Figshare</td>
+      <td>DepMap Public 26Q1</td>
+      <td>26Q1</td>
+      <td>public bulk download; acceptance of file-level terms required</td>
+      <td>CRISPR gene effect; expression; mutation; copy number; model metadata</td>
+      <td>Broad DepMap. DepMap Public 26Q1; cite release DOI shown in download portal and DepMap portal</td>
+    </tr>
+    <tr>
+      <td>prism_repurposing</td>
+      <td>drug_response_discovery</td>
+      <td>Broad DepMap</td>
+      <td>PRISM Repurposing Secondary Screen</td>
+      <td>portal file version locked at import</td>
+      <td>public bulk download with file-level terms</td>
+      <td>drug dose response; cell viability; compound metadata</td>
+      <td>Corsello et al. Discovering the anti-cancer potential of non-oncology drugs by systematic viability profiling. Nature Cancer 2020</td>
+    </tr>
+    <tr>
+      <td>lincs_phase1</td>
+      <td>independent_signature_validation</td>
+      <td>NCBI GEO/LINCS</td>
+      <td>GSE92742</td>
+      <td>GEO accession update locked by file MD5</td>
+      <td>open</td>
+      <td>L1000 expression signatures; small molecule; gene perturbation</td>
+      <td>Subramanian et al. A Next Generation Connectivity Map. Cell 2017. DOI:10.1016/j.cell.2017.10.049</td>
+    </tr>
+    <tr>
+      <td>lincs_phase2</td>
+      <td>independent_signature_validation</td>
+      <td>NCBI GEO/LINCS</td>
+      <td>GSE70138</td>
+      <td>GEO accession update locked by file MD5</td>
+      <td>open</td>
+      <td>L1000 expression signatures</td>
+      <td>NIH LINCS L1000 Phase II, GEO GSE70138</td>
+    </tr>
+    <tr>
+      <td>lincs_genetic_perturbations</td>
+      <td>genetic_signature_validation</td>
+      <td>NCBI GEO/LINCS</td>
+      <td>GSE106127</td>
+      <td>GEO accession update locked</td>
+      <td>open</td>
+      <td>RNAi; CRISPR; L1000</td>
+      <td>LINCS genetic perturbation signatures, GEO GSE106127</td>
+    </tr>
+  </tbody>
+</table><h2>Independent validation</h2><p>Discovery: DepMap 26Q1 + PRISM</p><p>Validation: LINCS Phase I, LINCS Phase II, LINCS genetic perturbations</p><p>Split unit: cell line/model</p><h2>Download plan</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>execution_mode</th>
+      <th>command_or_action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>depmap_26q1</td>
+      <td>manual-terms-no-scraping</td>
+      <td>Download DepMap Public 26Q1 from DepMap Downloads after accepting file terms; place files in /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/depmap_26q1</td>
+    </tr>
+    <tr>
+      <td>prism_repurposing</td>
+      <td>manual-terms-no-scraping</td>
+      <td>Download PRISM Repurposing Secondary Screen from DepMap Downloads after accepting file terms; place files in /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/prism_repurposing</td>
+    </tr>
+    <tr>
+      <td>lincs_phase1</td>
+      <td>public-command</td>
+      <td>Download GEO supplementary files for GSE92742 using NCBI HTTPS/FTP into /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/lincs_phase1</td>
+    </tr>
+    <tr>
+      <td>lincs_phase2</td>
+      <td>public-command</td>
+      <td>Download GEO supplementary files for GSE70138 using NCBI HTTPS/FTP into /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/lincs_phase2</td>
+    </tr>
+    <tr>
+      <td>lincs_genetic_perturbations</td>
+      <td>public-command</td>
+      <td>Download GEO supplementary files for GSE106127 using NCBI HTTPS/FTP into /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/lincs_genetic_perturbations</td>
+    </tr>
+  </tbody>
+</table><h2>Research-use limits</h2><p>Outputs are retrospective research benchmarks. They are not diagnostic, prognostic, or treatment guidance.</p><p><a href="index.html">Back to registry</a></p></body></html>

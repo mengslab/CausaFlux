@@ -1,0 +1,15 @@
+{
+  "accession": "syn3159438",
+  "adapter": "synapse",
+  "command_or_action": "synapse get --downloadFile false syn3159438 --downloadLocation /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/msbb",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/msbb",
+  "execution_mode": "account-or-controlled",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "lock_entity_version": true,
+    "synapse_id": "syn3159438"
+  },
+  "requires_user_authorization": true,
+  "source_id": "msbb"
+}

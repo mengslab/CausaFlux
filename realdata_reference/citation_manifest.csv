@@ -1,0 +1,25 @@
+benchmark_id,source_id,accession,citation,citation_url
+htan_spatial_cancer,htan_oms_breast,HTAN center hta9; file Synapse IDs resolved from portal query,Human Tumor Atlas Network; HTAN OMS Atlas Center,https://humantumoratlas.org/center/hta9
+htan_spatial_cancer,htan_breast_precancer,HTAN center hta6; file Synapse IDs resolved from portal query,Human Tumor Atlas Network; Breast Pre-Cancer Atlas Center,https://humantumoratlas.org/center/hta6
+htan_spatial_cancer,htan_cellular_geography_resistance,HTAN center hta5; file Synapse IDs resolved from portal query,Human Tumor Atlas Network,https://humantumoratlas.org/center/hta5
+gdc_tcga_cptac_brca,tcga_brca,TCGA-BRCA,The Cancer Genome Atlas Network. Comprehensive molecular portraits of human breast tumours. Nature 2012. DOI:10.1038/nature11412,https://doi.org/10.1038/nature11412
+gdc_tcga_cptac_brca,cptac2_breast_genomics,CPTAC-2,NCI Clinical Proteomic Tumor Analysis Consortium,https://gdc.cancer.gov/about-gdc/contributed-genomic-data-cancer-research/clinical-proteomic-tumor-analysis-consortium-cptac
+gdc_tcga_cptac_brca,cptac_brca_proteome,PDC000120,Krug et al. Proteogenomic Landscape of Breast Cancer Tumorigenesis and Targeted Therapy. Cell 2020. DOI:10.1016/j.cell.2020.10.036,https://doi.org/10.1016/j.cell.2020.10.036
+gdc_tcga_cptac_brca,calgb40601_proteogenomics,PDC000582,NCI PDC study PDC000582,https://pdc.cancer.gov/pdc/study/PDC000582
+depmap_prism_lincs,depmap_26q1,DepMap Public 26Q1,Broad DepMap. DepMap Public 26Q1; cite release DOI shown in download portal and DepMap portal,https://forum.depmap.org/t/announcing-the-26q1-release/4606
+depmap_prism_lincs,prism_repurposing,PRISM Repurposing Secondary Screen,Corsello et al. Discovering the anti-cancer potential of non-oncology drugs by systematic viability profiling. Nature Cancer 2020,https://doi.org/10.1038/s43018-019-0018-6
+depmap_prism_lincs,lincs_phase1,GSE92742,Subramanian et al. A Next Generation Connectivity Map. Cell 2017. DOI:10.1016/j.cell.2017.10.049,https://doi.org/10.1016/j.cell.2017.10.049
+depmap_prism_lincs,lincs_phase2,GSE70138,"NIH LINCS L1000 Phase II, GEO GSE70138",https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138
+depmap_prism_lincs,lincs_genetic_perturbations,GSE106127,"LINCS genetic perturbation signatures, GEO GSE106127",https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106127
+sea_ad_neural_glial,sea_ad_processed_single_cell,AWS s3://sea-ad-single-cell-profiling/; Brain Knowledge project UMSVXTDIAZTAFKGE43T,Gabitto et al. Integrated multimodal cell atlas of Alzheimer’s disease. Nature Neuroscience 2024. DOI:10.1038/s41593-024-01774-5,https://doi.org/10.1038/s41593-024-01774-5
+sea_ad_neural_glial,sea_ad_spatial,AWS s3://sea-ad-spatial-transcriptomics/,Gabitto et al. Nature Neuroscience 2024. DOI:10.1038/s41593-024-01774-5,https://doi.org/10.1038/s41593-024-01774-5
+sea_ad_neural_glial,sea_ad_neuropathology,AWS s3://sea-ad-quantitative-neuropathology/,SEA-AD quantitative neuropathology resource,https://brain-map.org/consortia/sea-ad/our-data
+sea_ad_neural_glial,sea_ad_multiregion,SEA-AD processed 11-region release (June 2026),SEA-AD Data and Downloads,https://brain-map.org/consortia/sea-ad/our-data
+amp_ad_molecular,ampad_rnaseq_harmonization,syn21241740,"AMP-AD RNAseq Harmonization Study, Synapse syn21241740",https://doi.org/10.7303/syn21241740
+amp_ad_molecular,rosmap,syn3219045,"ROSMAP Study, Synapse syn3219045",https://doi.org/10.7303/syn3219045
+amp_ad_molecular,msbb,syn3159438,"Mount Sinai Brain Bank Study, Synapse syn3159438",https://doi.org/10.7303/syn3159438
+amp_ad_molecular,mayo_rnaseq,syn5550404,"Mayo RNAseq Study, Synapse syn5550404",https://doi.org/10.7303/syn5550404
+amp_ad_molecular,ampad_diverse_cohorts,syn51732482,"AMP-AD Diverse Cohorts Study, Synapse syn51732482",https://doi.org/10.7303/syn51732482
+dandi_neurophysiology,dandi_000048,DANDI:000048,DANDI:000048; cite Dandiset metadata and associated publication,https://identifiers.org/DANDI:000048
+dandi_neurophysiology,dandi_000039,DANDI:000039,DANDI:000039; Allen Institute contrast-tuning dataset,https://identifiers.org/DANDI:000039
+dandi_neurophysiology,dandi_000568,DANDI:000568,DANDI:000568; cite immutable Dandiset metadata and associated publication,https://identifiers.org/DANDI:000568

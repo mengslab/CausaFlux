@@ -1,0 +1,8 @@
+{
+  "framework": "CausaFlux",
+  "version": "1.7.0",
+  "valid": true,
+  "n_benchmarks": 6,
+  "n_sources": 24,
+  "errors": []
+}

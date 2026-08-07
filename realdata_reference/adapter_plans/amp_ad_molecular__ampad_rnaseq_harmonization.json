@@ -1,0 +1,15 @@
+{
+  "accession": "syn21241740",
+  "adapter": "synapse",
+  "command_or_action": "synapse get --downloadFile false syn21241740 --downloadLocation /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/ampad_rnaseq_harmonization",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/ampad_rnaseq_harmonization",
+  "execution_mode": "account-or-controlled",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "lock_entity_version": true,
+    "synapse_id": "syn21241740"
+  },
+  "requires_user_authorization": true,
+  "source_id": "ampad_rnaseq_harmonization"
+}

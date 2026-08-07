@@ -1,0 +1,15 @@
+{
+  "accession": "DepMap Public 26Q1",
+  "adapter": "depmap_manual",
+  "command_or_action": "Open the official DepMap Downloads page, accept the file-specific terms, download DepMap Public 26Q1, and place it under /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/depmap_26q1. Automated portal scraping is intentionally disabled.",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/depmap_26q1",
+  "execution_mode": "manual-terms-no-scraping",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "manual": true,
+    "release": "DepMap Public 26Q1"
+  },
+  "requires_user_authorization": true,
+  "source_id": "depmap_26q1"
+}

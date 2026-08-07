@@ -1,0 +1,71 @@
+<!doctype html><html><head><meta charset="utf-8"><title>DANDI electrophysiology and imaging benchmark</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:32px auto;color:#202124;line-height:1.45;padding:0 20px}h1,h2{letter-spacing:-.02em}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border-bottom:1px solid #ddd;padding:7px;text-align:left;vertical-align:top}th{background:#f5f5f5}.tag{display:inline-block;background:#eef3f8;padding:3px 7px;border-radius:10px;margin-right:4px}.warning{border-left:4px solid #b75d00;padding:10px 14px;background:#fff7ed}.ok{border-left:4px solid #287a4a;padding:10px 14px;background:#effaf3}code{background:#f5f5f5;padding:2px 4px}a{color:#24557a}</style></head><body><h1>DANDI electrophysiology and imaging benchmark</h1><p class="tag">neurophysiology</p><p>Can CausaFlux extract standardized functional state features from NWB electrophysiology and optical physiology and transfer them across experiments?</p><div class="warning"><strong>Execution status:</strong> accession and metadata verified. Large or controlled matrices are not redistributed. Run the download plan after accepting source-specific terms.</div><h2>Accession manifest</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>role</th>
+      <th>repository</th>
+      <th>accession</th>
+      <th>version_policy</th>
+      <th>access</th>
+      <th>modalities</th>
+      <th>citation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dandi_000048</td>
+      <td>multimodal_discovery</td>
+      <td>DANDI</td>
+      <td>DANDI:000048</td>
+      <td>latest published version resolved and locked</td>
+      <td>open</td>
+      <td>electrophysiology; two-photon calcium imaging; NWB</td>
+      <td>DANDI:000048; cite Dandiset metadata and associated publication</td>
+    </tr>
+    <tr>
+      <td>dandi_000039</td>
+      <td>independent_imaging_validation</td>
+      <td>DANDI</td>
+      <td>DANDI:000039</td>
+      <td>latest published version resolved and locked</td>
+      <td>open</td>
+      <td>calcium imaging; stimulus response; NWB</td>
+      <td>DANDI:000039; Allen Institute contrast-tuning dataset</td>
+    </tr>
+    <tr>
+      <td>dandi_000568</td>
+      <td>independent_ephys_validation</td>
+      <td>DANDI</td>
+      <td>DANDI:000568</td>
+      <td>latest published version resolved and locked</td>
+      <td>open</td>
+      <td>intracellular electrophysiology; optogenetics; NWB</td>
+      <td>DANDI:000568; cite immutable Dandiset metadata and associated publication</td>
+    </tr>
+  </tbody>
+</table><h2>Independent validation</h2><p>Discovery: DANDI:000048</p><p>Validation: DANDI:000039, DANDI:000568</p><p>Split unit: animal/session/cell as appropriate, with subject grouping</p><h2>Download plan</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>execution_mode</th>
+      <th>command_or_action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dandi_000048</td>
+      <td>public-command</td>
+      <td>dandi download DANDI:000048@latest --output-dir /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/dandi_neurophysiology/dandi_000048</td>
+    </tr>
+    <tr>
+      <td>dandi_000039</td>
+      <td>public-command</td>
+      <td>dandi download DANDI:000039@latest --output-dir /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/dandi_neurophysiology/dandi_000039</td>
+    </tr>
+    <tr>
+      <td>dandi_000568</td>
+      <td>public-command</td>
+      <td>dandi download DANDI:000568@latest --output-dir /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/dandi_neurophysiology/dandi_000568</td>
+    </tr>
+  </tbody>
+</table><h2>Research-use limits</h2><p>Outputs are retrospective research benchmarks. They are not diagnostic, prognostic, or treatment guidance.</p><p><a href="index.html">Back to registry</a></p></body></html>

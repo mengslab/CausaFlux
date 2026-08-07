@@ -1,0 +1,15 @@
+{
+  "accession": "DANDI:000048",
+  "adapter": "dandi",
+  "command_or_action": "dandi ls DANDI:000048@latest",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/dandi_neurophysiology/dandi_000048",
+  "execution_mode": "public-command",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "dandiset": "000048",
+    "version_policy": "latest_published"
+  },
+  "requires_user_authorization": false,
+  "source_id": "dandi_000048"
+}

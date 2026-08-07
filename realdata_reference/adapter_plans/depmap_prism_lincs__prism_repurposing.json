@@ -1,0 +1,15 @@
+{
+  "accession": "PRISM Repurposing Secondary Screen",
+  "adapter": "depmap_manual",
+  "command_or_action": "Open the official DepMap Downloads page, accept the file-specific terms, download PRISM Repurposing Secondary Screen, and place it under /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/prism_repurposing. Automated portal scraping is intentionally disabled.",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/prism_repurposing",
+  "execution_mode": "manual-terms-no-scraping",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "manual": true,
+    "release": "PRISM Repurposing Secondary Screen"
+  },
+  "requires_user_authorization": true,
+  "source_id": "prism_repurposing"
+}

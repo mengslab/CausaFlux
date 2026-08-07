@@ -1,0 +1,26 @@
+{
+  "real_dataset": true,
+  "source": "SEA-AD Data and Downloads",
+  "donors": 84,
+  "median_age_at_death": 90.0,
+  "age_range": [
+    65.0,
+    102.0
+  ],
+  "sex_counts": {
+    "Female": 51,
+    "Male": 33
+  },
+  "cognitive_status_counts": {
+    "No dementia": 42,
+    "Dementia": 42
+  },
+  "cps_records": 632,
+  "cps_donors": 84,
+  "brain_regions": 9,
+  "snapshot_sha256": {
+    "sea_ad_cohort_donor_metadata_2024-07-25.xlsx": "d18faa1c51f426bb2bf17ce431878cfacce673729c1ee185be84a51d31271146",
+    "sea_ad_continuous_pseudoprogression_scores_2026-05-01.xlsx": "6736b3736c57bfd3e4771c8dd9af21716e2187d5e939acdc46817904bcbc08f3"
+  },
+  "interpretation": "Descriptive cohort metadata only; no causal or clinical inference."
+}

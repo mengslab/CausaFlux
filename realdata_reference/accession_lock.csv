@@ -1,0 +1,27 @@
+relative_path,sha256,lock_type
+snapshots/sea_ad/sea_ad_cohort_donor_metadata_2024-07-25.xlsx,d18faa1c51f426bb2bf17ce431878cfacce673729c1ee185be84a51d31271146,bundled public metadata snapshot
+snapshots/sea_ad/sea_ad_continuous_pseudoprogression_scores_2026-05-01.xlsx,6736b3736c57bfd3e4771c8dd9af21716e2187d5e939acdc46817904bcbc08f3,bundled public metadata snapshot
+remote::htan_spatial_cancer::htan_oms_breast,runtime-resolution-required,Phase 1/portal-resolved immutable Synapse versions
+remote::htan_spatial_cancer::htan_breast_precancer,runtime-resolution-required,Phase 1/portal-resolved immutable Synapse versions
+remote::htan_spatial_cancer::htan_cellular_geography_resistance,runtime-resolution-required,portal-resolved
+remote::gdc_tcga_cptac_brca::tcga_brca,runtime-resolution-required,GDC current release resolved and locked at download
+remote::gdc_tcga_cptac_brca::cptac2_breast_genomics,runtime-resolution-required,GDC current release resolved and locked
+remote::gdc_tcga_cptac_brca::cptac_brca_proteome,runtime-resolution-required,PDC study version resolved and locked
+remote::gdc_tcga_cptac_brca::calgb40601_proteogenomics,runtime-resolution-required,PDC study version resolved and locked
+remote::depmap_prism_lincs::depmap_26q1,runtime-resolution-required,26Q1
+remote::depmap_prism_lincs::prism_repurposing,runtime-resolution-required,portal file version locked at import
+remote::depmap_prism_lincs::lincs_phase1,runtime-resolution-required,GEO accession update locked by file MD5
+remote::depmap_prism_lincs::lincs_phase2,runtime-resolution-required,GEO accession update locked by file MD5
+remote::depmap_prism_lincs::lincs_genetic_perturbations,runtime-resolution-required,GEO accession update locked
+remote::sea_ad_neural_glial::sea_ad_processed_single_cell,runtime-resolution-required,object ETag and LastModified locked at download
+remote::sea_ad_neural_glial::sea_ad_spatial,runtime-resolution-required,object ETag and LastModified locked
+remote::sea_ad_neural_glial::sea_ad_neuropathology,runtime-resolution-required,object ETag and LastModified locked
+remote::sea_ad_neural_glial::sea_ad_multiregion,runtime-resolution-required,June 2026 release/object lock
+remote::amp_ad_molecular::ampad_rnaseq_harmonization,runtime-resolution-required,Synapse entity version locked at download
+remote::amp_ad_molecular::rosmap,runtime-resolution-required,Synapse version lock
+remote::amp_ad_molecular::msbb,runtime-resolution-required,Synapse version lock
+remote::amp_ad_molecular::mayo_rnaseq,runtime-resolution-required,Synapse version lock
+remote::amp_ad_molecular::ampad_diverse_cohorts,runtime-resolution-required,Synapse version lock
+remote::dandi_neurophysiology::dandi_000048,runtime-resolution-required,latest published version resolved and locked
+remote::dandi_neurophysiology::dandi_000039,runtime-resolution-required,latest published version resolved and locked
+remote::dandi_neurophysiology::dandi_000568,runtime-resolution-required,latest published version resolved and locked

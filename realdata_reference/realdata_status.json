@@ -1,0 +1,16 @@
+{
+  "framework": "CausaFlux",
+  "version": "1.7.0",
+  "generated_at_utc": "2026-08-07T17:11:43.028410+00:00",
+  "registry_valid": true,
+  "n_benchmarks": 6,
+  "n_sources": 24,
+  "bundled_real_data": [
+    "SEA-AD donor metadata",
+    "SEA-AD continuous pseudoprogression scores"
+  ],
+  "large_data_redistributed": false,
+  "controlled_data_redistributed": false,
+  "full_benchmarks_executed": false,
+  "report_scope": "accession, access, licensing, reproducibility, and real metadata descriptive benchmark"
+}

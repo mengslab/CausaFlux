@@ -1,0 +1,15 @@
+benchmark_id,validation_source,accession,role,split_unit,metrics
+htan_spatial_cancer,htan_breast_precancer,HTAN center hta6; file Synapse IDs resolved from portal query,independent_validation,patient/case,niche reproducibility; donor-supported communication circuits; cross-atlas state mapping
+htan_spatial_cancer,htan_cellular_geography_resistance,HTAN center hta5; file Synapse IDs resolved from portal query,secondary_validation,patient/case,niche reproducibility; donor-supported communication circuits; cross-atlas state mapping
+gdc_tcga_cptac_brca,cptac2_breast_genomics,CPTAC-2,independent_validation,patient,cross-cohort subtype/state concordance; calibration; external C-index/AUC where outcome supports it
+gdc_tcga_cptac_brca,cptac_brca_proteome,PDC000120,independent_validation,patient,cross-cohort subtype/state concordance; calibration; external C-index/AUC where outcome supports it
+gdc_tcga_cptac_brca,calgb40601_proteogenomics,PDC000582,therapy_response_validation,patient,cross-cohort subtype/state concordance; calibration; external C-index/AUC where outcome supports it
+depmap_prism_lincs,lincs_phase1,GSE92742,independent_signature_validation,cell line/model,held-line dependency prediction; drug-ranking enrichment; signature reversal concordance
+depmap_prism_lincs,lincs_phase2,GSE70138,independent_signature_validation,cell line/model,held-line dependency prediction; drug-ranking enrichment; signature reversal concordance
+depmap_prism_lincs,lincs_genetic_perturbations,GSE106127,genetic_signature_validation,cell line/model,held-line dependency prediction; drug-ranking enrichment; signature reversal concordance
+sea_ad_neural_glial,sea_ad_multiregion,SEA-AD processed 11-region release (June 2026),within-program_validation,donor,cell-state mapping; donor-held-out pathology association; spatial vulnerability reproducibility
+amp_ad_molecular,msbb,syn3159438,independent_validation,participant/donor,external effect direction; meta-analysis heterogeneity; calibration and transportability
+amp_ad_molecular,mayo_rnaseq,syn5550404,independent_validation,participant/donor,external effect direction; meta-analysis heterogeneity; calibration and transportability
+amp_ad_molecular,ampad_diverse_cohorts,syn51732482,generalization_validation,participant/donor,external effect direction; meta-analysis heterogeneity; calibration and transportability
+dandi_neurophysiology,dandi_000039,DANDI:000039,independent_imaging_validation,"animal/session/cell as appropriate, with subject grouping",feature extraction reproducibility; modality alignment; cross-dandiset transfer
+dandi_neurophysiology,dandi_000568,DANDI:000568,independent_ephys_validation,"animal/session/cell as appropriate, with subject grouping",feature extraction reproducibility; modality alignment; cross-dandiset transfer

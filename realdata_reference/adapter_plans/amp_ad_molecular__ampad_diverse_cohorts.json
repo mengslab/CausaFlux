@@ -1,0 +1,15 @@
+{
+  "accession": "syn51732482",
+  "adapter": "synapse",
+  "command_or_action": "synapse get --downloadFile false syn51732482 --downloadLocation /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/ampad_diverse_cohorts",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/amp_ad_molecular/ampad_diverse_cohorts",
+  "execution_mode": "account-or-controlled",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "lock_entity_version": true,
+    "synapse_id": "syn51732482"
+  },
+  "requires_user_authorization": true,
+  "source_id": "ampad_diverse_cohorts"
+}

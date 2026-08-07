@@ -1,0 +1,13 @@
+{
+  "framework": "CausaFlux",
+  "version": "1.7.0",
+  "profile": "real-data-benchmark-registry",
+  "generated_at_utc": "2026-08-07T17:11:43.028410+00:00",
+  "synthetic": false,
+  "executed_real_data": [
+    "SEA-AD donor metadata",
+    "SEA-AD continuous pseudoprogression scores"
+  ],
+  "full_benchmarks_executed": false,
+  "clinical_use": false
+}

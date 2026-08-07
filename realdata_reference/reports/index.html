@@ -1,0 +1,299 @@
+<!doctype html><html><head><meta charset="utf-8"><title>CausaFlux v1.7.0 real-data benchmarks</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:32px auto;color:#202124;line-height:1.45;padding:0 20px}h1,h2{letter-spacing:-.02em}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border-bottom:1px solid #ddd;padding:7px;text-align:left;vertical-align:top}th{background:#f5f5f5}.tag{display:inline-block;background:#eef3f8;padding:3px 7px;border-radius:10px;margin-right:4px}.warning{border-left:4px solid #b75d00;padding:10px 14px;background:#fff7ed}.ok{border-left:4px solid #287a4a;padding:10px 14px;background:#effaf3}code{background:#f5f5f5;padding:2px 4px}a{color:#24557a}</style></head><body><h1>CausaFlux v1.7.0 — Real-data benchmark registry</h1><div class="ok"><strong>Six benchmark families are accession-ready.</strong> The release bundles public SEA-AD donor metadata and pathology-progression summaries; large assay matrices remain at their authoritative repositories.</div><p><a href="licenses.html">Data licenses</a> · <a href="citations.html">Citations</a> · <a href="../independent_validation_cohorts.csv">Independent validation cohorts</a></p><h2>Benchmark families</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>benchmark_id</th>
+      <th>title</th>
+      <th>domain</th>
+      <th>status</th>
+      <th>n_sources</th>
+      <th>n_validation_sources</th>
+      <th>estimated_storage_gb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>htan_spatial_cancer</td>
+      <td>HTAN spatial breast-cancer benchmark</td>
+      <td>cancer-spatial</td>
+      <td>accession-ready</td>
+      <td>3</td>
+      <td>2</td>
+      <td>100-5000 depending on imaging level</td>
+    </tr>
+    <tr>
+      <td>gdc_tcga_cptac_brca</td>
+      <td>GDC TCGA/CPTAC breast molecular benchmark</td>
+      <td>cancer-molecular</td>
+      <td>accession-ready</td>
+      <td>4</td>
+      <td>3</td>
+      <td>20-500 depending on raw versus harmonized level</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>DepMap–PRISM–LINCS perturbation benchmark</td>
+      <td>cancer-perturbation</td>
+      <td>accession-ready</td>
+      <td>5</td>
+      <td>3</td>
+      <td>30-200</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neural_glial</td>
+      <td>SEA-AD neural–glial benchmark</td>
+      <td>neurobiology-single-cell-spatial</td>
+      <td>includes-real-metadata-snapshot</td>
+      <td>4</td>
+      <td>1</td>
+      <td>3-5000 by selected regions and image levels</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>AMP-AD molecular validation benchmark</td>
+      <td>neurobiology-bulk-multiomics</td>
+      <td>accession-ready-controlled-components</td>
+      <td>5</td>
+      <td>3</td>
+      <td>5-1000</td>
+    </tr>
+    <tr>
+      <td>dandi_neurophysiology</td>
+      <td>DANDI electrophysiology and imaging benchmark</td>
+      <td>neurophysiology</td>
+      <td>accession-ready</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1-1000 by selected assets</td>
+    </tr>
+  </tbody>
+</table><h2>Accessions and licenses</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>benchmark_id</th>
+      <th>source_id</th>
+      <th>role</th>
+      <th>accession</th>
+      <th>access</th>
+      <th>license_summary</th>
+      <th>citation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>htan_spatial_cancer</td>
+      <td>htan_oms_breast</td>
+      <td>discovery</td>
+      <td>HTAN center hta9; file Synapse IDs resolved from portal query</td>
+      <td>mixed open and controlled</td>
+      <td>NIH/HTAN data-use terms; file-level access requirements</td>
+      <td>Human Tumor Atlas Network; HTAN OMS Atlas Center</td>
+    </tr>
+    <tr>
+      <td>htan_spatial_cancer</td>
+      <td>htan_breast_precancer</td>
+      <td>independent_validation</td>
+      <td>HTAN center hta6; file Synapse IDs resolved from portal query</td>
+      <td>mixed open and controlled</td>
+      <td>NIH/HTAN data-use terms; file-level access requirements</td>
+      <td>Human Tumor Atlas Network; Breast Pre-Cancer Atlas Center</td>
+    </tr>
+    <tr>
+      <td>htan_spatial_cancer</td>
+      <td>htan_cellular_geography_resistance</td>
+      <td>secondary_validation</td>
+      <td>HTAN center hta5; file Synapse IDs resolved from portal query</td>
+      <td>mixed open and controlled</td>
+      <td>NIH/HTAN data-use terms</td>
+      <td>Human Tumor Atlas Network</td>
+    </tr>
+    <tr>
+      <td>gdc_tcga_cptac_brca</td>
+      <td>tcga_brca</td>
+      <td>discovery</td>
+      <td>TCGA-BRCA</td>
+      <td>open harmonized derived files; controlled raw/germline files</td>
+      <td>NCI GDC data-use and dbGaP rules by file access class</td>
+      <td>The Cancer Genome Atlas Network. Comprehensive molecular portraits of human breast tumours. Nature 2012. DOI:10.1038/nature11412</td>
+    </tr>
+    <tr>
+      <td>gdc_tcga_cptac_brca</td>
+      <td>cptac2_breast_genomics</td>
+      <td>independent_validation</td>
+      <td>CPTAC-2</td>
+      <td>mixed open and controlled</td>
+      <td>NCI GDC/dbGaP terms</td>
+      <td>NCI Clinical Proteomic Tumor Analysis Consortium</td>
+    </tr>
+    <tr>
+      <td>gdc_tcga_cptac_brca</td>
+      <td>cptac_brca_proteome</td>
+      <td>independent_validation</td>
+      <td>PDC000120</td>
+      <td>open processed proteomic data; file-specific terms</td>
+      <td>NCI PDC data-use terms</td>
+      <td>Krug et al. Proteogenomic Landscape of Breast Cancer Tumorigenesis and Targeted Therapy. Cell 2020. DOI:10.1016/j.cell.2020.10.036</td>
+    </tr>
+    <tr>
+      <td>gdc_tcga_cptac_brca</td>
+      <td>calgb40601_proteogenomics</td>
+      <td>therapy_response_validation</td>
+      <td>PDC000582</td>
+      <td>open/controlled by file</td>
+      <td>NCI PDC data-use terms</td>
+      <td>NCI PDC study PDC000582</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>depmap_26q1</td>
+      <td>discovery</td>
+      <td>DepMap Public 26Q1</td>
+      <td>public bulk download; acceptance of file-level terms required</td>
+      <td>Broad-generated DepMap release files generally CC BY 4.0; verify each file</td>
+      <td>Broad DepMap. DepMap Public 26Q1; cite release DOI shown in download portal and DepMap portal</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>prism_repurposing</td>
+      <td>drug_response_discovery</td>
+      <td>PRISM Repurposing Secondary Screen</td>
+      <td>public bulk download with file-level terms</td>
+      <td>Verify file-specific terms in DepMap download panel</td>
+      <td>Corsello et al. Discovering the anti-cancer potential of non-oncology drugs by systematic viability profiling. Nature Cancer 2020</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>lincs_phase1</td>
+      <td>independent_signature_validation</td>
+      <td>GSE92742</td>
+      <td>open</td>
+      <td>NCBI GEO terms and submitter-provided usage; citation required</td>
+      <td>Subramanian et al. A Next Generation Connectivity Map. Cell 2017. DOI:10.1016/j.cell.2017.10.049</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>lincs_phase2</td>
+      <td>independent_signature_validation</td>
+      <td>GSE70138</td>
+      <td>open</td>
+      <td>NCBI GEO terms and submitter-provided usage</td>
+      <td>NIH LINCS L1000 Phase II, GEO GSE70138</td>
+    </tr>
+    <tr>
+      <td>depmap_prism_lincs</td>
+      <td>lincs_genetic_perturbations</td>
+      <td>genetic_signature_validation</td>
+      <td>GSE106127</td>
+      <td>open</td>
+      <td>NCBI GEO terms</td>
+      <td>LINCS genetic perturbation signatures, GEO GSE106127</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neural_glial</td>
+      <td>sea_ad_processed_single_cell</td>
+      <td>discovery</td>
+      <td>AWS s3://sea-ad-single-cell-profiling/; Brain Knowledge project UMSVXTDIAZTAFKGE43T</td>
+      <td>open processed data</td>
+      <td>Allen Institute Terms of Use and Citation Policy</td>
+      <td>Gabitto et al. Integrated multimodal cell atlas of Alzheimer’s disease. Nature Neuroscience 2024. DOI:10.1038/s41593-024-01774-5</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neural_glial</td>
+      <td>sea_ad_spatial</td>
+      <td>spatial_discovery</td>
+      <td>AWS s3://sea-ad-spatial-transcriptomics/</td>
+      <td>open</td>
+      <td>Allen Institute Terms of Use and Citation Policy</td>
+      <td>Gabitto et al. Nature Neuroscience 2024. DOI:10.1038/s41593-024-01774-5</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neural_glial</td>
+      <td>sea_ad_neuropathology</td>
+      <td>phenotype_anchor</td>
+      <td>AWS s3://sea-ad-quantitative-neuropathology/</td>
+      <td>open</td>
+      <td>Allen Institute Terms of Use</td>
+      <td>SEA-AD quantitative neuropathology resource</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neural_glial</td>
+      <td>sea_ad_multiregion</td>
+      <td>within-program_validation</td>
+      <td>SEA-AD processed 11-region release (June 2026)</td>
+      <td>open processed</td>
+      <td>Allen Institute Terms of Use</td>
+      <td>SEA-AD Data and Downloads</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>ampad_rnaseq_harmonization</td>
+      <td>harmonized_discovery</td>
+      <td>syn21241740</td>
+      <td>mixed open/controlled; Synapse account and conditions may be required</td>
+      <td>Study-specific Synapse access requirements and data-use terms</td>
+      <td>AMP-AD RNAseq Harmonization Study, Synapse syn21241740</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>rosmap</td>
+      <td>discovery_cohort</td>
+      <td>syn3219045</td>
+      <td>controlled for many individual-level files</td>
+      <td>ROSMAP/AD Knowledge Portal data-use terms</td>
+      <td>ROSMAP Study, Synapse syn3219045</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>msbb</td>
+      <td>independent_validation</td>
+      <td>syn3159438</td>
+      <td>mixed/controlled</td>
+      <td>MSBB/AD Knowledge Portal terms</td>
+      <td>Mount Sinai Brain Bank Study, Synapse syn3159438</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>mayo_rnaseq</td>
+      <td>independent_validation</td>
+      <td>syn5550404</td>
+      <td>mixed/controlled</td>
+      <td>Mayo/AD Knowledge Portal terms</td>
+      <td>Mayo RNAseq Study, Synapse syn5550404</td>
+    </tr>
+    <tr>
+      <td>amp_ad_molecular</td>
+      <td>ampad_diverse_cohorts</td>
+      <td>generalization_validation</td>
+      <td>syn51732482</td>
+      <td>mixed/controlled</td>
+      <td>Study-specific terms</td>
+      <td>AMP-AD Diverse Cohorts Study, Synapse syn51732482</td>
+    </tr>
+    <tr>
+      <td>dandi_neurophysiology</td>
+      <td>dandi_000048</td>
+      <td>multimodal_discovery</td>
+      <td>DANDI:000048</td>
+      <td>open</td>
+      <td>Resolve exact CC0 or CC-BY license from immutable Dandiset metadata</td>
+      <td>DANDI:000048; cite Dandiset metadata and associated publication</td>
+    </tr>
+    <tr>
+      <td>dandi_neurophysiology</td>
+      <td>dandi_000039</td>
+      <td>independent_imaging_validation</td>
+      <td>DANDI:000039</td>
+      <td>open</td>
+      <td>Resolve from immutable Dandiset metadata</td>
+      <td>DANDI:000039; Allen Institute contrast-tuning dataset</td>
+    </tr>
+    <tr>
+      <td>dandi_neurophysiology</td>
+      <td>dandi_000568</td>
+      <td>independent_ephys_validation</td>
+      <td>DANDI:000568</td>
+      <td>open</td>
+      <td>Resolve from immutable Dandiset metadata</td>
+      <td>DANDI:000568; cite immutable Dandiset metadata and associated publication</td>
+    </tr>
+  </tbody>
+</table><h2>Real-data snapshot</h2><p>SEA-AD donors: 84; CPS records: 632; brain regions: 9.</p><p><a href="../sea_ad_descriptive/sea_ad_cohort_overview.svg">Open SEA-AD descriptive figure</a></p><h2>Important boundary</h2><div class="warning">This package does not bundle controlled-access files or claim that full molecular benchmarks were executed during release construction. Reports become biological-result reports only after the user downloads data, records immutable versions, runs the analysis, and passes external-validation gates.</div></body></html>

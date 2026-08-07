@@ -1,0 +1,24 @@
+{
+  "accession": "HTAN center hta9; file Synapse IDs resolved from portal query",
+  "adapter": "htan_synapse",
+  "command_or_action": "Query the HTAN portal using {\"atlas_name\": \"HTAN OMS Atlas\", \"data_types\": [\"Imaging\", \"scRNA-seq\", \"Bulk RNA-seq\", \"DNA-seq\"], \"organ\": \"Breast\"}; export the result; resolve every entity to a Synapse ID and immutable version; place approved files under /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/htan_spatial_cancer/htan_oms_breast",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/htan_spatial_cancer/htan_oms_breast",
+  "execution_mode": "portal-query-account",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "lock_synapse_versions": true,
+    "portal_query": {
+      "atlas_name": "HTAN OMS Atlas",
+      "data_types": [
+        "Imaging",
+        "scRNA-seq",
+        "Bulk RNA-seq",
+        "DNA-seq"
+      ],
+      "organ": "Breast"
+    }
+  },
+  "requires_user_authorization": true,
+  "source_id": "htan_oms_breast"
+}

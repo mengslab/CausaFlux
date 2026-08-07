@@ -1,0 +1,25 @@
+benchmark_id,source_id,manifest_valid,validation_cohort_defined,adapter,required_tool,tool_available,requires_account_or_terms,license_recorded,citation_recorded
+htan_spatial_cancer,htan_oms_breast,True,True,htan_synapse,synapse,False,True,True,True
+htan_spatial_cancer,htan_breast_precancer,True,True,htan_synapse,synapse,False,True,True,True
+htan_spatial_cancer,htan_cellular_geography_resistance,True,True,htan_synapse,synapse,False,True,True,True
+gdc_tcga_cptac_brca,tcga_brca,True,True,gdc,curl,True,True,True,True
+gdc_tcga_cptac_brca,cptac2_breast_genomics,True,True,gdc,curl,True,True,True,True
+gdc_tcga_cptac_brca,cptac_brca_proteome,True,True,pdc,curl,True,True,True,True
+gdc_tcga_cptac_brca,calgb40601_proteogenomics,True,True,pdc,curl,True,True,True,True
+depmap_prism_lincs,depmap_26q1,True,True,depmap_manual,manual browser,True,False,True,True
+depmap_prism_lincs,prism_repurposing,True,True,depmap_manual,manual browser,True,True,True,True
+depmap_prism_lincs,lincs_phase1,True,True,geo,curl,True,True,True,True
+depmap_prism_lincs,lincs_phase2,True,True,geo,curl,True,True,True,True
+depmap_prism_lincs,lincs_genetic_perturbations,True,True,geo,curl,True,True,True,True
+sea_ad_neural_glial,sea_ad_processed_single_cell,True,True,aws_s3,aws,False,True,True,True
+sea_ad_neural_glial,sea_ad_spatial,True,True,aws_s3,aws,False,True,True,True
+sea_ad_neural_glial,sea_ad_neuropathology,True,True,aws_s3,aws,False,True,True,True
+sea_ad_neural_glial,sea_ad_multiregion,True,True,aws_s3,aws,False,True,True,True
+amp_ad_molecular,ampad_rnaseq_harmonization,True,True,synapse,synapse,False,True,True,True
+amp_ad_molecular,rosmap,True,True,synapse,synapse,False,True,True,True
+amp_ad_molecular,msbb,True,True,synapse,synapse,False,True,True,True
+amp_ad_molecular,mayo_rnaseq,True,True,synapse,synapse,False,True,True,True
+amp_ad_molecular,ampad_diverse_cohorts,True,True,synapse,synapse,False,True,True,True
+dandi_neurophysiology,dandi_000048,True,True,dandi,dandi,False,False,True,True
+dandi_neurophysiology,dandi_000039,True,True,dandi,dandi,False,False,True,True
+dandi_neurophysiology,dandi_000568,True,True,dandi,dandi,False,False,True,True

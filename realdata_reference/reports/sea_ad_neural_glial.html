@@ -1,0 +1,86 @@
+<!doctype html><html><head><meta charset="utf-8"><title>SEA-AD neural–glial benchmark</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:32px auto;color:#202124;line-height:1.45;padding:0 20px}h1,h2{letter-spacing:-.02em}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border-bottom:1px solid #ddd;padding:7px;text-align:left;vertical-align:top}th{background:#f5f5f5}.tag{display:inline-block;background:#eef3f8;padding:3px 7px;border-radius:10px;margin-right:4px}.warning{border-left:4px solid #b75d00;padding:10px 14px;background:#fff7ed}.ok{border-left:4px solid #287a4a;padding:10px 14px;background:#effaf3}code{background:#f5f5f5;padding:2px 4px}a{color:#24557a}</style></head><body><h1>SEA-AD neural–glial benchmark</h1><p class="tag">neurobiology-single-cell-spatial</p><p>Can neural–glial state trajectories and spatial vulnerability patterns reproduce across regions and modalities?</p><div class="warning"><strong>Execution status:</strong> accession and metadata verified. Large or controlled matrices are not redistributed. Run the download plan after accepting source-specific terms.</div><h2>Accession manifest</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>role</th>
+      <th>repository</th>
+      <th>accession</th>
+      <th>version_policy</th>
+      <th>access</th>
+      <th>modalities</th>
+      <th>citation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sea_ad_processed_single_cell</td>
+      <td>discovery</td>
+      <td>Allen Institute/AWS</td>
+      <td>AWS s3://sea-ad-single-cell-profiling/; Brain Knowledge project UMSVXTDIAZTAFKGE43T</td>
+      <td>object ETag and LastModified locked at download</td>
+      <td>open processed data</td>
+      <td>snRNA-seq; snATAC-seq; multiome</td>
+      <td>Gabitto et al. Integrated multimodal cell atlas of Alzheimer’s disease. Nature Neuroscience 2024. DOI:10.1038/s41593-024-01774-5</td>
+    </tr>
+    <tr>
+      <td>sea_ad_spatial</td>
+      <td>spatial_discovery</td>
+      <td>Allen Institute/AWS</td>
+      <td>AWS s3://sea-ad-spatial-transcriptomics/</td>
+      <td>object ETag and LastModified locked</td>
+      <td>open</td>
+      <td>MERFISH; Xenium; spatial cell annotations</td>
+      <td>Gabitto et al. Nature Neuroscience 2024. DOI:10.1038/s41593-024-01774-5</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neuropathology</td>
+      <td>phenotype_anchor</td>
+      <td>Allen Institute/AWS</td>
+      <td>AWS s3://sea-ad-quantitative-neuropathology/</td>
+      <td>object ETag and LastModified locked</td>
+      <td>open</td>
+      <td>brightfield pathology; quantifications; annotations</td>
+      <td>SEA-AD quantitative neuropathology resource</td>
+    </tr>
+    <tr>
+      <td>sea_ad_multiregion</td>
+      <td>within-program_validation</td>
+      <td>Allen Institute/AWS</td>
+      <td>SEA-AD processed 11-region release (June 2026)</td>
+      <td>June 2026 release/object lock</td>
+      <td>open processed</td>
+      <td>snRNA-seq across 11 regions</td>
+      <td>SEA-AD Data and Downloads</td>
+    </tr>
+  </tbody>
+</table><h2>Independent validation</h2><p>Discovery: MTG multimodal atlas</p><p>Validation: region-held-out SEA-AD, AMP-AD external cohorts via amp_ad_molecular benchmark</p><p>Split unit: donor</p><h2>Download plan</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source_id</th>
+      <th>execution_mode</th>
+      <th>command_or_action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sea_ad_processed_single_cell</td>
+      <td>public-command</td>
+      <td>aws s3 ls --no-sign-request s3://sea-ad-single-cell-profiling/ /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/sea_ad_neural_glial/sea_ad_processed_single_cell/</td>
+    </tr>
+    <tr>
+      <td>sea_ad_spatial</td>
+      <td>public-command</td>
+      <td>aws s3 ls --no-sign-request s3://sea-ad-spatial-transcriptomics/ /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/sea_ad_neural_glial/sea_ad_spatial/</td>
+    </tr>
+    <tr>
+      <td>sea_ad_neuropathology</td>
+      <td>public-command</td>
+      <td>aws s3 ls --no-sign-request s3://sea-ad-quantitative-neuropathology/ /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/sea_ad_neural_glial/sea_ad_neuropathology/</td>
+    </tr>
+    <tr>
+      <td>sea_ad_multiregion</td>
+      <td>public-command</td>
+      <td>aws s3 ls --no-sign-request s3://sea-ad-single-cell-profiling/ /mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/sea_ad_neural_glial/sea_ad_multiregion/</td>
+    </tr>
+  </tbody>
+</table><h2>Research-use limits</h2><p>Outputs are retrospective research benchmarks. They are not diagnostic, prognostic, or treatment guidance.</p><p><a href="index.html">Back to registry</a></p></body></html>

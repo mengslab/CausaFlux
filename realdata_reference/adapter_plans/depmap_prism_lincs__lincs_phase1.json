@@ -1,0 +1,14 @@
+{
+  "accession": "GSE92742",
+  "adapter": "geo",
+  "command_or_action": "Fetch GEO series metadata for GSE92742 via NCBI HTTPS; list supplementary files",
+  "destination": "/mnt/data/causaflux_v170_work/CausaFlux_v1.7.0/realdata_reference_v170/data/depmap_prism_lincs/lincs_phase1",
+  "execution_mode": "public-command",
+  "metadata_only": true,
+  "redistributable_by_causaflux": false,
+  "request_payload": {
+    "geo_accession": "GSE92742"
+  },
+  "requires_user_authorization": false,
+  "source_id": "lincs_phase1"
+}
