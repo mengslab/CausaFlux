@@ -1,0 +1,10 @@
+include run.sh run.command run_prospective_loop.sh
+include README.md LICENSE VERSION CITATION.cff
+include RELEASE_NOTES.md CHANGELOG.md HOTFIX_NOTES.md VERIFICATION_RESULTS.md
+recursive-include docs *.md
+recursive-include configs *.yaml
+recursive-include demos *.md *.yaml *.sh *.csv
+recursive-include examples *.py *.csv *.md
+
+recursive-include benchmarks *.yaml *.csv *.bib *.md *.xlsx *.npz
+recursive-include src/causaflux/resources *.yaml *.xlsx

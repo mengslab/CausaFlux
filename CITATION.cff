@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: CausaFlux
+type: software
+version: 2.0.0
+date-released: 2026-08-07
+message: "If you use CausaFlux, cite the software release and describe the exact configuration and validation strategy."
+authors:
+  - family-names: Meng
+    given-names: Huan
+license: MIT
+repository-code: "Local packaged research release"
+abstract: "A dynamic, intervention-aware research platform with prospectively locked experimental cycles, LIMS/ELN contracts, model-freeze and preregistration manifests, QC-aware posterior updating, adaptive stopping, cost accounting, calibration tracking, and retained dynamic, multimodal, intervention, spatial, cancer, and neurobiology workflows."
+keywords:
+  - causal AI
+  - single-cell
+  - spatial omics
+  - drug response
+  - biomarkers
+  - neurobiology
+  - dynamic trajectory forecasting
+  - neural controlled differential equations
+  - perturbation generalization
+  - prospective experimentation
+  - LIMS and ELN
+  - preregistration
+  - adaptive experimental design

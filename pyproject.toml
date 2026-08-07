@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "causaflux"
+version = "2.0.0"
+description = "Release-gated prospectively validated virtual-cell platform integrating real longitudinal perturbation data, AI-guided multimodal dynamics, prospective experimentation, calibrated distribution-shift uncertainty, evidence ledgers, and publication-grade reporting."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "MIT"
+authors = [
+  {name = "Huan Meng and CausaFlux contributors"}
+]
+keywords = ["causal-ai", "single-cell", "multimodal", "mudata", "disease-evolution", "drug-response", "biomarkers", "active-learning", "spatial-omics", "heterogeneous-graph", "cell-cell-communication", "counterfactual-therapeutics", "causal-biomarkers", "early-warning", "drug-combinations", "treatment-sequence", "treatment-timing", "closed-loop-experimentation", "crispr-design", "experimental-design", "information-gain", "neurobiology", "neural-glial", "electrophysiology", "live-imaging", "apoe", "neurodegeneration", "dynamic-model-benchmark", "neural-cde", "irregular-time-transformer", "trajectory-forecasting", "perturbation-generalization", "multimodal-dynamics", "product-of-experts", "mixture-of-experts", "modality-dropout", "cross-modal-forecasting", "phosphoproteomics", "metabolomics", "lipidomics", "missing-not-at-random", "intervention-generalization", "pkpd", "conformal-prediction", "positivity", "sequential-g-computation", "marginal-structural-model", "spatiotemporal-tissue", "digital-tissue", "graph-conditioned-dynamics", "nicheformer", "spatial-interference", "organelle-graph", "regulatory-graph", "foundation-pretraining", "scgpt", "get", "mrvi", "esm2", "molformer", "dinov2", "linear-probe", "peft", "zero-shot", "prospective-experimentation", "lims", "eln", "preregistration", "adaptive-stopping", "calibration-tracking", "virtual-cell", "real-world-data", "model-routing", "interactive-ui", "prospective-validation", "virtual-cell-reporting"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+dependencies = [
+  "numpy>=1.26,<2",
+  "pandas>=2.1,<3",
+  "torch>=2.2,<2.3; platform_system == 'Darwin' and platform_machine == 'x86_64'",
+  "torch>=2.2; platform_system != 'Darwin' or platform_machine != 'x86_64'",
+  "PyYAML>=6.0",
+  "matplotlib>=3.8,<4",
+  "scikit-learn>=1.4,<1.7",
+  "networkx>=3.2,<4",
+  "anndata>=0.12,<0.14",
+  "mudata>=0.3.10,<0.4",
+  "scipy>=1.11,<2",
+  "h5py>=3.10,<4",
+  "Pillow>=10,<13",
+  "openpyxl>=3.1,<4"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5", "build>=1.2"]
+app = ["streamlit>=1.39,<2"]
+realdata = ["synapseclient>=4.7,<5", "dandi>=0.76,<1", "boto3>=1.34,<2", "openpyxl>=3.1,<4", "pyarrow>=15,<25"]
+
+[project.scripts]
+causaflux = "causaflux.cli:main"
+causaflux-ui = "causaflux.ui_app:cli_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.setuptools.package-data]
+causaflux = ["resources/realdata/*.yaml", "resources/realdata/snapshots/*.xlsx", "resources/validation/*.yaml"]

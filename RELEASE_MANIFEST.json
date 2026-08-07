@@ -1,0 +1,40 @@
+{
+  "framework": "CausaFlux",
+  "version": "2.0.0",
+  "release_name": "Prospectively Validated Virtual Cell",
+  "software_release_status": "PASS",
+  "prospective_validation_claim_in_bundled_reference": "NOT_YET_ELIGIBLE",
+  "claim_requires_real_evidence": true,
+  "required_real_criteria": 10,
+  "real_longitudinal_data_bridge": true,
+  "evidence_ledger": true,
+  "distribution_shift_calibration": true,
+  "negative_and_failed_result_reporting": true,
+  "minimum_real_prospective_cycles": 2,
+  "independent_replication_required": true,
+  "publication_dpi": 600,
+  "python": ">=3.10,<3.13",
+  "intel_macos_compatibility": "PyTorch 2.2.2 / NumPy 1.26.x path retained",
+  "locked_artifacts": {
+    "dist/causaflux-2.0.0-py3-none-any.whl": {
+      "sha256": "1ead0daab9cc028e3171ae9e97762d1481f1e3190a848c6a055a3d1f8c53482e",
+      "size_bytes": 429777
+    },
+    "dist/causaflux-2.0.0.tar.gz": {
+      "sha256": "f61cb442ee8b68e5ffbac9d58923c796863c32a394fd5dde132ec5ecc50ad5f5",
+      "size_bytes": 3323940
+    },
+    "v2_release_reference/validation/v2_release_gate.json": {
+      "sha256": "74a74a8baeafe2ae8e6ab195ee5567cbefe06bb1510c493199958b954e08bf81",
+      "size_bytes": 611
+    },
+    "v2_release_reference/evidence/evidence_ledger.csv": {
+      "sha256": "e786bdc6de0b5c6730488978b7d70ab4bb906dcd122a88f89ae50428095d5919",
+      "size_bytes": 3341
+    },
+    "v2_release_reference/report/index.html": {
+      "sha256": "ca5725bd64af778fd98d99e35a7c8d9e5307a6c738dac89605ad871f9ce14209",
+      "size_bytes": 13205
+    }
+  }
+}
