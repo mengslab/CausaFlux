@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "Figure3_prospective_cycle_evidence",
+  "formats": {
+    "pdf": "Figure3_prospective_cycle_evidence.pdf",
+    "png": "Figure3_prospective_cycle_evidence.png",
+    "svg": "Figure3_prospective_cycle_evidence.svg",
+    "tiff": "Figure3_prospective_cycle_evidence.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "evidence_report": true,
+    "release": "2.0.0"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "c62b088d4e7fb8702f16eb21727a46fb39999a18c6ba1a3d44894f8695f38219",
+    "png": "e620349438180b39613091bf0296369ae3d85a40d44132f8acb5fb81f7bda48f",
+    "svg": "054ebe3a6f4ffe266e2fb3e069610a3e9670b6c2bbb5c899d43514b4837eafbf",
+    "tiff": "b53de4937d97fc002ebbd798d960470429f381d21a74b2fb48369c891753f8a8"
+  },
+  "source_data": [
+    "Figure3_prospective_cycle_evidence__panel_a.csv"
+  ],
+  "synthetic_only": false,
+  "version": "1.9.0",
+  "visual_hash": "9580004114419041b45100000040000000000000000070417041104140001041",
+  "width_mm": 183.0
+}

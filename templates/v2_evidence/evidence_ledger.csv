@@ -1,0 +1,11 @@
+evidence_id,claim_id,status,evidence_kind,source,independent,prospective,synthetic,negative_or_failure,cycle,metric,value,threshold,notes,sha256,recorded_at_utc
+REAL_DYNAMIC_001,CF2_PHASE1_DYNAMIC_SUPERIORITY,PENDING,real_longitudinal_perturbation,,true,false,false,false,,trajectory_rmse,,lower than prespecified static baseline,Replace with actual locked evidence artifact and SHA-256,,
+REAL_MM_001,CF2_MULTIMODAL_FORECASTING,PENDING,real_multimodal_perturbation,,true,false,false,false,,forecast_metric,,prespecified gate,Replace with actual locked evidence artifact and SHA-256,,
+REAL_INTERVENTION_001,CF2_UNSEEN_INTERVENTION_GENERALIZATION,PENDING,real_longitudinal_perturbation,,true,false,false,false,,heldout_intervention_metric,,prespecified gate,Replace with actual locked evidence artifact and SHA-256,,
+REAL_SPATIAL_001,CF2_SPATIAL_CONTEXT_BENEFIT,PENDING,real_spatial_perturbation,,true,false,false,false,,heldout_spatial_metric,,prespecified gate,Replace with actual locked evidence artifact and SHA-256,,
+REAL_CYCLE_1,CF2_PROSPECTIVE_CYCLE_1,PENDING,prospective_cycle,,true,true,false,false,1,locked_primary_endpoint,,prespecified endpoint,Prediction must be frozen before outcome access,,
+REAL_CYCLE_2,CF2_PROSPECTIVE_CYCLE_2,PENDING,prospective_cycle,,true,true,false,false,2,locked_primary_endpoint,,prespecified endpoint,Updated model and new recommendation,,
+REAL_REPLICATION_001,CF2_EXTERNAL_REPLICATION,PENDING,external_lab_replication,,true,false,false,false,,replication_primary_endpoint,,prespecified replication criterion,External lab or independent cohort,,
+REAL_SHIFT_001,CF2_SHIFT_CALIBRATION,PENDING,distribution_shift_calibration,,true,false,false,false,,coverage_90,,0.82-0.98,Prespecified distribution shift,,
+REAL_LONGITUDINAL_LINK_001,CF2_REAL_LONGITUDINAL_CONNECTED,PENDING,real_longitudinal_perturbation,,true,false,false,false,,training_connection,,required,Actual dataset must be used by model training and prospective recommendation,,
+REAL_REPORTING_001,CF2_NEGATIVE_FAILURE_REPORTING,PENDING,real_negative_result,,true,true,false,true,,reporting_completeness,,all failed/negative experiments retained,Attest completeness with a locked reporting artifact,,

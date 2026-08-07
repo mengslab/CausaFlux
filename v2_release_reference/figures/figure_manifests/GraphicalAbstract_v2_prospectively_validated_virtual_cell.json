@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "GraphicalAbstract_v2_prospectively_validated_virtual_cell",
+  "formats": {
+    "pdf": "GraphicalAbstract_v2_prospectively_validated_virtual_cell.pdf",
+    "png": "GraphicalAbstract_v2_prospectively_validated_virtual_cell.png",
+    "svg": "GraphicalAbstract_v2_prospectively_validated_virtual_cell.svg",
+    "tiff": "GraphicalAbstract_v2_prospectively_validated_virtual_cell.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 150.0,
+  "metadata": {
+    "evidence_report": true,
+    "release": "2.0.0"
+  },
+  "profile": "cell_square",
+  "sha256": {
+    "pdf": "15a211236ab21b9bff034f4878a954627d868b41eef2603de367b16f2d50d55f",
+    "png": "f936eb786b5b9ea65706264aea229f058468d1613aff82f7e521c57d9fc344e6",
+    "svg": "869b63a93511b9f8d907b3e44be714a93c9830186589589e733a8960ef032acb",
+    "tiff": "33a998e7a66023754447b48be395b4526e9b33ea415dfd9dca1a4623f0cc18a5"
+  },
+  "source_data": [
+    "GraphicalAbstract_v2_prospectively_validated_virtual_cell__panel_a.csv"
+  ],
+  "synthetic_only": false,
+  "version": "1.9.0",
+  "visual_hash": "026012b402b0017800f8037800f800f000f0096800f001f000f80160022c064c",
+  "width_mm": 150.0
+}

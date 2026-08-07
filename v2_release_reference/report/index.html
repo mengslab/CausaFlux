@@ -1,0 +1,341 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CausaFlux v2.0.0</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:28px auto;padding:0 24px;color:#202124}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border:1px solid #ddd;padding:6px;vertical-align:top}th{background:#f3f5f6}.ok{border-left:5px solid #2D7F78;background:#f2fbf8;padding:12px}.warn{border-left:5px solid #B64C4C;background:#fff4f2;padding:12px}.muted{color:#687078}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}img{max-width:100%;border:1px solid #e2e4e5}</style></head><body>
+<h1>CausaFlux v2.0.0 — Prospectively Validated Virtual Cell</h1>
+<div class='warn'><b>Prospective-validation claim: LOCKED / NOT YET ELIGIBLE</b><br>Software release ready: True. Real criteria passed: 0/10.</div>
+<p>CausaFlux v2.0.0 treats the version title as a release standard, not an automatic claim. Synthetic software fixtures remain useful for regression testing but cannot satisfy the real validation gate.</p>
+<h2>Release criteria</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>criterion</th>
+      <th>description</th>
+      <th>passed</th>
+      <th>detail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CF2_PHASE1_DYNAMIC_SUPERIORITY</td>
+      <td>Phase 1 dynamic superiority established on real held-out longitudinal perturbation data</td>
+      <td>False</td>
+      <td>no qualifying real PASS evidence</td>
+    </tr>
+    <tr>
+      <td>CF2_MULTIMODAL_FORECASTING</td>
+      <td>Multimodal forecasting validated on real data</td>
+      <td>False</td>
+      <td>no qualifying real PASS evidence</td>
+    </tr>
+    <tr>
+      <td>CF2_UNSEEN_INTERVENTION_GENERALIZATION</td>
+      <td>Unseen intervention generalization validated on real held-out interventions</td>
+      <td>False</td>
+      <td>no qualifying real PASS evidence</td>
+    </tr>
+    <tr>
+      <td>CF2_SPATIAL_CONTEXT_BENEFIT</td>
+      <td>Spatial context adds predictive value on independent real tissue data</td>
+      <td>False</td>
+      <td>no qualifying real PASS evidence</td>
+    </tr>
+    <tr>
+      <td>CF2_PROSPECTIVE_CYCLE_1</td>
+      <td>Prospective experimental Cycle 1 completed with preregistered locked predictions</td>
+      <td>False</td>
+      <td>no qualifying real PASS evidence</td>
+    </tr>
+    <tr>
+      <td>CF2_PROSPECTIVE_CYCLE_2</td>
+      <td>Prospective experimental Cycle 2 completed after model update</td>
+      <td>False</td>
+      <td>no qualifying real PASS evidence</td>
+    </tr>
+    <tr>
+      <td>CF2_EXTERNAL_REPLICATION</td>
+      <td>Independent cohort or external laboratory replication completed</td>
+      <td>False</td>
+      <td>independent qualifying replications=0</td>
+    </tr>
+    <tr>
+      <td>CF2_SHIFT_CALIBRATION</td>
+      <td>Calibrated uncertainty maintained under prespecified distribution shift</td>
+      <td>False</td>
+      <td>no qualifying real PASS evidence</td>
+    </tr>
+    <tr>
+      <td>CF2_REAL_LONGITUDINAL_CONNECTED</td>
+      <td>Actual longitudinal perturbation dataset connected to model training and prospective loop</td>
+      <td>False</td>
+      <td>no qualifying real PASS evidence</td>
+    </tr>
+    <tr>
+      <td>CF2_NEGATIVE_FAILURE_REPORTING</td>
+      <td>Failures and negative results are explicitly retained and reported</td>
+      <td>False</td>
+      <td>real-study reporting completeness not attested</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Evidence ledger</h2><p>Every release-level claim is linked to a typed evidence record. Pending, failed and negative evidence is retained rather than removed from the report.</p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>evidence_id</th>
+      <th>claim_id</th>
+      <th>status</th>
+      <th>evidence_kind</th>
+      <th>source</th>
+      <th>independent</th>
+      <th>prospective</th>
+      <th>synthetic</th>
+      <th>negative_or_failure</th>
+      <th>cycle</th>
+      <th>metric</th>
+      <th>value</th>
+      <th>threshold</th>
+      <th>notes</th>
+      <th>sha256</th>
+      <th>recorded_at_utc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SW_DYNAMIC</td>
+      <td>CF2_PHASE1_DYNAMIC_SUPERIORITY</td>
+      <td>SOFTWARE_PASS</td>
+      <td>software_fixture</td>
+      <td>/mnt/data/CausaFlux_v2.0.0/dynamic_benchmark_reference/dynamic_benchmark_status.json</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Synthetic dynamic superiority software gate only.</td>
+      <td>127f1fc02c9c518a0560ba72fa075fc7aa88404ce460672a2fbe11d9a8fcba77</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+    <tr>
+      <td>SW_MULTIMODAL</td>
+      <td>CF2_MULTIMODAL_FORECASTING</td>
+      <td>SOFTWARE_PASS</td>
+      <td>software_fixture</td>
+      <td>/mnt/data/CausaFlux_v2.0.0/multimodal_dynamic_reference/multimodal_exit_gate.json</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Synthetic multimodal forecasting gate only.</td>
+      <td>df35c483e3cd4b590843d5f6df722acf109f2cca1e47c5f3dd86983996ac4a34</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+    <tr>
+      <td>SW_INTERVENTION</td>
+      <td>CF2_UNSEEN_INTERVENTION_GENERALIZATION</td>
+      <td>SOFTWARE_PASS</td>
+      <td>software_fixture</td>
+      <td>/mnt/data/CausaFlux_v2.0.0/intervention_generalization_reference/intervention_exit_gate.json</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Synthetic unseen-intervention software gate only.</td>
+      <td>a6939296b640bf298ada0608d534af1abc15901ad11ef45d2ea5f17bc00822d2</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+    <tr>
+      <td>SW_SPATIAL</td>
+      <td>CF2_SPATIAL_CONTEXT_BENEFIT</td>
+      <td>SOFTWARE_PASS</td>
+      <td>software_fixture</td>
+      <td>/mnt/data/CausaFlux_v2.0.0/spatiotemporal_tissue_reference/spatiotemporal_exit_gate.json</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Synthetic spatial-context software gate only.</td>
+      <td>d024f248b24ffb0a4f9b27b043dd10dbf4abf14c0dba7c55ec819e1694baf47c</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+    <tr>
+      <td>SW_PROSPECTIVE_CYCLE_1</td>
+      <td>CF2_PROSPECTIVE_CYCLE_1</td>
+      <td>SOFTWARE_PASS</td>
+      <td>software_fixture</td>
+      <td>/mnt/data/CausaFlux_v2.0.0/prospective_loop_reference/prospective_exit_gate.json</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Prospectively locked synthetic workflow; not a real experimental cycle.</td>
+      <td>e5c45d5bab77950bbdcb3e6097f248c5252239d14d98bfe6a22390c99fe06593</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+    <tr>
+      <td>SW_PROSPECTIVE_CYCLE_2</td>
+      <td>CF2_PROSPECTIVE_CYCLE_2</td>
+      <td>SOFTWARE_PASS</td>
+      <td>software_fixture</td>
+      <td>/mnt/data/CausaFlux_v2.0.0/prospective_loop_reference/prospective_exit_gate.json</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Prospectively locked synthetic workflow; not a real experimental cycle.</td>
+      <td>e5c45d5bab77950bbdcb3e6097f248c5252239d14d98bfe6a22390c99fe06593</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+    <tr>
+      <td>REAL_OBSERVATIONAL_REPLICATION</td>
+      <td>CF2_EXTERNAL_REPLICATION</td>
+      <td>PARTIAL</td>
+      <td>independent_cohort_replication</td>
+      <td>/mnt/data/CausaFlux_v2.0.0/biological_validation_reference/biological_validation_status.json</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Retained observational source-cohort replication=3; does not satisfy perturbational external replication.</td>
+      <td>d00cd8d0cbd00bf73c3bb636aa5218e30b5d0cc7cdfdac5f2c3cac3eb3e29959</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+    <tr>
+      <td>PENDING_01</td>
+      <td>CF2_SHIFT_CALIBRATION</td>
+      <td>PENDING</td>
+      <td>release_boundary</td>
+      <td>CausaFlux v2.0.0 release gate</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>No real distribution-shift calibration evidence ingested.</td>
+      <td>NaN</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+    <tr>
+      <td>PENDING_02</td>
+      <td>CF2_REAL_LONGITUDINAL_CONNECTED</td>
+      <td>PENDING</td>
+      <td>release_boundary</td>
+      <td>CausaFlux v2.0.0 release gate</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Public dataset adapters are available, but no local real longitudinal perturbation training run is bundled as biological evidence.</td>
+      <td>NaN</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+    <tr>
+      <td>PENDING_03</td>
+      <td>CF2_NEGATIVE_FAILURE_REPORTING</td>
+      <td>PENDING</td>
+      <td>release_boundary</td>
+      <td>CausaFlux v2.0.0 release gate</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Reporting machinery is present; real-study completeness must be attested from the actual prospective study ledger.</td>
+      <td>NaN</td>
+      <td>2026-08-07T19:25:57+00:00</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Real longitudinal perturbation data bridge</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>dataset_id</th>
+      <th>repository</th>
+      <th>accession</th>
+      <th>title</th>
+      <th>organism</th>
+      <th>modality</th>
+      <th>perturbations</th>
+      <th>temporal_design</th>
+      <th>download_page</th>
+      <th>integration_role</th>
+      <th>bundled_data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>geo_gse8057_platinum_timecourse</td>
+      <td>NCBI GEO</td>
+      <td>GSE8057</td>
+      <td>Expression data from ovarian cancer cells with time-course and concentration-profiles</td>
+      <td>Homo sapiens</td>
+      <td>transcriptomic microarray</td>
+      <td>cisplatin; oxaliplatin; vehicle</td>
+      <td>pre, 0h, 2h, 6h, 16h, 24h after 2h drug exposure; dose-response at 16h</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE8057</td>
+      <td>real longitudinal perturbation benchmark</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>lincs_gse70138_l1000</td>
+      <td>NIH LINCS / NCBI GEO</td>
+      <td>GSE70138</td>
+      <td>L1000 Connectivity Map perturbational profiles, LINCS Phase II</td>
+      <td>Homo sapiens</td>
+      <td>L1000 transcriptomic signatures</td>
+      <td>small molecules; genetic loss/gain of function</td>
+      <td>condition metadata include perturbagen, cell line, dose and time point</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138</td>
+      <td>large-scale unseen-intervention/time/dose benchmark</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>lincs_gse101406_multimodal</td>
+      <td>NIH LINCS / NCBI GEO</td>
+      <td>GSE101406</td>
+      <td>Perturbational proteomic and transcriptional profiles of 90 small molecules</td>
+      <td>Homo sapiens</td>
+      <td>P100 phosphoproteomics; GCP chromatin PTM; L1000 transcriptomics</td>
+      <td>90 small molecules in six cell lines</td>
+      <td>P100 3h; L1000 6h; GCP 24h</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE101406</td>
+      <td>real multimodal perturbation validation</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+<div class='grid'><div><h3>Evidence ladder</h3><img src='../figures/Figure1_v2_release_evidence_ladder.png'></div><div><h3>Claim–evidence matrix</h3><img src='../figures/Figure2_claim_evidence_matrix.png'></div><div><h3>Prospective sequence</h3><img src='../figures/Figure3_prospective_cycle_evidence.png'></div><div><h3>Ledger composition</h3><img src='../figures/Figure4_evidence_ledger_composition.png'></div><div><h3>Virtual-cell validation flow</h3><img src='../figures/GraphicalAbstract_v2_prospectively_validated_virtual_cell.png'></div></div>
+<h2>Interpretation boundary</h2><p><b>Do not describe CausaFlux as prospectively validated unless this report shows PROSPECTIVELY_VALIDATED.</b> The bundled reference package is a stable software release with a locked real-evidence gate. Real experimental evidence must be supplied through the evidence ledger and pass all criteria.</p>
+</body></html>

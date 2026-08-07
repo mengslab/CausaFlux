@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "Figure4_evidence_ledger_composition",
+  "formats": {
+    "pdf": "Figure4_evidence_ledger_composition.pdf",
+    "png": "Figure4_evidence_ledger_composition.png",
+    "svg": "Figure4_evidence_ledger_composition.svg",
+    "tiff": "Figure4_evidence_ledger_composition.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 68.0,
+  "metadata": {
+    "evidence_report": true,
+    "release": "2.0.0"
+  },
+  "profile": "nature_single",
+  "sha256": {
+    "pdf": "f08a0fcf76eb8f22ff6459796a1a83ed02b2a1549093f2899c386f0d6bec0bd6",
+    "png": "f23869e97ed33ab952776de898c087cd4fd9165b5c96d8ab57e62832917d7cc5",
+    "svg": "8b4f4d6ad9790b70d89dec765b97bb16eec3bee817bbde56cfd4a376775ce535",
+    "tiff": "181bdd63f590c7256b428f19391bec317c35ba88f5cd008c14eceb73d1d3e6f8"
+  },
+  "source_data": [
+    "Figure4_evidence_ledger_composition__panel_a.csv"
+  ],
+  "synthetic_only": false,
+  "version": "1.9.0",
+  "visual_hash": "249804b525452405060126002681068028002c000d600568c56006610aaa0058",
+  "width_mm": 89.0
+}

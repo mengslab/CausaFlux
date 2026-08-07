@@ -1,0 +1,24 @@
+{
+  "schema_version": "2.0.0",
+  "required_columns": [
+    "trajectory_id",
+    "donor_id",
+    "time",
+    "history_id",
+    "target",
+    "dose",
+    "sequence",
+    "fate"
+  ],
+  "feature_columns": "one or more columns prefixed feature__",
+  "intervention_columns": "one or more columns prefixed int__",
+  "requirements": [
+    "each trajectory contains at least four ordered observations",
+    "all trajectories used together have the same number of time points for the current benchmark adapter",
+    "time is numeric and strictly increasing within each trajectory",
+    "history_id encodes the complete intervention history and must be held out as a group for unseen-history evaluation",
+    "donor_id is the biological or independent experimental unit",
+    "fate is constant within trajectory",
+    "future intervention schedule is known before outcome measurement"
+  ]
+}

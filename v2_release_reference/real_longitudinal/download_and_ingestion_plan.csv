@@ -1,0 +1,4 @@
+dataset_id,repository,accession,download_page,integration_role,action,redistributed
+geo_gse8057_platinum_timecourse,NCBI GEO,GSE8057,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE8057,real longitudinal perturbation benchmark,Download from authoritative repository; retain repository checksum/metadata; transform with CausaFlux longitudinal contract.,False
+lincs_gse70138_l1000,NIH LINCS / NCBI GEO,GSE70138,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138,large-scale unseen-intervention/time/dose benchmark,Download from authoritative repository; retain repository checksum/metadata; transform with CausaFlux longitudinal contract.,False
+lincs_gse101406_multimodal,NIH LINCS / NCBI GEO,GSE101406,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE101406,real multimodal perturbation validation,Download from authoritative repository; retain repository checksum/metadata; transform with CausaFlux longitudinal contract.,False

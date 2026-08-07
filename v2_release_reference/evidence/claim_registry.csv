@@ -1,0 +1,11 @@
+claim_id,claim_text
+CF2_PHASE1_DYNAMIC_SUPERIORITY,Phase 1 dynamic superiority established on real held-out longitudinal perturbation data
+CF2_MULTIMODAL_FORECASTING,Multimodal forecasting validated on real data
+CF2_UNSEEN_INTERVENTION_GENERALIZATION,Unseen intervention generalization validated on real held-out interventions
+CF2_SPATIAL_CONTEXT_BENEFIT,Spatial context adds predictive value on independent real tissue data
+CF2_PROSPECTIVE_CYCLE_1,Prospective experimental Cycle 1 completed with preregistered locked predictions
+CF2_PROSPECTIVE_CYCLE_2,Prospective experimental Cycle 2 completed after model update
+CF2_EXTERNAL_REPLICATION,Independent cohort or external laboratory replication completed
+CF2_SHIFT_CALIBRATION,Calibrated uncertainty maintained under prespecified distribution shift
+CF2_REAL_LONGITUDINAL_CONNECTED,Actual longitudinal perturbation dataset connected to model training and prospective loop
+CF2_NEGATIVE_FAILURE_REPORTING,Failures and negative results are explicitly retained and reported

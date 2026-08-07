@@ -1,0 +1,19 @@
+{
+  "evidence_boundary": "Bundled trajectory is a software-reference virtual cell. It is not a biological prediction for a patient, animal, or cell line.",
+  "framework": "CausaFlux",
+  "modeling_mode": "reliability_weighted_validated_module_ensemble",
+  "prospective_claim_authorized": false,
+  "selected_intervention": "combo_recovery",
+  "selected_intervention_calibrated_utility": 0.34474849953673253,
+  "selected_intervention_label": "Combination recovery program",
+  "selected_intervention_uncertainty": 0.09306671135682718,
+  "state_variables": [
+    "proteostasis_capacity",
+    "mitochondrial_reserve",
+    "inflammatory_dysfunction",
+    "commitment_risk",
+    "recovery_potential"
+  ],
+  "version": "1.9.0",
+  "virtual_cell_id": "CFVC-REFERENCE-001"
+}

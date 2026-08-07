@@ -1,0 +1,5 @@
+trajectory_id,donor_id,time,history_id,target,dose,sequence,fate,int__drugA,feature__state_1,feature__state_2
+traj_001,donor_001,0.0,drugA_1uM,drugA,1.0,continuous,recovery,0.0,0.1,0.8
+traj_001,donor_001,2.0,drugA_1uM,drugA,1.0,continuous,recovery,1.0,0.4,0.6
+traj_001,donor_001,6.0,drugA_1uM,drugA,1.0,continuous,recovery,1.0,0.6,0.3
+traj_001,donor_001,24.0,drugA_1uM,drugA,1.0,continuous,recovery,1.0,0.2,0.7

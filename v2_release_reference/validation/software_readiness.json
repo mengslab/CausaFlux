@@ -1,0 +1,9 @@
+{
+  "dynamic_software_gate": true,
+  "intervention_software_gate": true,
+  "multimodal_software_gate": true,
+  "prospective_locking_software_gate": true,
+  "realdata_registry_gate": true,
+  "spatial_software_gate": true,
+  "v1_9_integrated_virtual_cell_gate": true
+}

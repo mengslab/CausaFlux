@@ -1,0 +1,3 @@
+experiment_id,cycle,result_type,status,primary_endpoint,reason,cost_incurred,retained_in_evidence_ledger,notes
+EXP001,1,failed_assay,FAILED_QC,,technical failure,1.0,true,
+EXP002,1,negative_result,VALID,no_effect,biological negative result,1.0,true,

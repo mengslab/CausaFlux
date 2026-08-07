@@ -1,0 +1,30 @@
+{
+  "dpi": 600,
+  "figure_id": "Figure2_claim_evidence_matrix",
+  "formats": {
+    "pdf": "Figure2_claim_evidence_matrix.pdf",
+    "png": "Figure2_claim_evidence_matrix.png",
+    "svg": "Figure2_claim_evidence_matrix.svg",
+    "tiff": "Figure2_claim_evidence_matrix.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "evidence_report": true,
+    "release": "2.0.0"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "25e0cb5d3eac76f005528b2a05af5d5d96f91a49e39268061ac8b401ff482f56",
+    "png": "114a4eb233e3f6fcd03605c01a40c89b11e8a141e2c355b09d4860161385623a",
+    "svg": "5b042ef3b0177270e7ee9a668ba9451caf3a74aa6208a58b08d570768ab80904",
+    "tiff": "dda1c6ddc3a405e2bafb771ec66f8b8289798a07166b3123f054ec6fa3cbf5cd"
+  },
+  "source_data": [
+    "Figure2_claim_evidence_matrix__panel_a.csv"
+  ],
+  "synthetic_only": false,
+  "version": "1.9.0",
+  "visual_hash": "4ad349040a844804080408140864089c309d1825100510050803010a0a3e0e70",
+  "width_mm": 183.0
+}

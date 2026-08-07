@@ -1,0 +1,23 @@
+{
+  "adaptive_stop_reason": "maximum_cycles_reached",
+  "authorization_boundary": "Reference result validates software logic only. A real claim requires three prospectively locked experimental cycles, with Cycle 3 independent confirmation or falsification.",
+  "completed_cycles": 3,
+  "cycle3_independent_confirmation_or_falsification": true,
+  "cycle3_independent_confirmation_required": true,
+  "cycle3_roles": [
+    "independent_confirmation_or_falsification"
+  ],
+  "exit_criterion": "Model-guided selection must improve outcome discovery, uncertainty reduction, experiment efficiency, or recovery-trajectory identification relative to a prespecified non-AI strategy.",
+  "framework": "CausaFlux",
+  "n_passing_metrics": 3,
+  "passing_metrics": [
+    "outcome_discovery",
+    "experiment_efficiency",
+    "recovery_trajectory_identification"
+  ],
+  "real_prospective_claim_authorized": false,
+  "required_sequence_complete": true,
+  "software_gate": "PASS",
+  "synthetic_fixture": true,
+  "version": "1.8.0"
+}

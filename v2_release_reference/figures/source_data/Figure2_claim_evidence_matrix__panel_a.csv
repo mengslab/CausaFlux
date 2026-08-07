@@ -1,0 +1,11 @@
+,claim_id,software_fixture,real_longitudinal_perturbation,real_multimodal_perturbation,real_spatial_perturbation,prospective_cycle,external_lab_replication,independent_cohort_replication,distribution_shift_calibration,real_negative_result,real_failed_assay
+0,CF2_PHASE1_DYNAMIC_SUPERIORITY,1,0,0,0,0,0,0,0,0,0
+1,CF2_MULTIMODAL_FORECASTING,1,0,0,0,0,0,0,0,0,0
+2,CF2_UNSEEN_INTERVENTION_GENERALIZATION,1,0,0,0,0,0,0,0,0,0
+3,CF2_SPATIAL_CONTEXT_BENEFIT,1,0,0,0,0,0,0,0,0,0
+4,CF2_PROSPECTIVE_CYCLE_1,1,0,0,0,0,0,0,0,0,0
+5,CF2_PROSPECTIVE_CYCLE_2,1,0,0,0,0,0,0,0,0,0
+6,CF2_EXTERNAL_REPLICATION,0,0,0,0,0,0,1,0,0,0
+7,CF2_SHIFT_CALIBRATION,0,0,0,0,0,0,0,0,0,0
+8,CF2_REAL_LONGITUDINAL_CONNECTED,0,0,0,0,0,0,0,0,0,0
+9,CF2_NEGATIVE_FAILURE_REPORTING,0,0,0,0,0,0,0,0,0,0

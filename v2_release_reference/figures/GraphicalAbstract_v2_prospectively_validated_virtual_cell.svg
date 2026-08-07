@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="333.847559pt" height="331.721575pt" viewBox="0 0 333.847559 331.721575" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-07T19:26:02.624068</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 331.721575 
+L 333.847559 331.721575 
+L 333.847559 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <g id="patch_2">
+     <path d="M 115.932498 48.348811 
+L 217.915061 48.348811 
+Q 222.387061 48.348811 222.387061 43.876811 
+L 222.387061 25.923504 
+Q 222.387061 21.451504 217.915061 21.451504 
+L 115.932498 21.451504 
+Q 111.460498 21.451504 111.460498 25.923504 
+L 111.460498 43.876811 
+Q 111.460498 48.348811 115.932498 48.348811 
+z
+" style="fill: #f1f7f6; stroke: #6d747a; stroke-width: 0.8; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(116.88253 32.458161)">REAL LONGITUDINAL</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(115.932498 42.088279)">PERTURBATION DATA</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 166.92378 51.634193 
+Q 166.92378 55.091673 166.92378 57.431119 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+    <path d="M 168.52378 54.231119 
+L 166.92378 57.431119 
+L 165.32378 54.231119 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <g id="patch_4">
+     <path d="M 106.087514 88.728338 
+L 227.760045 88.728338 
+Q 232.232045 88.728338 232.232045 84.256338 
+L 232.232045 66.303032 
+Q 232.232045 61.831032 227.760045 61.831032 
+L 106.087514 61.831032 
+Q 101.615514 61.831032 101.615514 66.303032 
+L 101.615514 84.256338 
+Q 101.615514 88.728338 106.087514 88.728338 
+z
+" style="fill: #f1f7f6; stroke: #6d747a; stroke-width: 0.8; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(106.087514 72.837688)">DYNAMIC + MULTIMODAL</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(133.450295 82.467807)">VIRTUAL CELL</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 166.92378 92.013721 
+Q 166.92378 95.471201 166.92378 97.810646 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+    <path d="M 168.52378 94.610646 
+L 166.92378 97.810646 
+L 165.32378 94.610646 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <g id="patch_6">
+     <path d="M 104.63492 129.107866 
+L 229.212639 129.107866 
+Q 233.684639 129.107866 233.684639 124.635866 
+L 233.684639 106.682559 
+Q 233.684639 102.210559 229.212639 102.210559 
+L 104.63492 102.210559 
+Q 100.16292 102.210559 100.16292 106.682559 
+L 100.16292 124.635866 
+Q 100.16292 129.107866 104.63492 129.107866 
+z
+" style="fill: #f1f7f6; stroke: #6d747a; stroke-width: 0.8; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(104.63492 113.217216)">UNSEEN INTERVENTION +</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(123.446076 122.847334)">SPATIAL CONTEXT</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 166.92378 132.393248 
+Q 166.92378 135.850728 166.92378 138.190174 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+    <path d="M 168.52378 134.990174 
+L 166.92378 138.190174 
+L 165.32378 134.990174 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <g id="patch_8">
+     <path d="M 112.93392 169.487393 
+L 220.913639 169.487393 
+Q 225.385639 169.487393 225.385639 165.015393 
+L 225.385639 147.062087 
+Q 225.385639 142.590087 220.913639 142.590087 
+L 112.93392 142.590087 
+Q 108.46192 142.590087 108.46192 147.062087 
+L 108.46192 165.015393 
+Q 108.46192 169.487393 112.93392 169.487393 
+z
+" style="fill: #f1f7f6; stroke: #6d747a; stroke-width: 0.8; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(112.93392 153.596743)">LOCKED PROSPECTIVE</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(134.80278 163.226862)">CYCLES 1 → 2</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 166.92378 172.772776 
+Q 166.92378 176.230256 166.92378 178.569701 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+    <path d="M 168.52378 175.369701 
+L 166.92378 178.569701 
+L 165.32378 175.369701 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <g id="patch_10">
+     <path d="M 132.49153 209.866921 
+L 201.35603 209.866921 
+Q 205.82803 209.866921 205.82803 205.394921 
+L 205.82803 187.441615 
+Q 205.82803 182.969615 201.35603 182.969615 
+L 132.49153 182.969615 
+Q 128.01953 182.969615 128.01953 187.441615 
+L 128.01953 205.394921 
+Q 128.01953 209.866921 132.49153 209.866921 
+z
+" style="fill: #f7f5ee; stroke: #6d747a; stroke-width: 0.8; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(132.49153 193.976271)">INDEPENDENT</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(135.246217 203.60639)">REPLICATION</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 166.92378 213.152304 
+Q 166.92378 216.609783 166.92378 218.949229 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+    <path d="M 168.52378 215.749229 
+L 166.92378 218.949229 
+L 165.32378 215.749229 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <g id="patch_12">
+     <path d="M 121.414326 250.246448 
+L 212.433233 250.246448 
+Q 216.905233 250.246448 216.905233 245.774448 
+L 216.905233 227.821142 
+Q 216.905233 223.349142 212.433233 223.349142 
+L 121.414326 223.349142 
+Q 116.942326 223.349142 116.942326 227.821142 
+L 116.942326 245.774448 
+Q 116.942326 250.246448 121.414326 250.246448 
+z
+" style="fill: #f7f5ee; stroke: #6d747a; stroke-width: 0.8; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(121.414326 234.355798)">CALIBRATED SHIFT</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(133.449623 243.985917)">UNCERTAINTY</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 166.92378 253.531831 
+Q 166.92378 256.989311 166.92378 259.328756 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+    <path d="M 168.52378 256.128756 
+L 166.92378 259.328756 
+L 165.32378 256.128756 
+" style="fill: none; stroke: #40464b; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <g id="patch_14">
+     <path d="M 122.338155 290.625976 
+L 211.509405 290.625976 
+Q 215.981405 290.625976 215.981405 286.153976 
+L 215.981405 268.20067 
+Q 215.981405 263.72867 211.509405 263.72867 
+L 122.338155 263.72867 
+Q 117.866155 263.72867 117.866155 268.20067 
+L 117.866155 286.153976 
+Q 117.866155 290.625976 122.338155 290.625976 
+z
+" style="fill: #f7f5ee; stroke: #6d747a; stroke-width: 0.8; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(132.259733 274.735326)">CLAIM-LINKED</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(122.338155 284.365445)">EVIDENCE LEDGER</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 7.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #b64c4c" x="166.92378" y="313.624019" transform="rotate(-0 166.92378 313.624019)">CLAIM LOCKED — REAL EVIDENCE REQUIRED</text>
+   </g>
+  </g>
+ </g>
+</svg>

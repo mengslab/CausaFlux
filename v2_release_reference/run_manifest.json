@@ -1,0 +1,39 @@
+{
+  "artifact_manifest": "release_artifact_manifest.csv",
+  "external_evidence_files": [],
+  "framework": "CausaFlux",
+  "generated_at_utc": "2026-08-07T19:26:03.024501+00:00",
+  "release_gate": {
+    "authorization_boundary": "The v2 prospectively validated claim is emitted only when every criterion is supported by qualifying non-synthetic evidence in the locked evidence ledger.",
+    "evidence_ledger_valid": true,
+    "framework": "CausaFlux",
+    "generated_at_utc": "2026-08-07T19:25:57.377102+00:00",
+    "independent_replication_records": 0,
+    "prospectively_validated_virtual_cell": false,
+    "real_prospective_cycles_completed": [],
+    "real_required_criteria": 10,
+    "real_required_criteria_passed": 0,
+    "release_claim_status": "NOT_YET_ELIGIBLE",
+    "software_release_ready": true,
+    "version": "2.0.0"
+  },
+  "report": "report/index.html",
+  "software_checks": {
+    "dynamic_software_gate": true,
+    "intervention_software_gate": true,
+    "multimodal_software_gate": true,
+    "prospective_locking_software_gate": true,
+    "realdata_registry_gate": true,
+    "spatial_software_gate": true,
+    "v1_9_integrated_virtual_cell_gate": true
+  },
+  "validation": {
+    "missing": [],
+    "prospectively_validated_virtual_cell": false,
+    "release_claim_status": "NOT_YET_ELIGIBLE",
+    "require_prospectively_validated": false,
+    "software_release_ready": true,
+    "valid": true
+  },
+  "version": "2.0.0"
+}

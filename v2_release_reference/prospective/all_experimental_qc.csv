@@ -1,0 +1,7 @@
+cycle_id,experiment_id,sample_id,assay_status,qc_metric,qc_value,qc_threshold,qc_pass,failure_reason,usable_for_primary_endpoint,locked_evaluation_eligible
+1,IMG_ER_RECOVERY_18H,C1-IMG_ER_RECOVERY_18H-R1,pass,synthetic_assay_quality,0.91,0.7,True,,True,True
+1,IMG_MITO_24H,C1-IMG_MITO_24H-R1,fail,synthetic_assay_quality,0.42,0.7,False,prespecified synthetic technical failure,False,False
+2,DRUG_IRE1I_TIMECOURSE,C2-DRUG_IRE1I_TIMECOURSE-R1,pass,synthetic_assay_quality,0.91,0.7,True,,True,True
+2,PROTEOMICS_XBP1_TARGETS,C2-PROTEOMICS_XBP1_TARGETS-R1,pass,synthetic_assay_quality,0.91,0.7,True,,True,True
+3,CRISPR_XBP1_24H,C3-CRISPR_XBP1_24H-R1,pass,synthetic_assay_quality,0.91,0.7,True,,True,True
+3,CRISPR_NDUFS1_24H,C3-CRISPR_NDUFS1_24H-R1,pass,synthetic_assay_quality,0.91,0.7,True,,True,True
