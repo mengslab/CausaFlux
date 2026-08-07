@@ -1,0 +1,15 @@
+{
+  "authorization_boundary": "CausaFlux may be labeled a prospectively validated virtual cell only after real perturbational evidence and three real prospectively locked cycles, including independent Cycle 3 confirmation/falsification, pass.",
+  "framework": "CausaFlux",
+  "generated_at_utc": "2026-08-07T18:48:15.199274+00:00",
+  "n_real_claim_checks": 2,
+  "n_real_claim_passed": 0,
+  "n_required_software_checks": 9,
+  "n_required_software_passed": 9,
+  "prospectively_validated_virtual_cell": false,
+  "real_prospectively_validated_virtual_cell_gate": "PENDING",
+  "real_world_observational_evidence_integrated": true,
+  "software_integrated_virtual_cell_gate": "PASS",
+  "software_reference_is_prospectively_locked": true,
+  "version": "1.9.0"
+}

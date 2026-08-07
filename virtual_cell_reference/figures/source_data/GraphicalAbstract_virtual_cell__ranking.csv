@@ -1,0 +1,2 @@
+,rank,scenario_id,scenario_label,cost,final_recovery_potential,final_proteostasis_capacity,final_mitochondrial_reserve,final_inflammatory_dysfunction,final_commitment_risk,mean_predictive_uncertainty,biological_utility,calibrated_utility,utility_per_cost
+0,1,combo_recovery,Combination recovery program,0.98,0.8029705053451259,0.4372691195410733,0.6311131706759885,0.2648093377188526,0.1699087525296651,0.0930667113568271,0.3652231760352345,0.3447484995367325,0.3517841832007475

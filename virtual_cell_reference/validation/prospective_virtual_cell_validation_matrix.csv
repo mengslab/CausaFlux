@@ -1,0 +1,12 @@
+module_or_gate,passed,evidence,requirement_class,status
+dynamic_state,True,synthetic held-out perturbation histories,required,PASS
+multimodal_state,True,synthetic multimodal longitudinal fixture,required,PASS
+intervention_generalization,True,synthetic unseen intervention axes,required,PASS
+spatiotemporal_context,True,synthetic held-out donors/sections,required,PASS
+foundation_transfer,True,synthetic donor/tissue/perturbation holdouts,required,PASS
+prospective_loop,True,three prospectively locked synthetic cycles,required,PASS
+cycle3_independence,True,independent confirmation/falsification role,required,PASS
+real_world_registry,True,accession-pinned real-world registry,required,PASS
+real_world_observational_replication,True,real source-cohort replication,required,PASS
+real_perturbational_validation,False,real perturbational validation,real_claim,PENDING
+real_three_cycle_prospective_validation,False,real Cycle 1→2→3 locked evidence,real_claim,PENDING

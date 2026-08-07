@@ -1,0 +1,27 @@
+{
+  "dpi": 600,
+  "figure_id": "Figure2_ai_intervention_ranking",
+  "formats": {
+    "pdf": "Figure2_ai_intervention_ranking.pdf",
+    "png": "Figure2_ai_intervention_ranking.png",
+    "svg": "Figure2_ai_intervention_ranking.svg",
+    "tiff": "Figure2_ai_intervention_ranking.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {},
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "7a02cc59683bb51ed57cad2d8eeced54ea919117b73d512c3e4b69fb9cccabe3",
+    "png": "4d1f4172c018573edea9766d6b3aab200be5cf7b35a2514b9b7ef7a13b743305",
+    "svg": "714bab0691a4891e8f1a684a5c66e4faea6fd7bb32b8c9821d343db30cd9a7bf",
+    "tiff": "61e5de8687ba532f22c5678c609b37d4e31931a8ebdcf96b37dc914d0921e40f"
+  },
+  "source_data": [
+    "Figure2_ai_intervention_ranking__ranking.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.9.0",
+  "visual_hash": "061339e128f2c9b1c9b13a350b255a214a25322d022d12ad022c06b006b301c3",
+  "width_mm": 183.0
+}

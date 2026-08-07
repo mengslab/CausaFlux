@@ -1,0 +1,27 @@
+{
+  "dpi": 600,
+  "figure_id": "Figure3_ai_model_router",
+  "formats": {
+    "pdf": "Figure3_ai_model_router.pdf",
+    "png": "Figure3_ai_model_router.png",
+    "svg": "Figure3_ai_model_router.svg",
+    "tiff": "Figure3_ai_model_router.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {},
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "8b2a4cc5fc641ab86adad0421ff1d15334b9349805cfd1fd8b1c133e7b3633a3",
+    "png": "db26abef56a8f0abe3d86d42bd846c845206dd10fff0cdd30e179e27d84ce836",
+    "svg": "ad64be7ec05dc81bed6ec0ccf046846f4488e8974d02eba776844c0f72b0c100",
+    "tiff": "fee793329df0ca87acbef08480032685d26eb15daeb0ee088df5d557f594aacd"
+  },
+  "source_data": [
+    "Figure3_ai_model_router__router.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.9.0",
+  "visual_hash": "0d914ae24ad049b149e1498d4d91099149910b110b910b914b114b91059501a7",
+  "width_mm": 183.0
+}

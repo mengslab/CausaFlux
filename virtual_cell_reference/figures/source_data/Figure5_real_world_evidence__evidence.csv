@@ -1,0 +1,7 @@
+,hypothesis_id,domain,preregistered,discovery_supported,source_cohort_replication_supported,cross_endpoint_support_fraction,external_dataset_status,perturbational_status,causal_claim_permitted,clinical_claim_permitted,evidence_tier
+0,BV-SEA-AD-001,neurobiology,True,True,True,0.8333333333333334,independent_source_cohort_replicated,not_applicable,False,False,real_observational_replication
+1,BV-SEA-AD-002,neurobiology,True,True,True,1.0,independent_source_cohort_replicated,not_applicable,False,False,real_observational_replication
+2,BV-SEA-AD-003,neurobiology,True,True,True,1.0,independent_source_cohort_replicated,not_applicable,False,False,real_observational_replication
+3,BV-HTAN-001,cancer,True,False,False,,pending_data_access,planned_not_executed,False,False,real_perturbational
+4,BV-DEPMAP-001,cancer,True,False,False,,pending_data_access,planned_not_executed,False,False,real_perturbational
+5,BV-SEA-AD-004,neurobiology,True,False,False,,pending_data_access,planned_not_executed,False,False,real_perturbational

@@ -1,0 +1,12 @@
+{
+  "benchmark_families": 6,
+  "framework": "CausaFlux",
+  "generated_at_utc": "2026-08-07T18:48:15.197430+00:00",
+  "large_or_controlled_data_redistributed": false,
+  "real_observational_hypotheses_supported": 3,
+  "real_perturbational_hypotheses_supported": 3,
+  "real_prospective_virtual_cell_cycles": 0,
+  "registered_sources": 24,
+  "status": "REAL_WORLD_EVIDENCE_INTEGRATED__REAL_PROSPECTIVE_VIRTUAL_CELL_PENDING",
+  "version": "1.9.0"
+}

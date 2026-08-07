@@ -1,0 +1,7 @@
+strategy,cycle,experiment_id,planned_cost,attempted_cost,failed_assay_cost,evaluable_cost,status
+CausaFlux_model_guided,1,IMG_ER_RECOVERY_18H,0.25,0.25,0.0,0.25,evaluable
+CausaFlux_model_guided,1,IMG_MITO_24H,0.24,0.24,0.24,0.0,failed_qc
+CausaFlux_model_guided,2,DRUG_IRE1I_TIMECOURSE,0.42,0.42,0.0,0.42,evaluable
+CausaFlux_model_guided,2,PROTEOMICS_XBP1_TARGETS,0.46,0.46,0.0,0.46,evaluable
+CausaFlux_model_guided,3,CRISPR_XBP1_24H,0.62,0.62,0.0,0.62,evaluable
+CausaFlux_model_guided,3,CRISPR_NDUFS1_24H,0.64,0.64,0.0,0.64,evaluable

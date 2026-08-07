@@ -1,0 +1,28 @@
+{
+  "dpi": 600,
+  "figure_id": "Figure5_real_world_evidence",
+  "formats": {
+    "pdf": "Figure5_real_world_evidence.pdf",
+    "png": "Figure5_real_world_evidence.png",
+    "svg": "Figure5_real_world_evidence.svg",
+    "tiff": "Figure5_real_world_evidence.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {},
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "e39c61feaf72b5659d4c055337eabbdb69258d6df1a9e3d40b4514d839f8fd45",
+    "png": "b244b241f3e1072aed3e905d3fdcb714cafc3f44c221758beb2a044ba70ec587",
+    "svg": "5aa05f7aeb4e6dbfe3402b2504dab84ada2c9815fec4879d4b641508ead89329",
+    "tiff": "8ca04b04b9e3b914accb508ae68ec7db22f2fdf825ac83d6f1a91dfb41e3e3fd"
+  },
+  "source_data": [
+    "Figure5_real_world_evidence__benchmarks.csv",
+    "Figure5_real_world_evidence__evidence.csv"
+  ],
+  "synthetic_only": false,
+  "version": "1.9.0",
+  "visual_hash": "159c09e409e489a409e413a40b249b6403640b24962416a4162416a414842216",
+  "width_mm": 183.0
+}

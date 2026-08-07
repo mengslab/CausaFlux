@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "assay_status": {
+      "enum": [
+        "pass",
+        "fail",
+        "partial"
+      ],
+      "type": "string"
+    },
+    "cycle_id": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "experiment_id": {
+      "type": "string"
+    },
+    "failure_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "qc_metric": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "qc_pass": {
+      "type": "boolean"
+    },
+    "qc_threshold": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "qc_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "sample_id": {
+      "type": "string"
+    },
+    "usable_for_primary_endpoint": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "cycle_id",
+    "experiment_id",
+    "sample_id",
+    "assay_status",
+    "qc_pass",
+    "usable_for_primary_endpoint"
+  ],
+  "title": "CausaFlux experimental QC ingestion contract",
+  "type": "object"
+}

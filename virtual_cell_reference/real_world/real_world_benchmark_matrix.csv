@@ -1,0 +1,7 @@
+benchmark_id,title,domain,status,n_sources,n_validation_sources,estimated_storage_gb,integration_role,virtual_cell_readiness
+htan_spatial_cancer,HTAN spatial breast-cancer benchmark,cancer-spatial,accession-ready,3,2,100-5000 depending on imaging level,spatial_context,accession_ready
+gdc_tcga_cptac_brca,GDC TCGA/CPTAC breast molecular benchmark,cancer-molecular,accession-ready,4,3,20-500 depending on raw versus harmonized level,multimodal_state,accession_ready
+depmap_prism_lincs,DepMap–PRISM–LINCS perturbation benchmark,cancer-perturbation,accession-ready,5,3,30-200,intervention,accession_ready
+sea_ad_neural_glial,SEA-AD neural–glial benchmark,neurobiology-single-cell-spatial,includes-real-metadata-snapshot,4,1,3-5000 by selected regions and image levels,spatial_context,metadata_integrated
+amp_ad_molecular,AMP-AD molecular validation benchmark,neurobiology-bulk-multiomics,accession-ready-controlled-components,5,3,5-1000,multimodal_state,accession_ready
+dandi_neurophysiology,DANDI electrophysiology and imaging benchmark,neurophysiology,accession-ready,3,2,1-1000 by selected assets,dynamic_state,accession_ready

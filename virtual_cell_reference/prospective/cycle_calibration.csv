@@ -1,0 +1,4 @@
+cycle,n_attempted,n_evaluable,n_failed,prediction_rmse,interval_coverage_90,brier_discovery,mean_predicted_discovery_probability,observed_discovery_rate,recovery_trajectories_identified
+1,2,1,1,0.9105956452137938,0.0,0.545136111111111,0.26166666666666666,1.0,1
+2,2,2,0,0.13136865942342207,1.0,0.0211773888888889,0.8551666666666666,1.0,2
+3,2,2,0,0.14225926672579706,1.0,0.007304944444444444,0.5128333333333334,0.5,1

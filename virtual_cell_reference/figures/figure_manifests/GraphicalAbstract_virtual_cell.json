@@ -1,0 +1,29 @@
+{
+  "dpi": 600,
+  "figure_id": "GraphicalAbstract_virtual_cell",
+  "formats": {
+    "pdf": "GraphicalAbstract_virtual_cell.pdf",
+    "png": "GraphicalAbstract_virtual_cell.png",
+    "svg": "GraphicalAbstract_virtual_cell.svg",
+    "tiff": "GraphicalAbstract_virtual_cell.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 150.0,
+  "metadata": {
+    "real_prospective_gate": "PENDING"
+  },
+  "profile": "cell_square",
+  "sha256": {
+    "pdf": "1c93c20d6b80bd019842ba66f849dc96edf568502347ce100536581812f9ebb9",
+    "png": "f27cd6c2fa7ba68db857872fab94b1697f931d488f8114471ba475820317b502",
+    "svg": "61cbbf5434f2d9f3e1e2d2621388eaf7e2aba6e752dbbf1f3119f1eb4c21c21d",
+    "tiff": "c1a695c251d97a1c09be1a12c9484ccbdaaa5bdc83a7866acd2778006f63bad1"
+  },
+  "source_data": [
+    "GraphicalAbstract_virtual_cell__ranking.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.9.0",
+  "visual_hash": "0000296918e718d759691046194718e714c7296b0802033003300d0c0b2e1aa6",
+  "width_mm": 150.0
+}

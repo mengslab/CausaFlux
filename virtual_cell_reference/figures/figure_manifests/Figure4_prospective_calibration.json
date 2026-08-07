@@ -1,0 +1,27 @@
+{
+  "dpi": 600,
+  "figure_id": "Figure4_prospective_calibration",
+  "formats": {
+    "pdf": "Figure4_prospective_calibration.pdf",
+    "png": "Figure4_prospective_calibration.png",
+    "svg": "Figure4_prospective_calibration.svg",
+    "tiff": "Figure4_prospective_calibration.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {},
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "bf13899c8fdbe961e9a740e2331274aa34018580c0aadfb6d434b775a52f3fb4",
+    "png": "ad940e85864b6002dfcbbdd2af60812d05bb3aee411a8bb2594ce2ce3c4e7792",
+    "svg": "863b2d22646532240fbc05e2ef5bbb3ca3427036570d940b0f5239b24683394a",
+    "tiff": "6c514124e0944352425d5f1bbbf1f09ed402e47c5aeb89f73ba51950e3b3a1c3"
+  },
+  "source_data": [
+    "Figure4_prospective_calibration__calibration.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.9.0",
+  "visual_hash": "1be51825422850ed428c628c6284a29ea796a38eb10ab10a930adb0b4b2818e3",
+  "width_mm": 183.0
+}

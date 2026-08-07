@@ -1,0 +1,6 @@
+cycle_id,experiment_id,sample_id,outcome_name,observed_value,standard_error,unit,endpoint_role,blinded,measurement_timestamp_utc
+1,IMG_ER_RECOVERY_18H,C1-IMG_ER_RECOVERY_18H-R1,observed_standardized_readout,-1.3190956452137939,0.27,standardized,primary,True,2026-08-07T18:02:09+00:00
+2,DRUG_IRE1I_TIMECOURSE,C2-DRUG_IRE1I_TIMECOURSE-R1,observed_standardized_readout,-0.9198302026449872,0.3,standardized,primary,True,2026-08-07T18:02:09+00:00
+2,PROTEOMICS_XBP1_TARGETS,C2-PROTEOMICS_XBP1_TARGETS-R1,observed_standardized_readout,-0.8438817073071538,0.28,standardized,primary,True,2026-08-07T18:02:09+00:00
+3,CRISPR_XBP1_24H,C3-CRISPR_XBP1_24H-R1,observed_standardized_readout,-1.0931812910867185,0.32,standardized,primary,True,2026-08-07T18:02:09+00:00
+3,CRISPR_NDUFS1_24H,C3-CRISPR_NDUFS1_24H-R1,observed_standardized_readout,-0.058503066491292305,0.34,standardized,primary,True,2026-08-07T18:02:09+00:00

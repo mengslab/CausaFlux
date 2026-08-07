@@ -1,0 +1,31 @@
+{
+  "dpi": 600,
+  "figure_id": "Figure1_virtual_cell_trajectory",
+  "formats": {
+    "pdf": "Figure1_virtual_cell_trajectory.pdf",
+    "png": "Figure1_virtual_cell_trajectory.png",
+    "svg": "Figure1_virtual_cell_trajectory.svg",
+    "tiff": "Figure1_virtual_cell_trajectory.tiff"
+  },
+  "framework": "CausaFlux",
+  "height_mm": 120.0,
+  "metadata": {
+    "selected_scenario": "combo_recovery"
+  },
+  "profile": "nature_double",
+  "sha256": {
+    "pdf": "2e3469c633d6b4f6533c9925747590e2fb9198a262d88e1fed1b1e29ab8479dd",
+    "png": "85f8d69bdcd179653b7f58fb1e654e075d1793feb5382b513564a0fcc1e9944a",
+    "svg": "8c86a2c481809ae4ecd967defae4fbad651e1c941392258a67c6229feaacb095",
+    "tiff": "ea81dc7b94b99aa25f0ab7de5543fd6eb06c23639113b4d940534411fa301066"
+  },
+  "source_data": [
+    "Figure1_virtual_cell_trajectory__trajectory.csv",
+    "Figure1_virtual_cell_trajectory__baseline.csv",
+    "Figure1_virtual_cell_trajectory__ranking.csv"
+  ],
+  "synthetic_only": true,
+  "version": "1.9.0",
+  "visual_hash": "5920196689061a0679a32947a2a392449327d32c5b05ca6cc96329c7296718e5",
+  "width_mm": 183.0
+}
