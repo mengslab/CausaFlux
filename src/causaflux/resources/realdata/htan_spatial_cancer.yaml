@@ -1,0 +1,91 @@
+id: htan_spatial_cancer
+title: HTAN spatial breast-cancer benchmark
+domain: cancer-spatial
+status: accession-ready
+estimated_storage_gb: 100-5000 depending on imaging level
+primary_question: Can CausaFlux recover reproducible tumor–immune–stromal niches and communication circuits associated with
+  treatment state?
+sources:
+- source_id: htan_oms_breast
+  role: discovery
+  repository: HTAN/Synapse
+  accession: HTAN center hta9; file Synapse IDs resolved from portal query
+  title: Omic and Multidimensional Spatial Atlas of Metastatic Breast Cancers
+  adapter: htan_synapse
+  version: Phase 1/portal-resolved immutable Synapse versions
+  access: mixed open and controlled
+  license: NIH/HTAN data-use terms; file-level access requirements
+  license_url: https://docs.humantumoratlas.org/data_access/portal/
+  url: https://humantumoratlas.org/center/hta9
+  modalities:
+  - spatial imaging
+  - single-cell RNA
+  - DNA/RNA sequencing
+  - clinical metadata
+  citation: Human Tumor Atlas Network; HTAN OMS Atlas Center
+  citation_url: https://humantumoratlas.org/center/hta9
+  query:
+    atlas_name: HTAN OMS Atlas
+    organ: Breast
+    data_types:
+    - Imaging
+    - scRNA-seq
+    - Bulk RNA-seq
+    - DNA-seq
+  notes: Runtime resolution writes exact synIDs and entity versions to accession_lock.json.
+- source_id: htan_breast_precancer
+  role: independent_validation
+  repository: HTAN/Synapse
+  accession: HTAN center hta6; file Synapse IDs resolved from portal query
+  title: Breast Pre-Cancer Atlas
+  adapter: htan_synapse
+  version: Phase 1/portal-resolved immutable Synapse versions
+  access: mixed open and controlled
+  license: NIH/HTAN data-use terms; file-level access requirements
+  license_url: https://docs.humantumoratlas.org/data_access/portal/
+  url: https://humantumoratlas.org/center/hta6
+  modalities:
+  - spatial imaging
+  - single-cell
+  - mutations
+  - copy number
+  - methylation
+  - gene expression
+  citation: Human Tumor Atlas Network; Breast Pre-Cancer Atlas Center
+  citation_url: https://humantumoratlas.org/center/hta6
+  query:
+    atlas_name: HTAN Breast PreCancer Atlas
+    organ: Breast
+  notes: Validation is biological-context transfer, not a matched metastatic cohort.
+- source_id: htan_cellular_geography_resistance
+  role: secondary_validation
+  repository: HTAN/Synapse
+  accession: HTAN center hta5; file Synapse IDs resolved from portal query
+  title: Cellular Geography of Therapeutic Resistance in Cancer
+  adapter: htan_synapse
+  version: portal-resolved
+  access: mixed open and controlled
+  license: NIH/HTAN data-use terms
+  license_url: https://docs.humantumoratlas.org/data_access/portal/
+  url: https://humantumoratlas.org/center/hta5
+  modalities:
+  - spatial
+  - single-cell
+  - treatment response
+  citation: Human Tumor Atlas Network
+  citation_url: https://humantumoratlas.org/center/hta5
+  query:
+    atlas_name: HTAN Cellular Geography
+  notes: Used only when comparable treatment-state metadata are available.
+evaluation:
+  split_unit: patient/case
+  discovery: OMS metastatic breast atlas
+  validation:
+  - Breast Pre-Cancer Atlas
+  - Cellular Geography of Therapeutic Resistance
+  primary_metrics:
+  - niche reproducibility
+  - donor-supported communication circuits
+  - cross-atlas state mapping
+  forbidden_leakage:
+  - multiple sections from one patient across folds

@@ -1,0 +1,120 @@
+id: amp_ad_molecular
+title: AMP-AD molecular validation benchmark
+domain: neurobiology-bulk-multiomics
+status: accession-ready-controlled-components
+estimated_storage_gb: 5-1000
+primary_question: Do candidate neural–glial and molecular programs replicate across independent human Alzheimer cohorts?
+sources:
+- source_id: ampad_rnaseq_harmonization
+  role: harmonized_discovery
+  repository: AD Knowledge Portal/Synapse
+  accession: syn21241740
+  title: AMP-AD RNA-seq Harmonization Study
+  adapter: synapse
+  version: Synapse entity version locked at download
+  access: mixed open/controlled; Synapse account and conditions may be required
+  license: Study-specific Synapse access requirements and data-use terms
+  license_url: https://adknowledgeportal.synapse.org/DataAccess/
+  url: https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn21241740
+  modalities:
+  - harmonized bulk RNA-seq
+  - clinical/pathology metadata
+  citation: AMP-AD RNAseq Harmonization Study, Synapse syn21241740
+  citation_url: https://doi.org/10.7303/syn21241740
+  query:
+    synapse_id: syn21241740
+  notes: Common processing of ROSMAP, MSBB and MayoRNAseq.
+- source_id: rosmap
+  role: discovery_cohort
+  repository: AD Knowledge Portal/Synapse
+  accession: syn3219045
+  title: Religious Orders Study and Memory and Aging Project
+  adapter: synapse
+  version: Synapse version lock
+  access: controlled for many individual-level files
+  license: ROSMAP/AD Knowledge Portal data-use terms
+  license_url: https://adknowledgeportal.synapse.org/DataAccess/
+  url: https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn3219045
+  modalities:
+  - longitudinal clinical
+  - neuropathology
+  - RNA-seq
+  - proteomics
+  - genomics
+  citation: ROSMAP Study, Synapse syn3219045
+  citation_url: https://doi.org/10.7303/syn3219045
+  query:
+    synapse_id: syn3219045
+  notes: Discovery only; subject-level access conditions must be honored.
+- source_id: msbb
+  role: independent_validation
+  repository: AD Knowledge Portal/Synapse
+  accession: syn3159438
+  title: Mount Sinai Brain Bank
+  adapter: synapse
+  version: Synapse version lock
+  access: mixed/controlled
+  license: MSBB/AD Knowledge Portal terms
+  license_url: https://adknowledgeportal.synapse.org/DataAccess/
+  url: https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn3159438
+  modalities:
+  - multi-region RNA-seq
+  - proteomics
+  - epigenomics
+  - pathology
+  citation: Mount Sinai Brain Bank Study, Synapse syn3159438
+  citation_url: https://doi.org/10.7303/syn3159438
+  query:
+    synapse_id: syn3159438
+  notes: Independent cohort validation.
+- source_id: mayo_rnaseq
+  role: independent_validation
+  repository: AD Knowledge Portal/Synapse
+  accession: syn5550404
+  title: Mayo RNAseq Study
+  adapter: synapse
+  version: Synapse version lock
+  access: mixed/controlled
+  license: Mayo/AD Knowledge Portal terms
+  license_url: https://adknowledgeportal.synapse.org/DataAccess/
+  url: https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn5550404
+  modalities:
+  - temporal cortex RNA-seq
+  - cerebellum RNA-seq
+  - proteomics/metabolomics where available
+  citation: Mayo RNAseq Study, Synapse syn5550404
+  citation_url: https://doi.org/10.7303/syn5550404
+  query:
+    synapse_id: syn5550404
+  notes: Independent cohort validation.
+- source_id: ampad_diverse_cohorts
+  role: generalization_validation
+  repository: AD Knowledge Portal/Synapse
+  accession: syn51732482
+  title: AMP-AD Diverse Cohorts Study
+  adapter: synapse
+  version: Synapse version lock
+  access: mixed/controlled
+  license: Study-specific terms
+  license_url: https://adknowledgeportal.synapse.org/DataAccess/
+  url: https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage?Study=syn51732482
+  modalities:
+  - harmonized human postmortem multiomics
+  citation: AMP-AD Diverse Cohorts Study, Synapse syn51732482
+  citation_url: https://doi.org/10.7303/syn51732482
+  query:
+    synapse_id: syn51732482
+  notes: Used for demographic and ancestry generalization where permitted.
+evaluation:
+  split_unit: participant/donor
+  discovery: ROSMAP or harmonized discovery partition
+  validation:
+  - MSBB
+  - MayoRNAseq
+  - AMP-AD Diverse Cohorts
+  primary_metrics:
+  - external effect direction
+  - meta-analysis heterogeneity
+  - calibration and transportability
+  forbidden_leakage:
+  - same donor or duplicated specimen across harmonized and source cohorts

@@ -1,0 +1,15 @@
+id: BV-DEPMAP-001
+title: Proteostasis dependence and drug response
+status: preregistered_pending_data
+domain: cancer
+hypothesis: IRE1-XBP1 proteostasis dependence predicts sensitivity to proteostasis-disrupting combinations after lineage and growth-rate adjustment.
+direction: positive
+primary_endpoint: PRISM viability response
+discovery_cohort: DepMap Public 26Q1 and PRISM
+discovery_validation: LINCS expression reversal
+replication_cohort: held-out lineages and independent LINCS accessions
+analysis: nested lineage-held-out regression against elastic net and random forest
+alpha: 0.05
+multiple_testing_family: perturbational cancer hypotheses
+perturbational_validation: required
+external_dataset_validation: planned

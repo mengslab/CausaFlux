@@ -1,0 +1,83 @@
+id: dandi_neurophysiology
+title: DANDI electrophysiology and imaging benchmark
+domain: neurophysiology
+status: accession-ready
+estimated_storage_gb: 1-1000 by selected assets
+primary_question: Can CausaFlux extract standardized functional state features from NWB electrophysiology and optical physiology
+  and transfer them across experiments?
+sources:
+- source_id: dandi_000048
+  role: multimodal_discovery
+  repository: DANDI
+  accession: DANDI:000048
+  title: Electrical and optical physiology in in vivo population-scale two-photon calcium imaging
+  adapter: dandi
+  version: latest published version resolved and locked
+  access: open
+  license: Resolve exact CC0 or CC-BY license from immutable Dandiset metadata
+  license_url: https://docs.dandiarchive.org/introduction/
+  url: https://dandiarchive.org/dandiset/000048
+  modalities:
+  - electrophysiology
+  - two-photon calcium imaging
+  - NWB
+  citation: DANDI:000048; cite Dandiset metadata and associated publication
+  citation_url: https://identifiers.org/DANDI:000048
+  query:
+    dandiset: 000048
+    version: latest_published
+  notes: Primary multimodal functional benchmark.
+- source_id: dandi_000039
+  role: independent_imaging_validation
+  repository: DANDI
+  accession: DANDI:000039
+  title: Allen Institute contrast tuning in mouse visual cortex with calcium imaging
+  adapter: dandi
+  version: latest published version resolved and locked
+  access: open
+  license: Resolve from immutable Dandiset metadata
+  license_url: https://docs.dandiarchive.org/introduction/
+  url: https://dandiarchive.org/dandiset/000039
+  modalities:
+  - calcium imaging
+  - stimulus response
+  - NWB
+  citation: DANDI:000039; Allen Institute contrast-tuning dataset
+  citation_url: https://identifiers.org/DANDI:000039
+  query:
+    dandiset: 000039
+    version: latest_published
+  notes: Independent imaging validation.
+- source_id: dandi_000568
+  role: independent_ephys_validation
+  repository: DANDI
+  accession: DANDI:000568
+  title: Probing subthreshold dynamics of hippocampal neurons by pulsed optogenetics
+  adapter: dandi
+  version: latest published version resolved and locked
+  access: open
+  license: Resolve from immutable Dandiset metadata
+  license_url: https://docs.dandiarchive.org/introduction/
+  url: https://dandiarchive.org/dandiset/000568
+  modalities:
+  - intracellular electrophysiology
+  - optogenetics
+  - NWB
+  citation: DANDI:000568; cite immutable Dandiset metadata and associated publication
+  citation_url: https://identifiers.org/DANDI:000568
+  query:
+    dandiset: 000568
+    version: latest_published
+  notes: Independent electrophysiology validation.
+evaluation:
+  split_unit: animal/session/cell as appropriate, with subject grouping
+  discovery: DANDI:000048
+  validation:
+  - DANDI:000039
+  - DANDI:000568
+  primary_metrics:
+  - feature extraction reproducibility
+  - modality alignment
+  - cross-dandiset transfer
+  forbidden_leakage:
+  - recordings from same subject or session across folds

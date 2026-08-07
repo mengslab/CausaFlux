@@ -1,0 +1,14 @@
+id: BV-HTAN-001
+title: Macrophage barrier and treatment resistance
+status: preregistered_pending_data
+domain: cancer
+hypothesis: Spatial macrophage barriers are associated with lower antigen-presentation connectivity and greater residual-disease burden.
+direction: positive
+primary_endpoint: residual disease burden
+discovery_cohort: HTAN metastatic breast cancer atlas
+replication_cohort: HTAN cellular geography of therapeutic resistance
+analysis: donor-blocked spatial permutation and mixed-effects regression
+alpha: 0.05
+multiple_testing_family: HTAN spatial hypotheses
+perturbational_validation: planned_macrophage_or_IFNG_perturbation
+external_dataset_validation: planned

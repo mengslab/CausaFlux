@@ -1,0 +1,8 @@
+version: 1.7.0
+hypotheses:
+  - manifest: sea_ad_apoe4_cps.yaml
+  - manifest: sea_ad_dementia_cps.yaml
+  - manifest: sea_ad_adnc_cps.yaml
+  - manifest: htan_macrophage_barrier.yaml
+  - manifest: depmap_proteostasis_response.yaml
+  - manifest: sea_ad_glial_stress.yaml
