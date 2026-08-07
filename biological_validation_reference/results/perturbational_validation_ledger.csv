@@ -1,0 +1,4 @@
+hypothesis_id,perturbation,repository,status,support_established
+BV-HTAN-001,macrophage depletion or IFNG rescue,HTAN / prospective experiment,planned_not_executed,False
+BV-DEPMAP-001,CRISPR dependency plus PRISM/LINCS response,DepMap / LINCS,planned_not_executed,False
+BV-SEA-AD-004,ex vivo neural-glial stress perturbation,SEA-AD / DANDI follow-up,planned_not_executed,False

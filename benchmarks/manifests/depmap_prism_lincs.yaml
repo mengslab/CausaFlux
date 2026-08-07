@@ -1,0 +1,128 @@
+id: depmap_prism_lincs
+title: DepMap–PRISM–LINCS perturbation benchmark
+domain: cancer-perturbation
+status: accession-ready
+estimated_storage_gb: 30-200
+primary_question: Can gene dependencies, drug sensitivity, and perturbational signatures jointly prioritize reproducible state-specific
+  interventions?
+sources:
+- source_id: depmap_26q1
+  role: discovery
+  repository: Broad DepMap/Figshare
+  accession: DepMap Public 26Q1
+  title: DepMap Public 26Q1
+  adapter: depmap_manual
+  version: 26Q1
+  access: public bulk download; acceptance of file-level terms required
+  license: Broad-generated DepMap release files generally CC BY 4.0; verify each file
+  license_url: https://forum.depmap.org/t/license-for-data-found-in-the-depmap-portal/130
+  url: https://depmap.org/portal/download/all/
+  modalities:
+  - CRISPR gene effect
+  - expression
+  - mutation
+  - copy number
+  - model metadata
+  citation: Broad DepMap. DepMap Public 26Q1; cite release DOI shown in download portal and DepMap portal
+  citation_url: https://forum.depmap.org/t/announcing-the-26q1-release/4606
+  query:
+    release: 26Q1
+    expected_files:
+    - CRISPRGeneEffect.csv
+    - Model.csv
+    - OmicsExpressionProteinCodingGenesTPMLogp1.csv
+    - OmicsSomaticMutations.csv
+  notes: The adapter never scrapes the portal; it validates user-downloaded release files and records checksums.
+- source_id: prism_repurposing
+  role: drug_response_discovery
+  repository: Broad DepMap
+  accession: PRISM Repurposing Secondary Screen
+  title: PRISM Repurposing drug-response screen
+  adapter: depmap_manual
+  version: portal file version locked at import
+  access: public bulk download with file-level terms
+  license: Verify file-specific terms in DepMap download panel
+  license_url: https://depmap.org/portal/download/all/
+  url: https://depmap.org/portal/download/all/
+  modalities:
+  - drug dose response
+  - cell viability
+  - compound metadata
+  citation: Corsello et al. Discovering the anti-cancer potential of non-oncology drugs by systematic viability profiling.
+    Nature Cancer 2020
+  citation_url: https://doi.org/10.1038/s43018-019-0018-6
+  query:
+    dataset_name: PRISM Repurposing Secondary Screen
+  notes: Imported locally; no automated portal scraping.
+- source_id: lincs_phase1
+  role: independent_signature_validation
+  repository: NCBI GEO/LINCS
+  accession: GSE92742
+  title: LINCS L1000 Phase I
+  adapter: geo
+  version: GEO accession update locked by file MD5
+  access: open
+  license: NCBI GEO terms and submitter-provided usage; citation required
+  license_url: https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html
+  url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742
+  modalities:
+  - L1000 expression signatures
+  - small molecule
+  - gene perturbation
+  citation: Subramanian et al. A Next Generation Connectivity Map. Cell 2017. DOI:10.1016/j.cell.2017.10.049
+  citation_url: https://doi.org/10.1016/j.cell.2017.10.049
+  query:
+    geo_accession: GSE92742
+    data_level: 5
+  notes: Large GCTX files are downloaded only on explicit request.
+- source_id: lincs_phase2
+  role: independent_signature_validation
+  repository: NCBI GEO/LINCS
+  accession: GSE70138
+  title: LINCS L1000 Phase II
+  adapter: geo
+  version: GEO accession update locked by file MD5
+  access: open
+  license: NCBI GEO terms and submitter-provided usage
+  license_url: https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html
+  url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138
+  modalities:
+  - L1000 expression signatures
+  citation: NIH LINCS L1000 Phase II, GEO GSE70138
+  citation_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138
+  query:
+    geo_accession: GSE70138
+  notes: ''
+- source_id: lincs_genetic_perturbations
+  role: genetic_signature_validation
+  repository: NCBI GEO/LINCS
+  accession: GSE106127
+  title: LINCS RNAi and CRISPR L1000 signatures
+  adapter: geo
+  version: GEO accession update locked
+  access: open
+  license: NCBI GEO terms
+  license_url: https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html
+  url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106127
+  modalities:
+  - RNAi
+  - CRISPR
+  - L1000
+  citation: LINCS genetic perturbation signatures, GEO GSE106127
+  citation_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106127
+  query:
+    geo_accession: GSE106127
+  notes: ''
+evaluation:
+  split_unit: cell line/model
+  discovery: DepMap 26Q1 + PRISM
+  validation:
+  - LINCS Phase I
+  - LINCS Phase II
+  - LINCS genetic perturbations
+  primary_metrics:
+  - held-line dependency prediction
+  - drug-ranking enrichment
+  - signature reversal concordance
+  forbidden_leakage:
+  - same model or compound analogs across folds without scaffold grouping

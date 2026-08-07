@@ -1,0 +1,16 @@
+{
+  "framework": "CausaFlux",
+  "version": "1.7.0",
+  "frozen_at_utc": "2026-08-07T17:10:42.603152+00:00",
+  "n_hypotheses": 6,
+  "registry_sha256": "dbcc87f2f454d856730f60c713a73bd5327adbcb870c4ee4ef9c920c9e7a1e32",
+  "hypothesis_hashes": {
+    "BV-SEA-AD-001": "91beddadce392580569487c15fb030fbaabbef4aa1f71d778cceee2c0dfd9ca5",
+    "BV-SEA-AD-002": "1822b5163aea0108d86d2ae0f6ef9799d365aed3339630d846e5d8225f6a896e",
+    "BV-SEA-AD-003": "eedf9b2eb123bf7ce28aa2d6c3262fe9b12f2b6bf3f068d348738d8bf80f01e6",
+    "BV-HTAN-001": "97a5d1c55e9c313be4dfafa9d7d33da371bfcbcb3b45bc496da48faaae4f797e",
+    "BV-DEPMAP-001": "15ef979aa16fd4b034d8b795d942c9a1c4adc35517ee1c8d6d8841c510edcc41",
+    "BV-SEA-AD-004": "ff2a87d14a44199a80ef3a4b6c7c2c64b1a16703827e88b05237823bb10319f9"
+  },
+  "mutable_after_results": false
+}

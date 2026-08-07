@@ -1,0 +1,151 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Evidence ledger</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:28px auto;padding:0 22px;color:#202124}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border:1px solid #ddd;padding:6px;text-align:left}th{background:#f4f4f4}.ok{border-left:4px solid #00A087;padding:12px;background:#f2fbf8}.warn{border-left:4px solid #E64B35;padding:12px;background:#fff5f3}code{background:#f3f3f3;padding:2px 4px}</style></head><body><h1>Evidence and conclusion ledger</h1><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>hypothesis_id</th>
+      <th>domain</th>
+      <th>preregistered</th>
+      <th>discovery_supported</th>
+      <th>source_cohort_replication_supported</th>
+      <th>cross_endpoint_support_fraction</th>
+      <th>external_dataset_status</th>
+      <th>perturbational_status</th>
+      <th>causal_claim_permitted</th>
+      <th>clinical_claim_permitted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BV-SEA-AD-001</td>
+      <td>neurobiology</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>0.833333</td>
+      <td>independent_source_cohort_replicated</td>
+      <td>not_applicable</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-SEA-AD-002</td>
+      <td>neurobiology</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1.000000</td>
+      <td>independent_source_cohort_replicated</td>
+      <td>not_applicable</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-SEA-AD-003</td>
+      <td>neurobiology</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1.000000</td>
+      <td>independent_source_cohort_replicated</td>
+      <td>not_applicable</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-HTAN-001</td>
+      <td>cancer</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>pending_data_access</td>
+      <td>planned_not_executed</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-DEPMAP-001</td>
+      <td>cancer</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>pending_data_access</td>
+      <td>planned_not_executed</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-SEA-AD-004</td>
+      <td>neurobiology</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>pending_data_access</td>
+      <td>planned_not_executed</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table><h2>Allowed language</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>hypothesis_id</th>
+      <th>title</th>
+      <th>evidence_tier</th>
+      <th>allowed_conclusion</th>
+      <th>causal_language_allowed</th>
+      <th>clinical_guidance_allowed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BV-SEA-AD-001</td>
+      <td>APOE epsilon-4 and pathological progression</td>
+      <td>replicated_association</td>
+      <td>The preregistered association was supported in the discovery cohort and replicated in an independent SEA-AD source cohort. APOE epsilon-4 carriers have higher continuous pseudo-progression scores than non-carriers. This is an observational association, not evidence of causality or clinical utility. External-dataset replication remains pending.</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-SEA-AD-002</td>
+      <td>Dementia status and pathological progression</td>
+      <td>replicated_association</td>
+      <td>The preregistered association was supported in the discovery cohort and replicated in an independent SEA-AD source cohort. Donors with dementia have higher continuous pseudo-progression scores than donors without dementia. This is an observational association, not evidence of causality or clinical utility. External-dataset replication remains pending.</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-SEA-AD-003</td>
+      <td>Neuropathological stage and pathological progression</td>
+      <td>replicated_association</td>
+      <td>The preregistered association was supported in the discovery cohort and replicated in an independent SEA-AD source cohort. Increasing AD neuropathological-change stage is monotonically associated with higher continuous pseudo-progression score. This is an observational association, not evidence of causality or clinical utility. External-dataset replication remains pending.</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-HTAN-001</td>
+      <td>Macrophage barrier and treatment resistance</td>
+      <td>preregistered_pending_data</td>
+      <td>Hypothesis preregistered before analysis. No biological conclusion is established because the required assay data have not been executed in this release.</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-DEPMAP-001</td>
+      <td>Proteostasis dependence and drug response</td>
+      <td>preregistered_pending_data</td>
+      <td>Hypothesis preregistered before analysis. No biological conclusion is established because the required assay data have not been executed in this release.</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BV-SEA-AD-004</td>
+      <td>Glial stress programs and pathological progression</td>
+      <td>preregistered_pending_data</td>
+      <td>Hypothesis preregistered before analysis. No biological conclusion is established because the required assay data have not been executed in this release.</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table></body></html>

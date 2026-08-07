@@ -1,0 +1,22 @@
+{
+  "framework": "CausaFlux",
+  "version": "1.7.0",
+  "valid": true,
+  "n_preregistered_hypotheses": 6,
+  "n_executed_hypotheses": 3,
+  "n_primary_tests": 6,
+  "n_endpoint_replication_tests": 18,
+  "n_method_comparisons": 54,
+  "bootstrap_requested": 500,
+  "discovery_cohort_donors": 69,
+  "replication_cohort_donors": 15,
+  "causal_claims": 0,
+  "clinical_claims": 0,
+  "synthetic_data_used_for_biological_conclusions": false,
+  "source_cohort_replication_established": 3,
+  "independent_source_cohort_replication_established": 3,
+  "external_dataset_replication_established": 0,
+  "perturbational_validation_established": 0,
+  "manuscript_figures": 4,
+  "biological_conclusions": "replicated observational associations only"
+}

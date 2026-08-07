@@ -1,0 +1,7 @@
+hypothesis_id,discovery,replication,replication_type,status,external_dataset,external_dataset_status
+BV-SEA-AD-001,ACT donors,ADRC Clinical Core donors,independent source cohort,established,AMP-AD,pending
+BV-SEA-AD-002,ACT donors,ADRC Clinical Core donors,independent source cohort,established,AMP-AD,pending
+BV-SEA-AD-003,ACT donors,ADRC Clinical Core donors,independent source cohort,established,AMP-AD,pending
+BV-HTAN-001,HTAN metastatic breast cancer,HTAN therapeutic resistance atlas,external atlas,pending data access,HTAN validation atlas,pending
+BV-DEPMAP-001,DepMap/PRISM,held-out lineages and LINCS,external perturbational,pending data access,LINCS,pending
+BV-SEA-AD-004,SEA-AD MTG,AMP-AD ROSMAP/MSBB,external molecular cohort,pending data access,AMP-AD,pending

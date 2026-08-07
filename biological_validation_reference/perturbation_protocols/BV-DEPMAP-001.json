@@ -1,0 +1,9 @@
+{
+  "hypothesis_id": "BV-DEPMAP-001",
+  "perturbation": "CRISPR dependency plus PRISM/LINCS response",
+  "repository": "DepMap / LINCS",
+  "status": "planned_not_executed",
+  "support_established": false,
+  "predefined_success_rule": "directionally concordant effect with FDR < 0.05 in an independent perturbational dataset",
+  "claim_if_incomplete": "No perturbational support established"
+}

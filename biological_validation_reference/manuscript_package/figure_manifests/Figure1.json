@@ -1,0 +1,14 @@
+{
+  "figure_id": "Figure1",
+  "title": "Preregistered hypotheses",
+  "source_data": "source_data/Figure1_preregistration.csv",
+  "vector_file": "figures/Figure1_preregistration.svg",
+  "formats": [
+    "svg",
+    "pdf",
+    "png",
+    "tiff"
+  ],
+  "profile": "Nature double column / Cell double column",
+  "data_type": "public real metadata"
+}

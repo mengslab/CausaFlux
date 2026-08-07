@@ -1,0 +1,200 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CausaFlux v1.7.0 biological validation</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:1180px;margin:28px auto;padding:0 22px;color:#202124}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border:1px solid #ddd;padding:6px;text-align:left}th{background:#f4f4f4}.ok{border-left:4px solid #00A087;padding:12px;background:#f2fbf8}.warn{border-left:4px solid #E64B35;padding:12px;background:#fff5f3}code{background:#f3f3f3;padding:2px 4px}</style></head><body>
+<h1>CausaFlux v1.7.0 — Biological validation</h1>
+<div class='ok'><strong>Three preregistered SEA-AD hypotheses were executed.</strong> Discovery used ACT donors and replication used independent ADRC Clinical Core donors. All conclusions remain observational.</div>
+<p><a href='../preregistration/preregistered_hypotheses.csv'>Preregistered hypotheses</a> · <a href='../manuscript_package/figure_inventory.csv'>Figure inventory</a> · <a href='evidence.html'>Evidence ledger</a></p>
+<h2>Primary results</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>cohort</th>
+      <th>endpoint</th>
+      <th>n</th>
+      <th>n_exposed</th>
+      <th>n_reference</th>
+      <th>effect</th>
+      <th>method</th>
+      <th>statistic</th>
+      <th>p_value</th>
+      <th>adjusted_effect</th>
+      <th>adjusted_ci_low</th>
+      <th>adjusted_ci_high</th>
+      <th>bootstrap_success</th>
+      <th>supported</th>
+      <th>hypothesis_id</th>
+      <th>title</th>
+      <th>exposure</th>
+      <th>cohort_name</th>
+      <th>q_value_bh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>discovery</td>
+      <td>Gabitto 2024</td>
+      <td>69</td>
+      <td>17</td>
+      <td>52</td>
+      <td>0.2078</td>
+      <td>Mann-Whitney U (one-sided)</td>
+      <td>667</td>
+      <td>0.0008851</td>
+      <td>0.2154</td>
+      <td>0.1003</td>
+      <td>0.3217</td>
+      <td>500</td>
+      <td>True</td>
+      <td>BV-SEA-AD-001</td>
+      <td>APOE epsilon-4 and pathological progression</td>
+      <td>APOE4</td>
+      <td>ACT</td>
+      <td>0.001328</td>
+    </tr>
+    <tr>
+      <td>replication</td>
+      <td>Gabitto 2024</td>
+      <td>15</td>
+      <td>8</td>
+      <td>7</td>
+      <td>0.1737</td>
+      <td>Mann-Whitney U (one-sided)</td>
+      <td>49</td>
+      <td>0.006993</td>
+      <td>0.1619</td>
+      <td>0.04712</td>
+      <td>0.301</td>
+      <td>500</td>
+      <td>True</td>
+      <td>BV-SEA-AD-001</td>
+      <td>APOE epsilon-4 and pathological progression</td>
+      <td>APOE4</td>
+      <td>ADRC Clinical Core</td>
+      <td>0.008392</td>
+    </tr>
+    <tr>
+      <td>discovery</td>
+      <td>Gabitto 2024</td>
+      <td>69</td>
+      <td>32</td>
+      <td>37</td>
+      <td>0.2538</td>
+      <td>Mann-Whitney U (one-sided)</td>
+      <td>930</td>
+      <td>2.443e-05</td>
+      <td>0.2497</td>
+      <td>0.1489</td>
+      <td>0.3515</td>
+      <td>500</td>
+      <td>True</td>
+      <td>BV-SEA-AD-002</td>
+      <td>Dementia status and pathological progression</td>
+      <td>Dementia</td>
+      <td>ACT</td>
+      <td>7.328e-05</td>
+    </tr>
+    <tr>
+      <td>replication</td>
+      <td>Gabitto 2024</td>
+      <td>15</td>
+      <td>10</td>
+      <td>5</td>
+      <td>0.1752</td>
+      <td>Mann-Whitney U (one-sided)</td>
+      <td>44</td>
+      <td>0.009657</td>
+      <td>0.1282</td>
+      <td>-0.09515</td>
+      <td>0.3429</td>
+      <td>500</td>
+      <td>True</td>
+      <td>BV-SEA-AD-002</td>
+      <td>Dementia status and pathological progression</td>
+      <td>Dementia</td>
+      <td>ADRC Clinical Core</td>
+      <td>0.009657</td>
+    </tr>
+    <tr>
+      <td>discovery</td>
+      <td>Gabitto 2024</td>
+      <td>69</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.7352</td>
+      <td>Spearman rank correlation (one-sided)</td>
+      <td>0.7352</td>
+      <td>3.162e-13</td>
+      <td>0.1771</td>
+      <td>0.1534</td>
+      <td>0.2087</td>
+      <td>500</td>
+      <td>True</td>
+      <td>BV-SEA-AD-003</td>
+      <td>Neuropathological stage and pathological progression</td>
+      <td>ADNC</td>
+      <td>ACT</td>
+      <td>1.897e-12</td>
+    </tr>
+    <tr>
+      <td>replication</td>
+      <td>Gabitto 2024</td>
+      <td>15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.7423</td>
+      <td>Spearman rank correlation (one-sided)</td>
+      <td>0.7423</td>
+      <td>0.0007639</td>
+      <td>0.2139</td>
+      <td>0.1052</td>
+      <td>0.2797</td>
+      <td>500</td>
+      <td>True</td>
+      <td>BV-SEA-AD-003</td>
+      <td>Neuropathological stage and pathological progression</td>
+      <td>ADNC</td>
+      <td>ADRC Clinical Core</td>
+      <td>0.001328</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Permitted conclusions</h2><table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>hypothesis_id</th>
+      <th>evidence_tier</th>
+      <th>allowed_conclusion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BV-SEA-AD-001</td>
+      <td>replicated_association</td>
+      <td>The preregistered association was supported in the discovery cohort and replicated in an independent SEA-AD source cohort. APOE epsilon-4 carriers have higher continuous pseudo-progression scores than non-carriers. This is an observational association, not evidence of causality or clinical utility. External-dataset replication remains pending.</td>
+    </tr>
+    <tr>
+      <td>BV-SEA-AD-002</td>
+      <td>replicated_association</td>
+      <td>The preregistered association was supported in the discovery cohort and replicated in an independent SEA-AD source cohort. Donors with dementia have higher continuous pseudo-progression scores than donors without dementia. This is an observational association, not evidence of causality or clinical utility. External-dataset replication remains pending.</td>
+    </tr>
+    <tr>
+      <td>BV-SEA-AD-003</td>
+      <td>replicated_association</td>
+      <td>The preregistered association was supported in the discovery cohort and replicated in an independent SEA-AD source cohort. Increasing AD neuropathological-change stage is monotonically associated with higher continuous pseudo-progression score. This is an observational association, not evidence of causality or clinical utility. External-dataset replication remains pending.</td>
+    </tr>
+    <tr>
+      <td>BV-HTAN-001</td>
+      <td>preregistered_pending_data</td>
+      <td>Hypothesis preregistered before analysis. No biological conclusion is established because the required assay data have not been executed in this release.</td>
+    </tr>
+    <tr>
+      <td>BV-DEPMAP-001</td>
+      <td>preregistered_pending_data</td>
+      <td>Hypothesis preregistered before analysis. No biological conclusion is established because the required assay data have not been executed in this release.</td>
+    </tr>
+    <tr>
+      <td>BV-SEA-AD-004</td>
+      <td>preregistered_pending_data</td>
+      <td>Hypothesis preregistered before analysis. No biological conclusion is established because the required assay data have not been executed in this release.</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Scope boundary</h2><div class='warn'>Source-cohort replication is established for the bundled SEA-AD metadata hypotheses. External-dataset replication in AMP-AD and perturbational validation in molecular or experimental systems remain pending. No causal, therapeutic, biomarker, or clinical-guidance claim is permitted.</div>
+</body></html>

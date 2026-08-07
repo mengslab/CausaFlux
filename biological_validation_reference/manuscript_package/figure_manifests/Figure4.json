@@ -1,0 +1,14 @@
+{
+  "figure_id": "Figure4",
+  "title": "Method comparison",
+  "source_data": "source_data/Figure4_method_comparison.csv",
+  "vector_file": "figures/Figure4_method_comparison.svg",
+  "formats": [
+    "svg",
+    "pdf",
+    "png",
+    "tiff"
+  ],
+  "profile": "Nature double column / Cell double column",
+  "data_type": "public real metadata"
+}

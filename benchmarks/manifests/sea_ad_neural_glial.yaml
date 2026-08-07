@@ -1,0 +1,102 @@
+id: sea_ad_neural_glial
+title: SEA-AD neural–glial benchmark
+domain: neurobiology-single-cell-spatial
+status: includes-real-metadata-snapshot
+estimated_storage_gb: 3-5000 by selected regions and image levels
+primary_question: Can neural–glial state trajectories and spatial vulnerability patterns reproduce across regions and modalities?
+sources:
+- source_id: sea_ad_processed_single_cell
+  role: discovery
+  repository: Allen Institute/AWS
+  accession: AWS s3://sea-ad-single-cell-profiling/; Brain Knowledge project UMSVXTDIAZTAFKGE43T
+  title: SEA-AD processed snRNA-seq and snATAC-seq
+  adapter: aws_s3
+  version: object ETag and LastModified locked at download
+  access: open processed data
+  license: Allen Institute Terms of Use and Citation Policy
+  license_url: https://alleninstitute.org/legal/terms-use/
+  url: https://registry.opendata.aws/allen-sea-ad-atlas/
+  modalities:
+  - snRNA-seq
+  - snATAC-seq
+  - multiome
+  citation: Gabitto et al. Integrated multimodal cell atlas of Alzheimer’s disease. Nature Neuroscience 2024. DOI:10.1038/s41593-024-01774-5
+  citation_url: https://doi.org/10.1038/s41593-024-01774-5
+  query:
+    bucket: sea-ad-single-cell-profiling
+    regions:
+    - MTG
+    - A9/PFC
+  notes: Processed snRNA data from eleven regions were available as of June 2026.
+- source_id: sea_ad_spatial
+  role: spatial_discovery
+  repository: Allen Institute/AWS
+  accession: AWS s3://sea-ad-spatial-transcriptomics/
+  title: SEA-AD MERFISH and Xenium spatial transcriptomics
+  adapter: aws_s3
+  version: object ETag and LastModified locked
+  access: open
+  license: Allen Institute Terms of Use and Citation Policy
+  license_url: https://alleninstitute.org/legal/terms-use/
+  url: https://registry.opendata.aws/allen-sea-ad-atlas/
+  modalities:
+  - MERFISH
+  - Xenium
+  - spatial cell annotations
+  citation: Gabitto et al. Nature Neuroscience 2024. DOI:10.1038/s41593-024-01774-5
+  citation_url: https://doi.org/10.1038/s41593-024-01774-5
+  query:
+    bucket: sea-ad-spatial-transcriptomics
+    region: MTG
+  notes: Cell-level spatial data from 24 donors are described by the ABC Atlas.
+- source_id: sea_ad_neuropathology
+  role: phenotype_anchor
+  repository: Allen Institute/AWS
+  accession: AWS s3://sea-ad-quantitative-neuropathology/
+  title: SEA-AD quantitative neuropathology
+  adapter: aws_s3
+  version: object ETag and LastModified locked
+  access: open
+  license: Allen Institute Terms of Use
+  license_url: https://alleninstitute.org/legal/terms-use/
+  url: https://registry.opendata.aws/allen-sea-ad-atlas/
+  modalities:
+  - brightfield pathology
+  - quantifications
+  - annotations
+  citation: SEA-AD quantitative neuropathology resource
+  citation_url: https://brain-map.org/consortia/sea-ad/our-data
+  query:
+    bucket: sea-ad-quantitative-neuropathology
+  notes: ''
+- source_id: sea_ad_multiregion
+  role: within-program_validation
+  repository: Allen Institute/AWS
+  accession: SEA-AD processed 11-region release (June 2026)
+  title: SEA-AD multiregion processed single-nucleus data
+  adapter: aws_s3
+  version: June 2026 release/object lock
+  access: open processed
+  license: Allen Institute Terms of Use
+  license_url: https://alleninstitute.org/legal/terms-use/
+  url: https://brain-map.org/consortia/sea-ad/our-data
+  modalities:
+  - snRNA-seq across 11 regions
+  citation: SEA-AD Data and Downloads
+  citation_url: https://brain-map.org/consortia/sea-ad/our-data
+  query:
+    bucket: sea-ad-single-cell-profiling
+    scope: eleven brain regions
+  notes: Used for region-held-out validation; donors may overlap, so it is not labeled independent-donor validation.
+evaluation:
+  split_unit: donor
+  discovery: MTG multimodal atlas
+  validation:
+  - region-held-out SEA-AD
+  - AMP-AD external cohorts via amp_ad_molecular benchmark
+  primary_metrics:
+  - cell-state mapping
+  - donor-held-out pathology association
+  - spatial vulnerability reproducibility
+  forbidden_leakage:
+  - cells or regions from same donor across donor-held-out folds

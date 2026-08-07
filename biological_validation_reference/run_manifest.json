@@ -1,0 +1,10 @@
+{
+  "framework": "CausaFlux",
+  "version": "1.7.0",
+  "workflow": "biological_validation",
+  "generated_at_utc": "2026-08-07T17:10:45.537373+00:00",
+  "public_real_data": true,
+  "synthetic_data_used": false,
+  "clinical_guidance": false,
+  "n_artifacts": 59
+}

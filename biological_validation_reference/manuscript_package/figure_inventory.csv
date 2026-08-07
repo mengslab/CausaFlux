@@ -1,0 +1,5 @@
+figure_id,title,source_data,vector_file,formats,profile,data_type
+Figure1,Preregistered hypotheses,source_data/Figure1_preregistration.csv,figures/Figure1_preregistration.svg,"['svg', 'pdf', 'png', 'tiff']",Nature double column / Cell double column,public real metadata
+Figure2,Primary replication,source_data/Figure2_primary_replication.csv,figures/Figure2_primary_replication.svg,"['svg', 'pdf', 'png', 'tiff']",Nature double column / Cell double column,public real metadata
+Figure3,Endpoint robustness,source_data/Figure3_endpoint_robustness.csv,figures/Figure3_endpoint_robustness.svg,"['svg', 'pdf', 'png', 'tiff']",Nature double column / Cell double column,public real metadata
+Figure4,Method comparison,source_data/Figure4_method_comparison.csv,figures/Figure4_method_comparison.svg,"['svg', 'pdf', 'png', 'tiff']",Nature double column / Cell double column,public real metadata

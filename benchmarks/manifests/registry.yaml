@@ -1,0 +1,17 @@
+framework: CausaFlux
+version: 1.5.0
+release: Real-data benchmark release
+generated_at: '2026-08-06'
+benchmarks:
+- id: htan_spatial_cancer
+  manifest: htan_spatial_cancer.yaml
+- id: gdc_tcga_cptac_brca
+  manifest: gdc_tcga_cptac_brca.yaml
+- id: depmap_prism_lincs
+  manifest: depmap_prism_lincs.yaml
+- id: sea_ad_neural_glial
+  manifest: sea_ad_neural_glial.yaml
+- id: amp_ad_molecular
+  manifest: amp_ad_molecular.yaml
+- id: dandi_neurophysiology
+  manifest: dandi_neurophysiology.yaml

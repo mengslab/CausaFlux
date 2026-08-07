@@ -1,0 +1,14 @@
+{
+  "figure_id": "Figure3",
+  "title": "Endpoint robustness",
+  "source_data": "source_data/Figure3_endpoint_robustness.csv",
+  "vector_file": "figures/Figure3_endpoint_robustness.svg",
+  "formats": [
+    "svg",
+    "pdf",
+    "png",
+    "tiff"
+  ],
+  "profile": "Nature double column / Cell double column",
+  "data_type": "public real metadata"
+}

@@ -1,0 +1,110 @@
+id: gdc_tcga_cptac_brca
+title: GDC TCGA/CPTAC breast molecular benchmark
+domain: cancer-molecular
+status: accession-ready
+estimated_storage_gb: 20-500 depending on raw versus harmonized level
+primary_question: Do multimodal molecular state representations replicate across TCGA genomics and CPTAC proteogenomics?
+sources:
+- source_id: tcga_brca
+  role: discovery
+  repository: NCI GDC
+  accession: TCGA-BRCA
+  title: Breast Invasive Carcinoma
+  adapter: gdc
+  version: GDC current release resolved and locked at download
+  access: open harmonized derived files; controlled raw/germline files
+  license: NCI GDC data-use and dbGaP rules by file access class
+  license_url: https://gdc.cancer.gov/access-data
+  url: https://portal.gdc.cancer.gov/projects/TCGA-BRCA
+  modalities:
+  - RNA-seq
+  - somatic mutation
+  - copy number
+  - methylation
+  - clinical
+  citation: The Cancer Genome Atlas Network. Comprehensive molecular portraits of human breast tumours. Nature 2012. DOI:10.1038/nature11412
+  citation_url: https://doi.org/10.1038/nature11412
+  query:
+    project_id: TCGA-BRCA
+    data_access: open
+    data_categories:
+    - Transcriptome Profiling
+    - Simple Nucleotide Variation
+    - Copy Number Variation
+    - DNA Methylation
+    - Clinical
+  notes: Adapter generates GDC filters, file manifest, MD5 lock, and case-level join audit.
+- source_id: cptac2_breast_genomics
+  role: independent_validation
+  repository: NCI GDC
+  accession: CPTAC-2
+  title: CPTAC Breast, Colon, Ovary genomic project
+  adapter: gdc
+  version: GDC current release resolved and locked
+  access: mixed open and controlled
+  license: NCI GDC/dbGaP terms
+  license_url: https://gdc.cancer.gov/access-data
+  url: https://portal.gdc.cancer.gov/projects/CPTAC-2
+  modalities:
+  - WXS/WGS
+  - RNA-seq
+  - clinical
+  citation: NCI Clinical Proteomic Tumor Analysis Consortium
+  citation_url: https://gdc.cancer.gov/about-gdc/contributed-genomic-data-cancer-research/clinical-proteomic-tumor-analysis-consortium-cptac
+  query:
+    project_id: CPTAC-2
+    primary_site: Breast
+  notes: Case-level identifiers must be reconciled to PDC aliquots.
+- source_id: cptac_brca_proteome
+  role: independent_validation
+  repository: NCI PDC
+  accession: PDC000120
+  title: Prospective Breast BI Proteome
+  adapter: pdc
+  version: PDC study version resolved and locked
+  access: open processed proteomic data; file-specific terms
+  license: NCI PDC data-use terms
+  license_url: https://pdc.cancer.gov/pdc-docs/
+  url: https://pdc.cancer.gov/pdc/study/PDC000120
+  modalities:
+  - proteome
+  - phosphoproteome
+  - acetylproteome
+  - clinical
+  citation: Krug et al. Proteogenomic Landscape of Breast Cancer Tumorigenesis and Targeted Therapy. Cell 2020. DOI:10.1016/j.cell.2020.10.036
+  citation_url: https://doi.org/10.1016/j.cell.2020.10.036
+  query:
+    pdc_study_id: PDC000120
+  notes: Confirmatory cohort of approximately 125 individuals according to PDC study summary.
+- source_id: calgb40601_proteogenomics
+  role: therapy_response_validation
+  repository: NCI PDC
+  accession: PDC000582
+  title: CALGB 40601 neoadjuvant HER2+ breast cancer proteogenomics
+  adapter: pdc
+  version: PDC study version resolved and locked
+  access: open/controlled by file
+  license: NCI PDC data-use terms
+  license_url: https://pdc.cancer.gov/pdc-docs/
+  url: https://pdc.cancer.gov/pdc/study/PDC000582
+  modalities:
+  - proteome
+  - phosphoproteome
+  - treatment response
+  citation: NCI PDC study PDC000582
+  citation_url: https://pdc.cancer.gov/pdc/study/PDC000582
+  query:
+    pdc_study_id: PDC000582
+  notes: Used only for retrospective response benchmarking; no clinical recommendations.
+evaluation:
+  split_unit: patient
+  discovery: TCGA-BRCA
+  validation:
+  - CPTAC-2/PDC000120
+  - PDC000582
+  primary_metrics:
+  - cross-cohort subtype/state concordance
+  - calibration
+  - external C-index/AUC where outcome supports it
+  forbidden_leakage:
+  - aliquots or omics from one patient across folds

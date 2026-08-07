@@ -1,0 +1,14 @@
+id: BV-SEA-AD-004
+title: Glial stress programs and pathological progression
+status: preregistered_pending_molecular_data
+domain: neurobiology
+hypothesis: Microglial inflammatory and astrocytic proteostasis programs increase before neuronal dysfunction across pathological progression.
+direction: positive
+primary_endpoint: cell-state program score versus CPS
+discovery_cohort: SEA-AD MTG single-cell atlas
+replication_cohort: AMP-AD ROSMAP and MSBB
+analysis: donor-blocked pseudobulk regression and region-held-out replication
+alpha: 0.05
+multiple_testing_family: neural-glial molecular hypotheses
+perturbational_validation: planned_DANDI_or_ex_vivo_followup
+external_dataset_validation: planned

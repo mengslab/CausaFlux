@@ -1,0 +1,14 @@
+id: BV-SEA-AD-003
+title: Neuropathological stage and pathological progression
+status: executed
+domain: neurobiology
+hypothesis: Increasing AD neuropathological-change stage is monotonically associated with higher continuous pseudo-progression score.
+direction: positive
+primary_endpoint: Gabitto 2024 CPS
+discovery_cohort: SEA-AD ACT donors
+replication_cohort: SEA-AD ADRC Clinical Core donors
+analysis: one-sided Spearman rank correlation plus age/sex-adjusted OLS with donor bootstrap
+alpha: 0.05
+multiple_testing_family: three primary SEA-AD hypotheses
+perturbational_validation: not_applicable_pathology_stage
+external_dataset_validation: pending_AMP_AD
